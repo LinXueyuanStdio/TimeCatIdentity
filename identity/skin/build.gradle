@@ -1,8 +1,9 @@
 apply from: "${project.rootDir}/gradle/library_header.gradle"
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.appcompat:appcompat:1.2.0'
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api "androidx.appcompat:appcompat:1.2.0"
+    api "skin.support:skin-support:4.0.5"
 }
 
 apply from: "${project.rootDir}/gradle/library_tail.gradle"
