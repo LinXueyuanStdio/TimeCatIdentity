@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="quick_view_dawn_desc">
+        <item quantity="other">昨日只是場夢，今天有%1$d個事項待辦。</item>
+    </plurals>
+    <plurals name="quick_view_morning_desc">
+        <item quantity="other">早安，今天有%1$d個事件待處理。</item>
+    </plurals>
+    <plurals name="quick_view_afternoon_desc">
+        <item quantity="other">午安，你還有%1$d個事件要處理。</item>
+    </plurals>
+    <plurals name="quick_view_evening_desc">
+        <item quantity="other">晚安，今天剩餘%1$d個事件。</item>
+    </plurals>
+    <string name="quick_view_no_event">今天沒有事件，休息一下吧。</string>
+    <string name="quick_view_check_today">今日事件</string>
+
+    <string name="gone">過去</string>
+    <string name="ongoing">進行</string>
+    <string name="waiting">等待</string>
+    <string name="got_it">知道了</string>
+
+
+    <!--Sorting Bottom Sheet-->
+    <string name="sorting_option_title">排序</string>
+    <string name="sorting_option_alphabetically">按字母排序</string>
+    <string name="sorting_option_creation_date">按建立日期</string>
+    <string name="sorting_option_due_date">按截止日期</string>
+    <string name="sorting_option_priority">按優先度</string>
+    <string name="sorting_option_type">按类型</string>
+    <string name="sorting_order_asc">正序</string>
+    <string name="sorting_order_desc">倒序</string>
+
+
+    <string name="chip_sort" formatted="false">%1s (%2s)</string>
+    <string name="chip_sort_type">按类型</string>
+    <string name="chip_sort_alpha">按字母</string>
+    <string name="chip_sort_due_date">按截止日期</string>
+    <string name="chip_sort_priority">按優先度</string>
+    <string name="chip_sort_creation_date">按建立日期</string>
+    <string name="chip_sort_order_asc">正序</string>
+    <string name="chip_sort_order_desc">倒序</string>
+</resources>

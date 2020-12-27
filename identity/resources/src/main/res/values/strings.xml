@@ -1,0 +1,1473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">时光猫</string>
+    <string name="applicationId">com.time.cat</string>
+
+    <!--region permission-->
+    <string name="ask_again">请给予应用必要权限，让程序可正常工作。</string>
+    <string name="perm_tip">缺少运行所需权限。\n请点击"设置"-"权限"-打开权限。\n再点击两次后退按钮返回本页。</string>
+    <string name="crash_submit">Submit</string>
+    <!--endregion-->
+
+    <!--region timecat-->
+    <string name="share_">分享</string>
+    <string name="translate">翻译</string>
+    <string name="addTask">添加任务</string>
+    <string name="copy_">复制</string>
+    <string name="save_">保存</string>
+    <string name="ocr_">识别</string>
+    <string name="timecat_">炸词</string>
+    <string name="drag_select_mode">框选模式</string>
+    <string name="drag_select_mode_done">非框选模式</string>
+    <string name="drag_mode">拖动排序</string>
+    <string name="drag_mode_done">退出拖动排序</string>
+    <string name="online_segment">在线分词</string>
+    <string name="offline_segment">离线分词</string>
+    <string name="no_symbol">不显示符号</string>
+    <string name="select_other">反选</string>
+    <string name="remain_section">保留分段</string>
+    <string name="no_section">不保留分段</string>
+    <string name="remain_symbol">显示符号</string>
+
+    <!--endregion-->
+
+    <string name="storage_not_available">存储空间不可用</string>
+    <string name="share_message_chooser">选择分享方式</string>
+
+    <string name="unread_feed_back">有%s条未读回复反馈，点击查看</string>
+
+    <string name="toast_tip_content">如果触发Time Cat异常，可以切换"增强型监控"设置查看效果。</string>
+    <string name="no_internet_for_fenci">网络异常，使用本地分词</string>
+    <string name="try_long_click_text">请试着长按上方文字</string>
+    <string name="request_accessibility_confirm">前往设置</string>
+    <string name="timecat_open">Time Cat 功能已打开</string>
+    <string name="timecat_close">Time Cat 功能已关闭</string>
+    <string name="open_timecat_for_translate">翻译功能开启Time Cat即可体验</string>
+
+    <string name="sort_mode_help">排序模式\n通过拖动改变词句的排列\n再次点击则返回选词模式</string>
+    <string name="click_to_see_function">选择文本后\n请点击功能按钮查看介绍\n请确保您掌握了每个功能</string>
+    <string name="share_request_confirm_dislike">当然！</string>
+    <string name="only_text">增强型监控(可能误触)</string>
+    <string name="white_list">设置触发方式</string>
+    <string name="share_mode_help">分享\n将选择的词句分享到其他APP</string>
+    <string name="monitor_clipboard">监控剪贴板</string>
+    <string name="problem_content">\t\t\t如果本产品出现一些使用异常，包括监控不工作，或者悬浮球或通知栏经常消失，程序经常被清理，请先确保您已经将本产品添加到了手机管家的清理白名单中，并允许自启动。</string>
+    <string name="stringValue1">Time Cat 是您的快捷助手，您可以在任意app中一步创建笔记或日程，对文字进行编辑，包括分词，翻译，复制以及动态调整，希望您能在日常生活中获得便利</string>
+    <string name="copy_mode_help">复制\n将选择的词句复制到剪贴板</string>
+    <string name="choose_sentences_mode">选词模式\n通过滑动和点击来选择词句进行操作</string>
+    <string name="stringValue2">开启 Time Cat 之旅</string>
+    <string name="stringValue3">从图库中选取图片识别</string>
+    <string name="stringValue4">拍照识别</string>
+    <string name="stringValue5">重新识别</string>
+
+    <string name="share_request_confirm_like">当然！</string>
+    <string name="stringValue9">翻译结果</string>
+    <string name="sorry_for_parse_fail">抱歉，解析失败</string>
+    <string name="ocr_picture">从图片中识别</string>
+    <string name="problems">程序工作不正常？</string>
+    <string name="monitor_click">监控点击/长按</string>
+    <string name="monitor_click_into">需要开启辅助服务，在一些比较奇葩的应用中可能无法使用</string>
+    <string name="setting_timecat">设置分词界面样式</string>
+    <string name="setting_timecat_intro">您可以调节爆炸出的文字的间距，大小，背景等</string>
+    <string name="setting_search_engine">设置默认搜索引擎</string>
+    <string name="setting_search_engine_into">您可以设置，添加内置浏览器使用的默认搜索引擎</string>
+    <string name="share_request_cancel">无感…</string>
+    <string name="share_request_msg">您喜欢本应用吗？</string>
+    <string name="search_mode_help">搜索\n将选中的词句通过默认浏览器进行搜索</string>
+    <string name="try_click_text">请点击或滑动上方文字</string>
+    <string name="share_request_cancel_like">算了吧…</string>
+    <string name="accessibility_des">打开右上角开关，在弹出的对话框中点击 `确认`。\n\n开启后，即可在微信，QQ等应用聊天页面中点击或长按文字聊天气泡，然后就会打开 Time Cat 页面。\n\n 此功能完全不需要root您的手机。只需您打开服务，弹窗提示您的授权时，点击确认便可。\n\n 注：服务被杀后，系统会自动撤销授权，这时请重新授权即可。</string>
+    <string name="translate_mode_help">翻译\n使用有道词典进行中英互译</string>
+
+    <string name="introduction">如何使用</string>
+    <string name="double_click_intercal">双击间隔#毫秒</string>
+    <string name="double_click_intercal_hint">太长易误触，太短会与微信自身冲突</string>
+    <string name="share_request_confirm">喜欢！</string>
+    <string name="share_request_msg_dislike">愿意给我们一些建议吗？</string>
+    <string name="share_request_msg_like">愿意分享给您的朋友吗？</string>
+    <string name="about_content">\t\t本产品是在开源项目https://github.com/l465659833/Bigbang的基础上进行设计开发的，旨在提供简单高效的任务管理和时间管理功能，帮用户省时间省脑力！\n\t\t本产品中的部分内容来自网络和其他开源组件，如有侵犯到您的版权，请联系我进行修改，谢谢！\n\t\t\t如果您对本产品有任何意见或建议，欢迎反馈。\n\n版本号：%1$s</string>
+    <string name="donate">我请作者吃辣条</string>
+    <string name="donate_now">点击跳转支付宝</string>
+    <string name="join_qq">点击加入内测群（601215164）</string>
+    <string name="confirm">确认</string>
+    <string name="share_request_cancel_dislike">算了吧...</string>
+    <string name="snackbar_net_error">连接网络失败，请稍后再试</string>
+    <string name="check_update">检测更新</string>
+    <string name="show_float_view">悬浮球常驻(自动靠边隐藏)</string>
+    <string name="show_float_view_request">开启后，在最近任务中杀死应用，强制应用重启，才能正常显示悬浮球</string>
+    <string name="check_update_close">已是最新版本</string>
+    <string name="default_setting">恢复默认设置</string>
+
+
+    <string name="punish_float_problem">悬浮球功能已开启!</string>
+    <string name="punish_float_action">悬浮球不显示？点击设置</string>
+
+    <string name="open_setting_failed_diy">无法打开系统设置，请手动设置</string>
+
+    <string name="setting_text_size">字体大小：</string>
+    <string name="setting_line_margin">行间距：</string>
+    <string name="setting_item_margin">块间距：</string>
+    <string name="setting_item_padding">块内边距：</string>
+    <string name="setting_alpha_percent">不透明度：</string>
+
+
+    <string name="use_app_browser">使用内置浏览器</string>
+
+
+    <string name="title_white_list">白名单</string>
+    <string name="system_app">系统应用</string>
+    <string name="user_app">第三方应用</string>
+
+    <string name="white_list_tip">此处设置不影响复制触发功能</string>
+    <string name="ocr_recognize">Ocr识别中</string>
+
+    <string name="error_in_copy">出现错误，请重试</string>
+    <string name="error_in_permission">请给开启辅助模式，可长按悬浮球设置</string>
+    <string name="copy_title">全局复制</string>
+    <string name="copy_subtitle">请点击想要复制的区域</string>
+    <string name="not_foud_qq">未找到QQ</string>
+    <string name="my_zhifubao">我的支付宝二维码</string>
+    <string name="my_weixin">我的微信二维码</string>
+    <string name="thinks_for_donate">有您的支持，我们会越做越好的，欢迎加群(601215164)，给我们提建议</string>
+    <string name="picture_saved">二维码已保存到本地相册</string>
+    <string name="click_to_save_qrcord">点击二维码保存到相册</string>
+
+
+    <string name="open_timecat">关闭分词</string>
+    <string name="close_timecat">开启分词</string>
+
+
+    <string name="float_view_hide">时光猫悬浮窗（隐藏状态）</string>
+    <string name="float_view">展开悬浮窗功能</string>
+    <string name="float_view_to_hide">收起悬浮窗</string>
+
+
+    <string name="share_content">Time Cat，不止是日历！更是您的高效助手！单击、双击、长按、复制等多种分词触发方式随心选！更有全局复制，图片识别等黑科技加持，给你的手机插上翅膀！\n\n
+苦苦寻觅一款高效又高逼格的管理事务/办公软件？\n想添加TO DO LIST又懒得切换页面再打开app？\n总是忙到忘记TO DO LIST？\n\n来找时光猫“玩耍”就对了！贴心时光猫，陪您度过高效时光！\n\n
+
+    ★“多”触即发，随时随地添加信息，懒癌福音！微信，qq，浏览器甚至桌面……小巧可爱的悬浮窗在手，您手机上任何地方都能简单快捷地添加任务，笔记等信息\n
+    ★“复制文字就能分词？”是的！不仅仅是分词，还可以直接搜索、翻译选中内容，更多精彩高效的功能等你来发现！\n
+    ★简洁精致的日历桌面小部件，为您清晰展示TO DO LIST，麻麻再也不用担心我忘记接下来要做什么啦~\n
+    ★拥有对用户友好的设置教程和使用教程，手把手教您使用高效管理信息的时光猫的正确姿势~\n
+    ★界面简洁而富有个性，可个性化设置界面显示效果，定能让您爱不释手~\n\n
+
+    Time Cat时光猫，送你最高效的时光喵~</string>
+    <string name="share_no_wechat">你还没有安装微信</string>
+    <string name="share_error">分享失败</string>
+
+    <string name="screen_capture_fail">抱歉，截屏失败</string>
+
+    <string name="word_type_cloud">云端分词\n把常见的词字组合在一起，有网络时默认启用</string>
+    <string name="word_type_local">本地分词\n把每一个字都拆分开，无网络时备选</string>
+
+    <string name="show_symbol">是否显示符号</string>
+    <string name="show_section">是否保持原段落\n开启时，段首的文字颜色加深，复制时保持分段状态</string>
+    <string name="show_drag_selection">框选模式\n选框内的词的选中状态由第一个选中的词决定</string>
+
+
+    <string name="recognize">识别中...</string>
+    <string name="click_show_timecat">点击炸开文字</string>
+
+    <string name="monitor_setting_card">点击触发相关设置</string>
+    <string name="donate_title">一分也是情</string>
+
+
+    <string name="total_switch">常驻服务总开关</string>
+
+    <string name="too_short_to_split">文字长度小于2，不分词</string>
+
+    <string name="float_tips">单击悬浮球切换开关，长按悬浮打开设置页。</string>
+    <string name="access_open_tips">监控单击/长按需要开启辅助功能，请在设置中开启！</string>
+    <string name="ocr_quote_beyond_time">\t\t非常抱歉，由于我们使用的是第三方付费OCR服务，作者每月需要为此支付数千元的费用。\n\t\t为了用户体验，本应用一直不愿接入广告，而热心用户的捐赠也有限，现已无力承担此费用.\n\t\t为了您的使用体验，麻烦您花几分钟时间进行设置，以继续免费使用OCR服务！</string>
+    <string name="free_use">如何免费使用OCR</string>
+    <string name="ocr_useup_toast">"我们的OCR限额即将耗尽，请查看设置页“免费设置OCR秘钥”"</string>
+
+
+    <string name="notify_total_switch_on">启用\n服务</string>
+    <string name="notify_total_switch_off">停用\n\n服务</string>
+    <string name="notify_monitor_click_on">监控点击</string>
+    <string name="notify_monitor_click_off">停用\n点击</string>
+    <string name="notify_monitor_clipboard_on">监控\n复制</string>
+    <string name="notify_monitor_clipboard_off">停用\n复制</string>
+    <string name="notify_copy_title">全局\n复制</string>
+    <string name="notify_srceen_cap">截屏\nOCR</string>
+
+
+    <string name="open_total_switch_first">请先点击第一项"使用服务"</string>
+
+    <string name="monitor_click_open">开始监控点击</string>
+    <string name="monitor_click_close">停止监控点击</string>
+
+
+    <string name="monitor_clipboard_open">开始监控复制</string>
+    <string name="monitor_clipboard_close">停止监控复制</string>
+
+
+    <string name="show_notify">显示通知栏</string>
+    <string name="show_notify_request">通知栏包含悬浮球的部分功能，可作为替代方案。</string>
+
+
+    <string name="show_app_notify">显示零应用通知栏</string>
+    <string name="show_app_notify_request">零应用通知栏包含悬浮入口，快捷操作。</string>
+
+    <string name="can_not_capture_under_5_0">Screenshots 5.0以下系统暂不支持截屏</string>
+
+    <string name="control_by_float">使用悬浮球控制</string>
+    <string name="control_by_notify">使用通知栏控制</string>
+    <string name="trigger_by_float">点击悬浮球触发</string>
+    <string name="pre_setting_title">请先设置 &lt;控制和触发&gt;方式</string>
+    <string name="pre_setting_intro1">通过&lt;悬浮球常驻或通知栏&gt;可以方便控制\n程序中还提供了更多控制方式\n\n如果您选择&lt;点击悬浮球触发&gt;\n在触发分词功能时会先弹出悬浮球\n您需要&lt;点击悬浮球&gt;才能激活分词</string>
+    <string name="pre_setting_intro2">&lt;点击上面的文字&gt;可以验证设置的效果。\n您也可以随时在设置页面中更改</string>
+    <string name="pre_setting_intro3">已经选好合适的触发方式了吗？\n您也可以随时在设置页面中更改， 或者从“如何使用”中进入本页面</string>
+    <string name="pre_setting_cancel">再看看效果</string>
+
+    <string name="capture_tips">在屏幕上划取区域截图</string>
+    <string name="capture_all">点我截取全屏</string>
+    <string name="capture_type_rect">矩形选取</string>
+    <string name="capture_type_free">曲线选取</string>
+
+    <string name="save_sd_card">已保存sd卡 timecat/image 目录下</string>
+    <string name="save_sd_card_fail">保存失败</string>
+
+
+    <string name="float_trigger">点击悬浮球触发分词</string>
+    <string name="float_trigger_request">在复制或点击以后，需要先点击悬浮球才会触发分词，多一步操作，减少误触发</string>
+
+
+    <string name="float_setting_card">悬浮球界面</string>
+
+
+    <string name="confirm_setting">我选好了</string>
+
+    <string name="notify_enable">通知栏已开启</string>
+    <string name="notify_disabled_title">通知不显示?</string>
+
+    <string name="goto_setting">进入设置</string>
+
+    <string name="set_background_myself">自定义</string>
+    <string name="set_background">设置Time Cat背景颜色</string>
+
+
+    <string name="set_diy_baidu_ocr_key">免费设置百度 OCR 秘钥</string>
+    <string name="set_diy_ocr_key">免费设置 OCR 秘钥</string>
+    <string name="set_diy_ocr_key_ok">设置OCR秘钥成功</string>
+    <string name="set_diy_ocr_key_hint">请输入OCR秘钥(不能包含空格)</string>
+    <string name="save_search_engine_fail">名字或网址不能为空</string>
+    <string name="set_search_pre">已将</string>
+    <string name="set_search_end">设置为默认搜索引擎</string>
+    <string name="can_not_delete"><![CDATA[不能再删啦，%>_<%]]></string>
+    <string name="xiugai">修改</string>
+    <string name="search_name_hint">名字(不超过5个字)</string>
+    <string name="search_url_hint">地址(最后会拼接上 搜索词 )</string>
+    <string name="move_edit_hint">左滑编辑或删除，长按调整位置</string>
+
+
+    <string name="setting_search_engine_web">设置搜索引擎</string>
+
+    <string name="treat_blanks_symbol">将空格当做普通符号\n(在分词界面控制显示/隐藏，否则当做文字)</string>
+    <string name="auto_add_blanks">自动在选中的单词和数字后添加空格\n(可能导致复制的网址中添加空格)</string>
+    <string name="is_default_local">默认使用本地分词</string>
+    <string name="is_full_screen">全屏显示分词</string>
+    <string name="is_stick_header">功能键保持在顶部</string>
+
+
+    <string name="select_all">全选</string>
+    <string name="select_mode">多选</string>
+    <string name="set_selection">设置为</string>
+    <string name="select_cancel">取消选择</string>
+
+    <string name="fragment_other">其他</string>
+    <string name="fragment_display">组件</string>
+    <string name="fragment_special">全局</string>
+    <string name="fragment_service">服务</string>
+
+    <string name="fragment_summary">统计</string>
+    <string name="fragment_usage_statistic">使用数据</string>
+    <string name="fragment_total_usage">总使用量</string>
+
+    <string name="open_access_setting">进入系统辅助服务设置</string>
+    <string name="open_access_hint">进程被杀或手机重启以后，需要重新开启辅助服务，建议您将该应用放到清理白名单</string>
+
+    <string name="save_setting">保存设置到SD卡</string>
+    <string name="load_setting">从SD卡恢复设置</string>
+
+    <string name="default_setting_tips">本操作会将所有设置项恢复默认，不过OCR秘钥将会保留。确认恢复吗？</string>
+
+    <string name="load_setting_tips">如果备份文件被修改过，可能会导致一些异常，确认恢复吗？</string>
+    <string name="effect_after_reboot">重启生效!</string>
+
+    <string name="save_setting_tips">普通备份不会备份OCR秘钥。\nOCR秘钥需要单独备份，备份后只能在本机上恢复。</string>
+    <string name="only_save_ocr">备份OCR</string>
+    <string name="save_other">普通备份</string>
+
+    <string name="restore_ocr_origin">OCR秘钥保持不变，</string>
+    <string name="restore_ocr_back">已恢复OCR秘钥，</string>
+    <string name="restore_failed">恢复设置失败，</string>
+    <string name="restore_success">已恢复设置，</string>
+
+    <string name="save_success">保存成功</string>
+    <string name="save_fail">保存失败</string>
+    <string name="setting_float_intro">您可以更改悬浮球的样式，满足您的个性化需求</string>
+    <string name="setting_floatview">设置悬浮球样式</string>
+    <string name="setting_burst_link_intro">一键，加速世界！</string>
+    <string name="setting_burst_link">设置 Burst Link</string>
+
+    <string name="crop_image_menu_rotate_left">左旋转</string>
+    <string name="crop_image_menu_rotate_right">右旋转</string>
+    <string name="crop_image_menu_crop">剪裁</string>
+
+    <string name="pick_image_intent_chooser_title">选择来源</string>
+    <string name="title_cropper">剪裁图片</string>
+    <string name="setting_floatview_size">悬浮球大小：</string>
+    <string name="set_floatview_image">自定义悬浮球图片</string>
+    <string name="del_floatview_image">恢复默认悬浮球图片</string>
+    <string name="set_floatview_background">设置展开时按键背景</string>
+    <string name="setting_floatview_alpha_percent">悬浮球不透明度:</string>
+
+    <string name="export_path">导出路径:/timecat/</string>
+    <string name="export_schedules">导出任务</string>
+    <string name="export_habits">导出习惯</string>
+    <string name="export_notes">导出笔记</string>
+    <string name="export_plans">导出计划</string>
+
+    <string name="import_schedules">导入任务</string>
+    <string name="import_habits">导入习惯</string>
+    <string name="import_notes">导入笔记</string>
+    <string name="import_plans">导入计划</string>
+
+    <string name="open_voice_setting">设置辅助应用程序</string>
+    <string name="open_voice_hint">设置完成后，请尝试能否通过长按Home键呼出菜单，如果不能，则该功能在您的手机上无效，请关闭该项设置。</string>
+
+
+    <string name="long_press">设置组合键打开菜单</string>
+    <string name="long_press_request">需开启辅助服务和悬浮窗权限，在有些手机上可能会与系统自带功能冲突</string>
+    <string name="long_press_toast">如果Home键无法触发，请“设置辅助应用程序”</string>
+
+
+    <string name="timecat_setting_card_title">分词界面</string>
+    <string name="notify_setting_card_title">通知栏界面</string>
+    <string name="no_query">无搜索词</string>
+    <string name="is_stick_sharebar">显示侧边分享栏(非全屏状态下不显示)</string>
+
+    <string name="pomodoro_setting_card_title">番茄界面</string>
+    <string name="weekview_setting_card_title">星期界面</string>
+    <string name="api_setting_card_title">API</string>
+    <string name="editor_setting_card_title">编辑器设置</string>
+    <string name="editor_richtext_setting_card_title">富文本编辑器</string>
+    <string name="keyboard_setting_card_title">键盘</string>
+    <string name="modules_setting_card_title">模块</string>
+    <string name="csv_setting_card_title">课程界面</string>
+    <string name="mini_main_setting_card_title">迷你界面</string>
+    <string name="mini_apps_setting_card_title">零应用</string>
+
+
+    <string name="show_introduction">显示介绍页面</string>
+
+    <string name="how_to_set">如何设置和使用(请先看上面的介绍)</string>
+    <string name="how_to_set_title">如何设置和使用</string>
+    <string name="how_to_set_msg">\t\t阅读完之前的介绍，你应该对这款应用的应用场景和不足之处有所了解了。\n\t\t
+        因为我们不具有系统权限，所以只能通过其他方式来提供给你相对更便捷的分词体验，不足之处，请谅解。\n\t\t
+        除了之前给出的使用建议，我们还有以下建议：\n\t\t
+        1.在微信、QQ等聊天应用中，使用监控点击触发分词更方便，至于是单击、双击还是长按，则是各有优劣，由你自己判断。\n\t\t
+        2.在浏览类应用中，使用复制触发分词，对于有些浏览器，可能得退出界面才能触发分词，多一步操作，也还是很方便的。\n\t\t
+        3.能够使用全局复制的地方用全局复制，比用系统复制方便，不过哪里能用，就得你自己多试试了，我们也没法统计所有应用。\n\t\t
+        4.在其他功能都不管用的时候，截图OCR作为最后的武器，也能起到不少作用，不过如果文字不清晰完整，识别率可能有待提高。\n\t\t
+        5.也可以开启“点击悬浮球触发时光猫”，减少误触发。\n\t\t
+        \n\n\t\t
+        当然你在使用过程也会有自己的体会，我们提供了最大的空间，
+        你可以定制自己的功能和分词界面。如果有其他定制需求，可以联系我们，对于好的建议，我们从来都是从善如流的！\n\t\t
+    </string>
+
+
+    <string name="about_control">为什么要使用悬浮球或通知栏</string>
+    <string name="about_control_msg">\t\t本应用的功能相对复杂，需要用户具备一定的动手探索能力。悬浮球、通知栏以及长按键菜单，一方面可以提供监控功能的开关，防止误触发，另一方面也是全局复制和截图OCR功能的入口。因此建议选择你最舒适的方式使用。\n\t\t
+    如果你都不喜欢，也不需要使用全局复制和截图OCR，也可以选择开启“点击悬浮球触发时光猫”，这样在监控点击和复制的时候，不至于误触发分词，影响使用体验。\n\t\t
+    PS: 在有些手机上，开启悬浮球会导致应用申请权限失败，可以在安装新应用时关闭悬浮球，也可以使用通知栏代替。</string>
+
+
+    <string name="about_accessibility">关于辅助模式的权限</string>
+    <string name="about_accessibility_msg">\t\t本应用可以通过监控点击触发分词，但是需要授予辅助模式的权限，但是辅助模式权限在进程被清理以后可能会被系统回收，所以请将本应用添加到自启动白名单和清理白名单中。</string>
+
+    <string name="about_click">为什么有时候点击触发分词不起作用</string>
+    <string name="about_click_msg">\t\t因为我们是通过监测用户的点击操作来判断是否触发分词的，这部分功能是通过辅助服务实现的。而以下情况就会导致无法检测到点击：\n\t\t
+1.有些应用不支持辅助服务对点击的捕获，点击发生以后，没有通知到辅助服务，比如微信朋友圈。\n\t\t
+2.有些应用屏蔽了一些点击事件，比如设置了一些位置不可点击，比如系统设置页面无法用长按触发分词。\n\t\t
+3.有些看似是文字的地方，其实是使用图片绘制的，比如一些阅读器：iReader等。\n\t\t
+而有时一些应用又会滥用点击事件，比如网易云音乐的评论界面，会把滑动误认为是长按。\n\t\t
+碰到以上情况，则可以尝试使用复制触发、全局复制或者截图OCR来触发分词。</string>
+
+    <string name="how_to_use_copy">为什么有些浏览器中复制不触发分词</string>
+    <string name="how_to_use_copy_msg">\t\t在一些浏览器中（比如微信自带浏览器，QQ浏览器，UC浏览器等），复制文字的时候无法触发分词。\n\t\t
+这是因为这些浏览器接管了系统的复制功能，用户点击的复制，要在退出浏览器页面的时候才真正被设置到系统的剪贴板中，所以我们也会到那能收到通知，然后才触发分词。\n\t\t
+解决办法是，在这些浏览器中，复制完成以后，暂时退出浏览器页面（Home键退到桌面，或者进入多任务界面，或者按返回键彻底退出），就可以触发分词了。或者使用我们提供的截图OCR识别、全局复制（只在Chrome内核的浏览器中才有用）。</string>
+
+    <string name="about_ocr">关于截图OCR</string>
+    <string name="about_ocr_msg">\t\t截图ORC我们使用的是微软的服务，收费颇高，因为我们本应用不产生收入，所以难以承受，但是你可以按照应用中的引导申请自己的key，每个月有5000次免费额度，相信足以满足你的需求。\n\t\t当然你也可以给我们捐赠10元以上，由我们给你提供key。</string>
+
+    <string name="about_universal_copy">为什么全局复制在有些页面没有用</string>
+    <string name="about_universal_copy_msg">\t\t全局复制的原理是通过辅助服务去抓取当前页面中的文字信息，而这些信息是需要应用来提供给复制服务的，所以以下情况可能会导致全局复制抓不到文字：\n\t\t
+1.如果应用没有提供文字信息给辅助服务，则无法抓取文字，比如浏览器（Chrome内核浏览器例外）和QQ消息界面等，此时可以考虑使用普通复制。\n\t\t
+2.一些看似是文字的内容，其实是当成图片绘制的，所以也抓不到文字信息，比如锤子桌面、iReader，此时可以使用截图OCR功能。</string>
+    <string name="share_app">设置侧边栏分享应用</string>
+    <string name="share_long_click_move">分享侧边栏长按图标可调整顺序</string>
+
+    <string name="overall_intro">软件功能介绍</string>
+    <string name="overall_intro_msg">\t\t本应用主要功能是信息管理和分词、选词，是为了让更多用户既能使用到“锤子手机Big Bang”的便捷功能，又能在不需要打开APP的情况下直接添加任务、任务、闹钟等。\n\t\t
+        *强烈建议打开悬浮窗权限，我们特别在悬浮窗上做了大量优化，悬浮窗操作比打开APP操作更加便捷。\n\t\t
+        所谓分词，就是将一句话按照词组拆分开来，用户可以对拆开的词进行自由排序，组合，快速形成新的句子。\n\t\t
+        因为本应用不具备操作系统底层的权限，所以无法完全做到锤子手机中的使用体验，但是本应用可以监控点击和系统复制来触发分词，也提供了全局复制和截图OCR的功能，能够覆盖大部分的取词情况。\n\t\t
+        分词界面不但支持锤子手机中的操作，还加入了长按词语拆分成字、拖动排序、保留分段结构等独创功能，最大程度上改进你的选词体验。\n\t\t
+        软件的设置可能比较复杂，阅读本页的介绍将会对您有所帮助，感谢您使用！
+    </string>
+
+    <string name="about_xposed">关于XP版多种触发方式的设置</string>
+    <string name="about_description0">
+        <![CDATA[
+    For this development, we use several open source libraries that are shown below:
+        ]]>
+    </string>
+
+    <string name="open_from_outside">如何通过外部应用触发功能</string>
+    <string name="open_from_outside_msg">我们提供了悬浮窗、通知栏、快捷键等方式来控制和触发功能，如果你对这几种方法仍然不满意，或者你使用了第三方的自定义开关(比如悬浮菜单)，可以将我们的功能集成进去，方法如下：\n
+    包名：\n
+        \t\t*普通版：com.time.cat\n
+        \t\t*Xposed版：com.time.cat.coolapk\n\n
+    类名：\n
+        \t*功能总开关(包含复制和点击)：
+        \tcom.time.cat.ui.activity.TotalSwitchActivity\n\n
+        \t*全局复制：
+        \tcom.time.cat.ui.activity.UniversalCopyActivity\n\n
+        \t*区域截屏OCR：
+        \tcom.time.cat.ui.activity.listHabitsScreen.ScreenCaptureActivity\n\n
+        \t*添加操作:
+        \tcom.time.cat.ui.activity.addtask.DialogActivity\n\n
+        提示：本页面可以通过全局复制来复制包名和类名。
+    </string>
+
+
+    <string name="intro_card_msg">看看应用的介绍和设置说明吗？</string>
+    <string name="intro_card_msg_2">如果使用中遇到了问题\n也可以在“其他”设置的“如何使用”中查看</string>
+
+    <string name="intro_card_go">现在查看</string>
+    <string name="intro_card_cancel">下次再说</string>
+
+
+    <string name="bb_long_press_toast">试试长按一个词组</string>
+
+
+    <string name="is_stick_view">固定悬浮球位置</string>
+
+    <string name="auto_open">自动开启辅助服务</string>
+    <string name="auto_open_hint">需要Root权限，如果频繁提示权限，可以到SuperSU中设置</string>
+
+
+    <string name="click_to_edit">修改内容后，长按或点击炸词开始分词</string>
+
+    <string name="jump_introduction">跳过</string>
+    <string name="jump_toast">如果遇到问题，你可以在设置中重新查看此页</string>
+    <string name="search_">以图搜图</string>
+    <string name="add_">添加</string>
+    <string name="upload_img">开始上传图片</string>
+    <string name="upload_img_fail">抱歉，图片上传失败</string>
+
+    <string name="request_usage_setting_msg">需要开启使用量权限，请在打开的设置页面中授权！</string>
+    <string name="float_white_list">不显示悬浮球的应用</string>
+    <string name="float_white_list_nagetive">不开启使用量权限，无法获取前台应用程序,设置将不会起作用</string>
+
+    <string name="calendar_year">年</string>
+
+    <string name="main_menu_today">今天</string>
+    <string name="main_menu_permission">申请权限</string>
+    <string name="main_menu_more">更多</string>
+    <string name="main_menu_help">帮助</string>
+    <string name="main_menu_new_clock">新建番茄钟</string>
+    <string name="main_menu_change_theme">改变效果</string>
+    <string name="label_not_important_not_urgent">不重要不紧急</string>
+    <string name="label_not_important_urgent">紧急不重要</string>
+    <string name="label_important_not_urgent">重要不紧急</string>
+    <string name="label_important_urgent">重要且紧急</string>
+    <string name="Complete">更新成功</string>
+    <string name="Error">更新失败！</string>
+    <string name="Upload">更新</string>
+    <string name="calendar_delay">顺延</string>
+    <string name="calendar_day">天</string>
+    <string name="add_task_mode_help">添加任务 直接根据选词生成日程任务</string>
+    <string name="open_timecat_for_task">快速添加任务功能开启Time Cat即可体验</string>
+    <!--getDrawerawer-->
+    <string name="title_schedules">任务</string>
+    <string name="title_habits">习惯</string>
+    <string name="title_plans">计划</string>
+    <string name="title_shelf">书架</string>
+
+    <string name="drawer_home_option">主页</string>
+    <string name="drawer_login_option">登录</string>
+    <string name="drawer_artifact_option">造物榜</string>
+    <string name="drawer_schedules_option">任务</string>
+    <string name="drawer_habits_option">习惯</string>
+    <string name="drawer_notes_option">笔记</string>
+    <string name="drawer_plans_option">书架</string>
+    <string name="drawer_medicines_option">用药</string>
+    <string name="drawer_pharmacies_option">药店</string>
+    <string name="drawer_theme_option">主题</string>
+    <string name="drawer_achievement_option">成就</string>
+    <string name="drawer_mini_apps_option">零应用</string>
+    <string name="drawer_lab_option">实验室</string>
+    <string name="drawer_creator_option">造物喵</string>
+    <string name="drawer_manager_option">管理喵</string>
+    <string name="drawer_permission_option">权限</string>
+    <string name="drawer_statistics_option">统计</string>
+    <string name="drawer_plugins_option">插件</string>
+    <string name="drawer_pomodoros_option">番茄钟</string>
+    <string name="drawer_collections_option">收藏</string>
+    <string name="drawer_tags_option">标签</string>
+    <string name="drawer_super_card_option">超级卡片</string>
+    <string name="drawer_settings_option">设置</string>
+    <string name="drawer_about_option">关于</string>
+
+    <string name="habits_list_empty_text">还没有[习惯]喵！\n[习惯]是定期任务，比如课程、健身、定期运动等。\n快去创建您的[习惯]喵！</string>
+    <string name="remove_habit_message_short">删除 %1$s [习惯]?</string>
+    <string name="remove_habit_dialog_title">删除[习惯]</string>
+    <string name="dialog_yes_option">Yes</string>
+    <string name="dialog_no_option">No</string>
+    <string name="reminder_cancelled_message">Reminder cancelled</string>
+    <!--floating button-->
+    <string name="schedule_type_habits_title">视图切换</string>
+    <string name="schedule_type_hourly_title">使用实例</string>
+    <string name="schedule_type_period_title">注意！</string>
+
+
+    <string name="schedule_type_help_title">您将创建一个[任务]，阅读下面的说明以更好地使用这个功能</string>
+    <string name="schedule_type_help">长按[任务]图标改变视图\n选中某个任务视图的情况下，再次单击[任务]图标可切换下一个任务视图\n点击左上角的日期文字，可看见年月视图。
+    </string>
+    <string name="schedule_type_hourly_help">
+        管理将要做的事情，比如做作业，写文章，追剧等。
+    </string>
+    <string name="schedule_type_intervalrest_help">
+        当天完成任务可获得丰厚的奖励，当天未完成的任务将自动顺延至下一天。
+    </string>
+
+
+    <string name="habit_type_help_title">您将创建一个[习惯]，阅读下面的说明以更好地使用这个功能</string>
+    <string name="habit_type_routines_help">
+        长按[习惯]图标可以改变视图\n选中某个习惯视图的情况下，再次单击[习惯]图标可切换下一个习惯视图
+    </string>
+    <string name="habit_type_hourly_help">
+        \t\t管理定期事情，比如课程表，产品上线，任务DDL，定时健身，定期体检，早睡早起等。
+    </string>
+    <string name="habit_type_intervalrest_help">
+        使用[全天]标签，取消全天并设置开始结束时间\n\n使用[重复]标签来批量创建。
+    </string>
+
+
+    <string name="note_type_help_title">您将创建一个[笔记]，阅读下面的说明以更好地使用这个功能</string>
+    <string name="note_type_routines_help">
+        长按[笔记]图标可以改变视图\n选中某个笔记视图的情况下，再次单击[笔记]图标可切换下一个笔记视图\n
+    </string>
+    <string name="note_type_hourly_help">
+        \t\t管理碎片信息，比如神评，摘抄，日记，想法，女朋友的注意事项等
+    </string>
+    <string name="note_type_intervalrest_help">
+        最基础的功能，推荐卡片视图，更加方便
+    </string>
+
+
+    <string name="plan_type_help_title">您将创建一个[计划]，阅读下面的说明以更好地使用这个功能</string>
+    <string name="plan_type_routines_help">
+        长按[计划]图标可以改变视图，目前支持的视图有：\n\t1. 列表视图\n\t2. 卡片视图\n\t3. 堆视图
+    </string>
+    <string name="plan_type_hourly_help">
+        \t\t管理计划信息，比如长期计划，项目计划，健身计划，学习计划，考证计划等
+    </string>
+    <string name="plan_type_intervalrest_help">
+        内置[抗焦虑锦囊]，在夜晚失眠时把担心的事放到锦囊里，在失去动力成为咸鱼时打开锦囊，不忘初心，做真正的自己。
+    </string>
+
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
+
+    <string name="title_notes">笔记</string>
+    <string name="notes">笔记</string>
+    <string name="title_add">添加</string>
+    <string name="main_menu_refresh_schedule">立即刷新</string>
+    <string name="main_menu_add">添加</string>
+    <string name="previous_month">Previous month</string>
+    <string name="next_month">Next month</string>
+    <string name="add_button">Add Button</string>
+    <string name="refresh_button">Refresh Button</string>
+
+
+    <!-- navigation drawer -->
+    <!-- navigation drawer item -->
+    <string name="drawer_item_sync">同步</string>
+    <string name="drawer_item_theme">主题</string>
+    <string name="drawer_item_help">帮助</string>
+    <string name="drawer_item_settings">设置</string>
+    <!-- navigation drawer item -->
+
+    <!-- dialog -->
+    <string name="dialog_message_alert_user">抱歉，暂时不支持同步</string>
+    <!-- navigation drawer -->
+
+    <!-- drawer toggle -->
+    <string name="toggle_drawer_open">Open Drawer</string>
+    <string name="toggle_drawer_close">Close Drawer</string>
+
+
+    <!-- file list fragment -->
+    <string name="toast_message_sdcard_unavailable">SD card不可用</string>
+    <string name="list_empty">没有找到任何文件\n点击右下角按钮新建文件</string>
+    <string name="FileManagerNoPost">没有文章</string>
+    <string name="FileManagerCreateHint">您可以点击右下角按钮创建新的文章</string>
+
+    <!-- menu -->
+    <string name="menu_item_search">搜索</string>
+    <string name="menu_item_notebook">文集</string>
+
+    <!-- sort options -->
+    <string name="menu_item_sort">排序</string>
+    <string name="choice_item_modify_time_sort">按修改时间</string>
+    <string name="choice_item_title_sort">按标题</string>
+    <string name="choice_item_type_sort">按类型</string>
+
+    <!-- show options -->
+    <string name="menu_item_display_option">查看选项</string>
+    <string name="choice_item_file_ext">文件后缀</string>
+    <string name="choice_item_file_size">文件大小</string>
+
+    <!-- search hint -->
+    <string name="search_hint">搜索文件</string>
+
+    <!-- action mode menu -->
+    <string name="action_mode_menu_item_select_all">全选</string>
+    <string name="action_mode_menu_item_delete">删除</string>
+    <string name="dialog_message_delete_files_confirm">要删除选中的文件吗？</string>
+    <!-- file list fragment -->
+
+
+    <!-- edit fragment -->
+    <!-- menu text -->
+    <string name="menu_item_undo">撤销</string>
+    <string name="menu_item_redo">恢复</string>
+    <string name="menu_item_preview">预览</string>
+    <string name="menu_item_save">保存</string>
+    <string name="menu_item_rename">重命名</string>
+    <string name="menu_item_delete">删除</string>
+    <string name="menu_item_clear_all">清除所有</string>
+    <string name="menu_item_docs">Markdown 速成语法</string>
+    <string name="menu_item_statistics">统计</string>
+    <string name="menu_item_edit">编辑</string>
+
+    <string name="menu_item_export_md">导出纯文本(.md)</string>
+    <string name="menu_item_export_html">导出 HTML</string>
+    <string name="menu_item_export_jpg">导出截图(.jpg)</string>
+    <string name="menu_item_export_pdf">导出 PDF</string>
+
+    <string name="menu_item_share_md">分享纯文本</string>
+    <string name="menu_item_share_html">分享 HTML</string>
+    <string name="menu_item_share_jpg">分享笔记截图</string>
+
+    <string name="toast_message_deleted">已删除</string>
+    <string name="toast_message_delete_error">文件删除失败</string>
+    <string name="toast_message_cleared">内容已清除</string>
+
+    <!-- edit fragment toolbar menu item dialog -->
+    <!-- save file -->
+    <string name="dialog_title_save_file">保存文件</string>
+    <string name="dialog_et_hint_file_name">文件名</string>
+    <string name="dialog_tv_file_extension">.md</string>
+    <string name="dialog_btn_save">保存</string>
+
+    <!-- rename file -->
+    <string name="dialog_title_rename_file">重命名</string>
+    <string name="dialog_et_hint_new_file_name">新的文件名</string>
+    <string name="dialog_btn_rename">重命名</string>
+
+    <!-- clear all -->
+    <string name="toast_content_empty">内容为空</string>
+    <string name="dialog_message_clear_all">确定要清除所有内容吗？</string>
+
+    <!-- markdown docs fragment toolbar title -->
+    <string name="docs_fragment_tb_title">Markdown 语法手册</string>
+
+    <!-- statistics -->
+    <string name="dialog_title_statistics">统计信息</string>
+    <string name="dialog_tv_bold_text">总字符数</string>
+    <string name="dialog_tv_char_count">10</string>
+    <string name="dialog_tv_char_unit">个字符</string>
+
+    <!-- editor toolbar dialog -->
+    <string name="dialog_btn_insert">插入</string>
+
+    <!-- insert link -->
+    <string name="dialog_title_insert_link">插入链接</string>
+    <string name="dialog_et_hint_link_display_text">显示文本（默认：Link）</string>
+    <string name="dialog_et_hint_link_content">链接</string>
+
+    <!-- insert image -->
+    <string name="dialog_item_text_local_image">本地图片</string>
+    <string name="dialog_item_text_internet_image">网络图片</string>
+    <string name="dialog_title_insert_image">插入图片</string>
+    <string name="dialog_et_hint_image_display_text">显示文本（默认：Image）</string>
+    <string name="dialog_et_hint_image_uri">图片链接</string>
+
+    <!-- insert block code -->
+    <string name="editor_dialog_title_insert_block_code">插入代码块</string>
+    <string name="dialog_et_hint_language_name">编程语言名称</string>
+
+    <!-- dialog toast -->
+    <string name="toast_saved">已保存</string>
+    <string name="toast_does_not_select">没有选择图片</string>
+    <string name="toast_file_name_can_not_empty">文件名不能为空</string>
+    <string name="toast_file_name_exists">文件名已存在，请重新输入</string>
+    <!-- edit fragment -->
+
+    <!--test content-->
+    <string name="test_long_title">这是一个标题，一个非常长的标题，长到看不到尽头，真的特别长，后面的根本看不到，后面还有很多内容你根本就看不到的，不信再看</string>
+    <string name="test_long_content">这是一段文章摘要，一段非常长的文章摘要，一样是长到没有尽头，到底是有多长呢，你继续往后看就知道有多长了，我不知道写什么了，就这样看看可不可以吧，要是不可以那就再长一点</string>
+
+    <!-- Weekly view -->
+
+    <!--region 视图-->
+    <string name="schedules_list_view">列表视图</string>
+    <string name="schedules_task_view">日程视图</string>
+    <string name="schedules_week_view">星期视图</string>
+    <string name="schedules_month_view">月视图</string>
+    <string name="schedules_four_view">四象限视图</string>
+    <string name="schedules_clock_view">闹钟视图</string>
+    <string name="schedules_class_view">课程表视图</string>
+    <string name="schedules_block_view">时间块视图</string>
+    <string name="schedules_middle_view">中视图</string>
+
+    <string name="habits_list_view">列表视图</string>
+    <string name="habits_card_view">卡片视图</string>
+    <string name="habits_multi_view">多功能视图</string>
+    <string name="habits_encourage_view">激励视图</string>
+    <string name="habits_chat_view">聊天视图</string>
+
+    <string name="notes_list_view">列表视图</string>
+    <string name="notes_card_view">卡片视图1</string>
+    <string name="notes_card_view2">卡片视图2</string>
+    <string name="notes_card_view3">卡片视图3</string>
+    <string name="notes_card_view4">卡片视图4</string>
+    <string name="notes_timeline_view">时间轴视图</string>
+    <string name="notes_markdown_view">Markdown视图</string>
+    <string name="notes_github_view">Github视图</string>
+    <string name="notes_org_view">笔记本视图</string>
+
+    <string name="shelf_moment_view">动态视图</string>
+    <string name="shelf_shelf_view">书架视图</string>
+    <!--endregion-->
+
+    <string name="word_test">测试</string>
+    <!--achievement-->
+    <string name="my_achievement_text">我的成就</string>
+    <string name="zero">0</string>
+    <string name="fail_tomato">烂番茄</string>
+
+    <string name="history_data">历史数据</string>
+    <string name="history_finish_tomato">总番茄数</string>
+    <string name="history_finish_tasks">总任务数</string>
+    <string name="history_total_habits">总习惯数</string>
+    <string name="history_total_notes">总笔记数</string>
+    <string name="history_total_plans">总计划数</string>
+    <string name="history_total_subplans">总子计划数</string>
+    <string name="history_unfinished_tasks">未完成任务</string>
+
+    <string name="work_count_down_over">工作时间结束</string>
+    <string name="work_end_warn">工作结束啦，休息一下吧！</string>
+    <string name="work_text">工作</string>
+    <string name="work_time_text">工作</string>
+    <string name="work_total_time">工作时间(小时)</string>
+    <string name="working_end_text">休息一下吧</string>
+    <string name="working_text">工作中</string>
+
+    <string name="today_data">今日数据</string>
+    <string name="today_finish_tomato">番茄数</string>
+    <string name="today_text">今天</string>
+
+    <string name="today_create_num">任务数</string>
+    <string name="today_finish_task">完成任务数</string>
+    <string name="today_remain_task">剩余任务数</string>
+
+    <string name="today_note_num">笔记数</string>
+    <string name="today_plan_num">计划数</string>
+    <string name="today_subplan_num">子计划数</string>
+
+    <string name="tomato_distribute_title">番茄收获时间</string>
+    <string name="tomato_num_title">番茄收成</string>
+
+    <string name="statistical_text">统计</string>
+
+    <string name="empty_schedules_head">没有任务！\n点击下面蓝色按钮创建任务！</string>
+    <string name="empty_notes_head">没有笔记！\n点击下面蓝色按钮创建笔记！</string>
+    <string name="empty_habits_head">没有习惯！\n点击下面蓝色按钮创建习惯！</string>
+    <string name="empty_plans_head">没有计划！\n点击下面蓝色按钮制定计划！</string>
+
+    <string name="empty_schedules">注意：\n(1)长按[日程]图标改变视图，目前支持的视图有：\n\t\t1. 日程视图\n\t\t2. 四象限视图\n点击左上角的日期文字，可看见年月视图。\n\n(2)建议管理将要做的事情，比如做作业，写文章，追剧等。\n\n(3)当天完成任务可获得丰厚的奖励，当天未完成的任务将自动顺延至下一天。</string>
+    <string name="empty_notes">注意：\n(1)长按[笔记]图标可以改变视图，目前支持的视图有：\n\t\t1. 列表视图\n\t\t2. 卡片视图\n\t\t3. Markdown视图\n\n(2)建议管理碎片信息，比如神评，摘抄，日记，想法，女朋友的注意事项等</string>
+    <string name="empty_habits">注意：\n(1)长按[习惯]图标可以改变视图，目前支持的视图有：\n\t\t1. 卡片视图\n\n(2)建议管理定期事情，比如课程表，产品上线，任务DDL，定时健身，定期体检，早睡早起等。\n\n(3)使用[全天]标签，取消全天并设置开始结束时间，使用[重复]标签来批量创建。</string>
+    <string name="empty_plans">注意：\n(1)长按[计划]图标可以改变视图，目前支持的视图有：\n\t\t1. 列表视图\n\t\t2. 卡片视图\n\t\t3. 堆视图\n\n(2)建议管理计划信息，比如长期计划，项目计划，健身计划，学习计划，考证计划等.\n\n(3)内置[抗焦虑锦囊]，在夜晚失眠时把担心的事放到锦囊里，在失去动力成为咸鱼时打开锦囊，不忘初心，做真正的自己。</string>
+    <string name="empty_long_press_tip">长按\n改变视图</string>
+
+
+    <!-- menu -->
+    <string name="nav_setting">设置</string>
+    <string name="nav_schedule">记录</string>
+    <string name="nav_info">关于</string>
+    <string name="nav_exit">退出</string>
+    <!-- button -->
+    <string name="btn_start">开始</string>
+    <string name="btn_pause">暂停</string>
+    <string name="btn_resume">继续</string>
+    <string name="btn_stop">放弃</string>
+    <string name="btn_skip">略过</string>
+
+    <string name="scene_title_work">开始工作</string>
+    <string name="scene_title_break">开始休息</string>
+
+    <string name="scene_work">工作</string>
+    <string name="scene_short_break">短时休息</string>
+    <string name="scene_long_break">长时休息</string>
+
+    <string name="amount_durations">番茄总时间 %1$d 分钟</string>
+    <string name="stage_time_unit">%1$d 分钟</string>
+    <string name="time_unit">分钟</string>
+
+    <!-- region 番茄 -->
+    <string name="notification_focus">番茄工作中</string>
+    <string name="notification_focus_pause">番茄暂停中</string>
+    <string name="notification_break">正在休息</string>
+    <string name="notification_break_pause">休息暂停中</string>
+    <string name="notification_time_left">还剩</string>
+    <string name="notification_finish">放下工作，准备休息</string>
+    <string name="notification_finish_content">已经完成一个番茄钟，休息一下吧！</string>
+    <string name="notification_break_finish">休息结束</string>
+    <string name="notification_break_finish_content">休息结束，开启下一个番茄钟吧！</string>
+
+    <!-- 设置 -->
+    <string name="pref_title_tick_title">定时器设置</string>
+    <string name="pref_title_work_length">工作时长</string>
+    <string name="pref_title_short_break">休息时长</string>
+    <string name="pref_title_long_break">长休息时长</string>
+    <string name="pref_title_long_break_frequency">长休息间隔</string>
+    <string name="pref_title_frequency_value">%1$d 个番茄</string>
+    <string name="pref_title_time_value">%1$d 分钟</string>
+
+    <string name="pref_title_pomodoro_element">番茄元素</string>
+    <string name="pref_title_pomodoro_mode">番茄模式</string>
+    <string name="pref_title_pomodoro_mode_summary">在番茄模式下不能暂停定时器</string>
+    <string name="pref_title_infinity_mode">自动模式</string>
+    <string name="pref_title_infinity_mode_summary">自动开始下一个番茄钟</string>
+    <string name="pref_title_ticking_sound">滴答声</string>
+    <string name="pref_title_ticking_sound_summary">在番茄钟工作期间，持续的滴答声</string>
+
+    <string name="pref_title_notifications">提示</string>
+    <string name="pref_title_use_notification">完成后提示</string>
+    <string name="pref_title_notification_sound">提示音</string>
+    <string name="pref_title_notification_vibrate">震动</string>
+
+    <string name="pref_title_advanced">高级</string>
+    <string name="pref_title_screen_on">屏幕常亮</string>
+    <string name="pref_title_screen_on_summary">仅针对主界面，在番茄钟期间保持屏幕常亮</string>
+    <string name="pref_title_check_update">检查更新</string>
+    <string name="check_update_connected_failed">无法连接网络</string>
+    <string name="check_update_connected_error">网络连接异常，请稍后再试</string>
+    <string name="check_update_checking">正在检查更新</string>
+    <string name="check_update_new_version">发现新版本</string>
+    <string name="check_update_last_version">已经是最新版本</string>
+    <string name="check_update_message">版本号: %1$s\n\n版本说明:\n%2$s</string>
+    <string name="check_update_update_now">立即更新</string>
+    <string name="check_update_update_later">稍后更新</string>
+    <string name="check_update_mobile_network">
+        "当前处于移动网络环境下，"
+        "继续使用可能产生流量，请确认是否继续？"
+    </string>
+    <string name="check_update_get_info_failed">获取版本信息失败，请重试</string>
+
+    <string name="schedule_today_title">今日数据</string>
+    <string name="schedule_amount_title">累计数据</string>
+    <string name="schedule_durations">番茄时间</string>
+    <string name="schedule_times">番茄次数</string>
+    <string name="schedule_done">完成次数</string>
+    <string name="schedule_amount_summary">注意：卸载应用，累计数据将重新计算!</string>
+
+    <string name="info_version">%1$s v%2$s</string>
+    <string name="info_description">
+        "轻番茄, 简单易用的番茄时钟, 是一款基于「番茄工作法」的辅助应用。"
+        "如果遵循番茄工作法，使用纸笔来制作今日待办、活动清单和记录，"
+        "需要的仅仅是手机上的一款计时器App，相信轻番茄是您最好的选择。"
+        "开启一个番茄钟，给自己 25 分钟的专注时间，战胜拖延，进入心流，让学习和工作更有效率!"
+    </string>
+    <string name="info_contact_us">联系方式</string>
+    <string name="info_email_title">邮箱</string>
+    <string name="info_github_title">Github</string>
+    <string name="info_website_title">网站</string>
+
+    <string name="toast_tick_sound_on">滴答声已开启</string>
+    <string name="toast_tick_sound_off">滴答声已关闭</string>
+    <string name="navigation_drawer_open">打开导航栏</string>
+    <string name="navigation_drawer_close">关闭导航栏</string>
+    <!--endregion-->
+
+    <!--region Settings -->
+    <string name="use_24_hour_format">24小时制</string>
+    <string name="sunday_first">周日为第一天</string>
+    <string name="start_day_at">一天的开始</string>
+    <string name="end_day_at">一天的结束</string>
+    <string name="pre_filled_weeks">预填充星期数</string>
+    <string name="week_numbers">显示星期数字</string>
+
+    <string name="tv_diy_ocr_key_microsoft">微软 OCR 密钥</string>
+    <string name="tv_default_ocr">默认 OCR 服务方</string>
+    <string name="tv_diy_ocr_secret_key_baidu">百度 OCR : Secret Key</string>
+    <string name="tv_diy_ocr_app_key_baidu">百度 OCR : Api Key</string>
+    <string name="tv_server_address">服务器地址</string>
+
+    <string name="default_main_view">首屏页面</string>
+
+    <string name="default_editor_when_read_notes">查看笔记默认编辑器</string>
+    <string name="rawtext_editor">纯文本编辑器</string>
+    <string name="richtext_editor">富文本编辑器</string>
+    <string name="normal_editor">普通编辑器</string>
+    <string name="markdown_editor">markdown 编辑器</string>
+
+    <string name="module_notes">笔记模块</string>
+    <string name="module_schedules">日程模块</string>
+    <string name="module_plans">计划模块</string>
+    <string name="module_habits">习惯模块</string>
+    <string name="module_statistic">统计模块</string>
+    <string name="module_lab">实验室模块</string>
+    <string name="module_mini_app">零应用模块</string>
+
+    <string name="mini_main_merge">合并显示(笔记和任务)</string>
+
+    <string name="csv_solid_row">solid row</string>
+    <string name="csv_fixed_headers">固定头部</string>
+    <string name="csv_rtl_direction">从右往左</string>
+    <string name="csv_drag_and_drop_enabled">开启拖拽</string>
+
+    <string name="show_quick_launch">快速启动窗口</string>
+    <string name="choose_launcher_shortcuts">选择快捷方式</string>
+    <string name="inactive_window_opacity">透明度</string>
+
+    <string name="to_rawtext_settings">设置纯文本编辑器</string>
+    <string name="to_rawtext_settings_hint">您可以设置折行、语法高亮、编辑器主题、自动保存等</string>
+
+    <string name="to_keyboard_settings">设置键盘</string>
+    <string name="to_keyboard_settings_hint">您可以设置键盘主题、键盘高度等等</string>
+    <!--<string name="vibrate">Vibrate on reminder notification</string>-->
+    <string name="no_ringtone_picker">No app capable of setting ringtone found</string>
+    <string name="no_ringtone_selected">None</string>
+    <string name="day_end_before_start">The day cannot end earlier than it starts</string>
+    <string name="caldav_sync">CalDAV sync</string>
+    <string name="event_lists">Event lists</string>
+    <string name="display_past_events">Display events from the past</string>
+    <string name="use_same_snooze">Always use same snooze interval</string>
+    <string name="snooze_delay">Postpone reminder with Snooze by</string>
+    <string name="widgets">Widgets</string>
+    <string name="replace_description_with_location">Replace event description with location</string>
+    <string name="delete_all_events">Delete all events</string>
+    <string name="delete_all_events_confirmation">Are you sure you want to delete all events? This will leave your event types and other settings intact.</string>
+    <!--endregion-->
+    <string name="action_settings">Settings</string>
+    <string name="scheduleContent">内 容</string>
+    <string name="rsq_sunday">日</string>
+    <string name="rsq_one">一</string>
+    <string name="rsq_two">二</string>
+    <string name="rsq_three">三</string>
+    <string name="rsq_four">四</string>
+    <string name="rsq_five">五</string>
+    <string name="rsq_six">六</string>
+
+    <string name="alarm_clock">闹钟</string>
+    <!-- 闹钟响起界面 -->
+    <string name="touch_here_nap">轻按此处督促%1$d分钟</string>
+    <string name="close_alarm_clock">右滑关闭闹钟</string>
+    <string name="xx_naping">%1$s (督促中……)</string>
+    <string name="nap_to">督促至%1$s闹钟再次响起，轻触取消</string>
+    <string name="nap_time">督促%1$d分钟</string>
+    <string name="weather_type">%1$s&#160;%2$s~%3$s℃</string>
+    <string name="bring_an_umbrella">带伞</string>
+    <string name="alarm_error">未知闹钟异常</string>
+    <!-- 音频播放 -->
+    <string name="play_fail">播放失败</string>
+
+    <!--offtime-->
+    <string name="crashHandler_internal_error">出现了一些错误，部分数据可能不正确。</string>
+    <string name="goal_app_title">应用</string>
+    <string name="goal_daily_title">每天</string>
+    <string name="goal_disable">关闭</string>
+    <string name="goal_not_set">-</string>
+    <string name="goal_notif_content">设备使用%s 分钟.</string>
+    <string name="goal_notif_offtime">开始一个 ( OFFTIME )</string>
+    <string name="goal_notif_remind">冻结</string>
+    <string name="goal_notif_session_message">你今天已经使用了%s 分钟.</string>
+    <string name="goal_notif_title_daily">每日目标</string>
+    <string name="goal_notif_title_session">使用提醒</string>
+    <string name="goal_session_title">解锁</string>
+    <string name="goals_click_to_enable">设置你的目标</string>
+    <string name="goals_click_to_enable_desc">一旦你激活了目标记录，你就能设置每日手机使用时间限制然后开始记录里你的进度</string>
+    <string name="goals_daily_limit_text">每日上限</string>
+    <string name="goals_daily_main_display">%1$s / %2$s</string>
+    <string name="goals_daily_main_invalid">改变手机的时间或者日期\n可能影响统计数据的准确性</string>
+    <string name="goals_min_daily_world">平均天数\n分钟数 (全球)</string>
+    <string name="goals_min_daily_you">平均天数\n分钟数 (你)</string>
+    <string name="goals_minutes_left">分钟</string>
+    <string name="goals_not_set">-</string>
+    <string name="goals_notifications_text">目标通知</string>
+    <string name="goals_session_limit_text">使用提醒</string>
+
+    <string name="insights_notif_device_usage">使用</string>
+    <string name="event_offtime_title">干的漂亮！</string>
+    <string name="schedule_aborted">时光猫 被终止</string>
+    <string name="schedule_delayed">时光猫 延迟 %1$s %2$s</string>
+    <string name="schedule_delayed_to_abort">时光猫 被终止，因为时间少于 %1$s %2$s</string>
+    <string name="pattern_date">dd.MM.</string>
+    <string name="pattern_datetime">yyyy-MM-dd hh:mm a</string>
+    <string name="load_dialog_wait">稍等片刻 (可能不会超过一分钟).</string>
+    <string name="account_create_request_photo">添加个人资料照片</string>
+    <string name="block_notif_info">处于激活状态直到</string>
+    <string name="general_today">今天</string>
+    <string name="general_today_cap">今天</string>
+    <string name="general_tomorrow">明天</string>
+    <string name="general_tomorrow_cap">明天</string>
+    <string name="event_no_name">没有名字</string>
+    <string name="cal_notif_scheduled">已定时</string>
+    <string name="invalid_date_toast">时光猫 已经停止记录,查看通知栏信息来处理这个错误.</string>
+    <string name="invalid_date_notif">您的设备的时间似乎出了一些错误.统计功能已停止.请检查 您的设备时间然后点击这里以重启统计功能.</string>
+    <string name="invalid_date_notif_title">记录事件失败</string>
+    <string name="daily_goals_detail">(设备低于%1$s 分钟使用)</string>
+    <string name="daily_goals_failed">你昨天没有完成目标</string>
+    <string name="daily_goals_reached">你完成了所有的目标！</string>
+    <string name="insights_yesterday_notif_title">( 昨天 )</string>
+    <string name="insights_notif_title">( 我的一天 )</string>
+
+    <string name="app_use_count">打开次数</string>
+    <string name="app_app_name">应用名称</string>
+    <string name="app_use_time">使用时长</string>
+    <string name="app_calculate_use_time">计算所得使用时长 : </string>
+    <string name="app_start_use_time">开始使用时间 : </string>
+    <string name="app_stop_use_time">最后使用时间 : </string>
+    <string name="app_total_use_time">使用时长总计 : </string>
+
+    <string name="action_bar_title_1">应用时间统计</string>
+    <string name="action_bar_title_2">应用使用次数信息统计</string>
+    <string name="action_bar_title_3">activity信息统计</string>
+
+    <string name="action_bar_title_permission">统计权限</string>
+    <string name="action_bar_title_show_all">显示当天全部数据</string>
+
+    <string name="activity_name">activity名称</string>
+    <string name="activity_total_use_time">activity使用时长</string>
+
+    <string name="tag">标签</string>
+    <string name="ring">铃声</string>
+    <string name="default_ring">默认铃声</string>
+    <string name="volume">音量</string>
+    <string name="vibrate">振动</string>
+    <string name="nap">督促</string>
+
+    <!-- 督促编辑界面 -->
+    <string name="nap_set">督促设置</string>
+    <string name="interval">间隔 (分钟)</string>
+    <string name="one">1</string>
+    <string name="three">3</string>
+    <string name="five">5</string>
+    <string name="eight">8</string>
+    <string name="ten">10</string>
+    <string name="twenty">20</string>
+    <string name="thirty">30</string>
+    <string name="num">60</string>
+
+    <!-- 铃声选择界面 -->
+    <string name="ring_select">铃声选择</string>
+    <string name="no_system_ring_file">没有系统铃声文件</string>
+    <string name="no_local_music_file">没有本地音乐文件</string>
+    <string name="no_record_file">没有录音文件</string>
+    <string name="save">保存</string>
+    <string name="system_ring">系统铃声</string>
+    <string name="local_music">本地音乐</string>
+    <string name="record">录音</string>
+    <string name="no_ring">无铃声</string>
+    <string name="no_sd_card">无存储设备</string>
+
+    <!-- 录音 -->
+    <string name="zero_zero">00:00</string>
+    <string name="click_record">点击录音</string>
+    <string name="click_stop">点击结束</string>
+    <string name="record_file_name">/录音%1$s.amr</string>
+    <string name="error_delete_fail">删除失败</string>
+    <string name="record_fail">录音失败</string>
+    <string name="record_fail_confirm">录音失败，请检查录音权限是否开启或录音已被其他应用占用。</string>
+    <!-- 录音操作 -->
+    <string name="rename">重命名</string>
+    <string name="delete_batch">批量删除</string>
+    <string name="detail">详情</string>
+    <!-- 录音详情画面 -->
+    <string name="file_name">文件名称：</string>
+    <string name="file_format">文件格式：</string>
+    <string name="file_size">文件大小：</string>
+    <string name="alter_time">修改时间：</string>
+    <string name="play_duration">播放时长：</string>
+    <string name="save_path">保存路径：</string>
+    <string name="roger">知道了</string>
+    <string name="amr">amr</string>
+
+    <!-- 录音重命名画面 -->
+    <string name="sure">确定</string>
+    <string name="rename_success">重命名成功</string>
+    <string name="file_name_exist">文件名已存在</string>
+    <string name="input_empty">输入内容为空</string>
+    <!-- 录音删除画面 -->
+    <string name="sure_delete">确定要删除吗？</string>
+    <string name="selected_xx_item">已选择%1$d项</string>
+    <string name="delete_success">删除成功</string>
+    <!-- 录音批量删除画面 -->
+    <string name="select_all_cancel">取消全选</string>
+
+    <string name="countdown_day_hour_minute">距闹钟响起还有%1$d天%2$d小时%3$d分</string>
+    <string name="countdown_hour_minute">距闹钟响起还有%1$d小时%2$d分</string>
+    <string name="countdown_minute">距闹钟响起还有%1$d分钟</string>
+
+    <!--note-->
+    <string name="undo">撤销</string>
+
+    <!-- Action Mode -->
+    <string name="action_select_all">全选</string>
+    <string name="action_move_to_notebook">移动到文集</string>
+    <string name="action_archive">归档</string>
+    <string name="action_delete">删除</string>
+    <string name="action_selected_one">%1$s 选定</string>
+    <string name="action_selected_many">%1$s 选定</string>
+    <string name="action_deleted">已删除</string>
+    <string name="action_archived">存档</string>
+    <string name="action_unarchived">从存档恢复</string>
+    <string name="action_merge">合并</string>
+    <string name="action_split">拆分</string>
+    <string name="action_full_screen">全屏选择</string>
+    <string name="action_select_mode">查看已选</string>
+    <string name="action_paste">粘贴</string>
+    <string name="action_copy">复制</string>
+    <string name="action_cut">剪切</string>
+    <string name="action_rename">重命名</string>
+
+
+    <!--权限-->
+    <string name="show_contacts">Show and add contacts</string>
+    <string name="permission_contacts_denied">Contacts permissions were denied. Please consider granting it in order to access the camera!</string>
+    <string name="permission_contacts_never_ask_again">Contacts permissions were denied with never ask again.</string>
+    <string name="permission_contacts_rationale">Contacts permissions are needed to demonstrate access to the contacts database.</string>
+
+    <string name="show_camera">Show camera preview</string>
+    <string name="permission_camera_rationale">Camera permission is needed to show the camera preview.</string>
+    <string name="permission_camera_denied">Camera permission was denied. Please consider granting it in order to access the camera!</string>
+    <string name="permission_camera_never_ask_again">Camera permission was denied with never ask again.</string>
+
+    <string name="show_read_write">Show camera preview</string>
+    <string name="permission_read_write_rationale">笔记、数据等存储需要存储权限</string>
+    <string name="permission_read_write_denied">权限申请被拒绝，没有权限可能导致闪退</string>
+    <string name="permission_read_write_never_ask_again">权限申请被永久拒绝，如果闪退，自己反省</string>
+    <string name="default_background">默认背景</string>
+    <string name="update_at">更新时间</string>
+    <string name="create_at">创建时间</string>
+
+    <!--toolbox-->
+    <string name="tool_bilibili">获取 bilibili 封面图</string>
+    <string name="temp">temp</string>
+
+    <string name="stop_run">结束</string>
+
+    <string name="window_icon">Window icon</string>
+    <string name="hide">Hide</string>
+    <string name="corner">Corner</string>
+    <string name="maximize">Maximize</string>
+    <string name="open_source">开源许可</string>
+
+    <!--region preferences-->
+    <string name="key_operation_color_prefix" translatable="false">operation_color_</string>
+    <string name="key_list_animation" translatable="false">list_animation</string>
+    <string name="key_system_animation" translatable="false">system_animation</string>
+    <string name="key_search_conditions" translatable="false">search_conditions</string>
+    <string name="key_note_editor_menu_sort" translatable="false">note_editor_menu_sort</string>
+    <string name="key_fast_scroller" translatable="false">enable_fast_scroller</string>
+    <!--endregion-->
+
+
+    <!--region notification-->
+    <string name="custom_notification_white_trans">白色半透明通知</string>
+    <string name="custom_notification_black_trans">黑色半透明通知</string>
+    <string name="custom_notification_white">纯白通知</string>
+    <string name="custom_notification_black">纯黑通知</string>
+    <!--endregion-->
+
+    <string name="uls_title"><![CDATA[<i>点击左边圆圈（或者长按）可以多选</i>]]></string>
+    <string name="uls_subtitle"><![CDATA[<i>左滑存档，右滑删除</i>]]></string>
+
+    <string name="crash_contact">Email（可选）</string>
+    <string name="crash_comment">告诉我们怎么崩溃的吧（可选）：</string>
+    <string name="crash_report_success">已经提交成功，感谢您的支持！</string>
+    <string name="crash_stacktrace">错误：</string>
+    <string name="crash_submit_fail_x">提交失败：%s</string>
+    <string name="network_unavailable">Network Unavailable</string>
+    <string name="submitting">正在提交…</string>
+    <string name="can_not_be_empty">不能为空</string>
+    <string name="try_agent">重试</string>
+    <string name="search_results">搜索结果</string>
+    <string name="directory">目录</string>
+    <string name="authenticate">授权</string>
+    <string name="selected_x_items">已选中 %d 个项目</string>
+    <string name="filename">文件名称：</string>
+    <string name="file_encoding">文件编码：</string>
+    <string name="file_save">保存</string>
+    <string name="root_path">根目录</string>
+    <string name="auto_detection_encoding">自动检测编码</string>
+    <string name="illegal_filename">非法文件名</string>
+    <string name="unknown_path">未知的目录</string>
+    <string name="open_file">打开文件</string>
+    <string name="save_file">保存文件</string>
+    <string name="override_file_prompt">%s 已经存在，确认要覆盖它吗？</string>
+    <string name="filter_by_name">按名称过滤</string>
+    <string name="show_today_finished">显示今天已完成</string>
+    <string name="show_important_urgent">显示重要且紧急</string>
+    <string name="show_not_important_urgent">显示紧急不重要</string>
+    <string name="show_important_not_urgent">显示重要不紧急</string>
+    <string name="show_not_important_not_urgent">显示不重要不紧急</string>
+    <string name="can_not_create_folder">无法创建文件夹</string>
+    <string name="can_not_share_x">无法共享该文件: %s</string>
+    <string name="cancel_select_all">取消全选</string>
+    <string name="copy">复制</string>
+    <string name="create_folder">创建文件夹</string>
+    <string name="cut">剪切</string>
+    <string name="paste">粘贴</string>
+    <string name="rename_fail">重命名失败</string>
+    <string name="show_hidden_files">显示隐藏文件</string>
+    <string name="sort_by_datetime">按时间</string>
+    <string name="sort_by_name">按名称</string>
+    <string name="sort_by_size">按大小</string>
+    <string name="sort_by_type">按类型</string>
+    <string name="sort_by_important_urgent">按重要紧急</string>
+    <string name="sort_by_create_time">按创建时间</string>
+    <string name="sort_by_update_time">按更新时间</string>
+    <string name="addToDictionary">添加到字典</string>
+    <string name="deleteText">删除文本</string>
+    <string name="replace">替换</string>
+    <string name="textSelectionCABTitle">选取文字</string>
+    <string name="selectAll">全选</string>
+    <string name="find">查找</string>
+    <string name="new_file">新建</string>
+    <string name="save_as_file">保存为文件</string>
+    <string name="redo">重做</string>
+    <string name="save_all">全部保存</string>
+    <string name="save_as">另存为</string>
+    <string name="recent_files">最近打开</string>
+    <string name="line_separator">转换换行符</string>
+    <string name="duplication_line">重复行</string>
+    <string name="find_in_files">搜索文件</string>
+    <string name="jump_to_start">跳到开始</string>
+    <string name="jump_to_end">跳到结束</string>
+    <string name="goto_line">跳到行</string>
+    <string name="forward">下个位置</string>
+    <string name="document_info">文档信息</string>
+    <string name="symbol">符号</string>
+    <string name="insert_color">插入颜色</string>
+    <string name="highlight_language">语法高亮</string>
+    <string name="encoding">编码</string>
+    <string name="read_only">只读模式</string>
+    <string name="wrap_line">折行</string>
+    <string name="insert_datetime">插入时间</string>
+    <string name="edit_mode">编辑模式</string>
+    <string name="run">运行</string>
+    <string name="file">文件</string>
+    <string name="other">其它</string>
+    <string name="view">查看</string>
+    <string name="new_filename">无标题 %d</string>
+    <string name="confirm_save">确认保存</string>
+    <string name="confirm_save_msg">文档 %s 尚未保存，是否保存并关闭</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="cannt_access_file">文件 %s 无法访问</string>
+    <string name="cannt_read_file">无法读取文件 %s</string>
+    <string name="read_file_exception">读取文件时发生异常：</string>
+    <string name="init_syntax_msg">正在初始化语法高亮…</string>
+    <string name="init_syntax_error">初始化语法文件失败，请检查是否有足够的存储空间</string>
+    <string name="init_build_index_error">建立索引失败</string>
+    <string name="convert_wrap_char">转换换行符</string>
+    <string name="path_x">路径：%s</string>
+    <string name="char_x">字符数：%d</string>
+    <string name="word_x">单词数：%d</string>
+    <string name="line_number_x">行数：%d</string>
+    <string name="encoding_x">编码：%s</string>
+    <string name="tab">标签</string>
+    <string name="no_change">没有任何改变</string>
+    <string name="find_label">输入关键字</string>
+    <string name="replace_label">替换为:</string>
+    <string name="case_sensitive">区分大小写</string>
+    <string name="whole_words_only">仅匹配单词</string>
+    <string name="regex">正则匹配</string>
+    <string name="in_path">指定目录:</string>
+    <string name="recursively">递归查找</string>
+    <string name="cannot_be_empty">不能为空</string>
+    <string name="path_not_exists">路径不存在</string>
+    <string name="find_not_found">找不到结果</string>
+    <string name="previous_occurrence">向上查找</string>
+    <string name="next_occurrence">查找下一个</string>
+    <string name="replace_all">替换全部</string>
+    <string name="searching">搜索中…</string>
+    <string name="select_lang_to_highlight">选择高亮语言</string>
+    <string name="more_menu">更多菜单</string>
+    <string name="reopen_with_encoding">使用该编码重新打开</string>
+    <string name="document_changed">文档已经改变</string>
+    <string name="give_up_document_changed_message">文档已经改变，重新打开将放弃改变，确认要放弃？</string>
+    <string name="preview_in_browser">在浏览器预览</string>
+    <string name="use_sl4a_in_background_run_script">调用SL4A在后台运行脚本</string>
+    <string name="use_sl4a_in_terminal_run_script">调用SL4A在命令行运行脚本</string>
+    <string name="please_save_as_file_first">请先保存为文件</string>
+    <string name="run_fail_message">调用外部应用失败</string>
+    <string name="settings">设置</string>
+    <string name="editor">编辑器</string>
+    <string name="font">字体</string>
+    <string name="default_value">默认值</string>
+    <string name="font_size">字体大小</string>
+    <string name="cursor_width">光标宽度</string>
+    <string name="touch_to_adjust_text_size">多点触摸缩放字体大小</string>
+    <string name="word_wrap_in_editor">自动换行</string>
+    <string name="show_linenumber">显示行号</string>
+    <string name="show_whitespace">显示空白字符</string>
+    <string name="auto_indent">自动缩进</string>
+    <string name="insert_space_for_tab">使用空格代替制表符</string>
+    <string name="indent_size">缩进大小</string>
+    <string name="highlight_and_theme">高亮和主题</string>
+    <string name="highlight_the_file_size_limit">限制高亮的文件大小</string>
+    <string name="auto_save">自动保存文档</string>
+    <string name="remember_last_opened_files">记住最后打开的文件</string>
+    <string name="remember_last_opened_files_summary">启动编辑器时自动打开上次打开的文件</string>
+    <string-array name="screen_orientation">
+        <item>自动</item>
+        <item>横屏</item>
+        <item>竖屏</item>
+    </string-array>
+    <string name="keep_screen_on">保持屏幕常亮</string>
+    <string name="auto_capitalize">首字母自动大写</string>
+    <string name="feedback">意见反馈</string>
+    <string name="help_translate">翻译本应用</string>
+    <string name="enable_highlight">启用语法高亮</string>
+    <string name="version_x">版本：%s</string>
+    <string name="need_to_enable_read_storage_permissions">需要打开读取存储器权限</string>
+    <string name="file_not_exists">文件不存在</string>
+    <string name="cannt_handle_intent_x">无法处理来源信息：%s</string>
+    <string name="handle_intent_x_error">处理来源：%s 时发生错误</string>
+    <string name="press_again_will_exit">再按一次返回按钮将退出</string>
+    <string name="find_replace">查找/替换</string>
+    <string name="find_title">\"%s\" 查找结果</string>
+    <string name="zero_matches">0 个匹配</string>
+    <string name="chooser_browser">选择一个浏览器</string>
+    <string name="find_or_replace">查找/替换…</string>
+    <string name="other_application">其它程序…</string>
+    <string name="chooser_application">选择程序</string>
+    <string name="editor_create_unknown_exception">创建编辑器时发生未知异常</string>
+    <string name="convert_to_uppercase">转换为大写</string>
+    <string name="convert_to_lowercase">转换为小写</string>
+    <string name="duplication_text">重复选中文本</string>
+    <string name="tab_size">制表符大小</string>
+    <string name="new_version_available">发现新版本</string>
+    <string name="upgrade">更新</string>
+    <string name="new_version_update_content">最新版本: %1$s\n\n更新日志:\n%2$s</string>
+    <string name="auto_check_updates">自动检查更新</string>
+    <string name="cannt_download">无法下载</string>
+    <string name="readonly_mode_not_support_this_action">只读模式不支持此操作</string>
+    <plurals name="x_text_replaced">
+        <item quantity="zero">0 个匹配</item>
+        <item quantity="other">%d 处文本已经替换</item>
+    </plurals>
+    <string name="enable_root">启用Root权限</string>
+    <string name="my_name">作者：彭春瑜 (QQ群：87272821)</string>
+    <string name="open_with_external_browser">使用外部浏览器打开</string>
+    <string name="contact_email_optional">联系Email（可选）</string>
+    <string name="with_error_logs">错误日志</string>
+    <string name="content">内容</string>
+    <string name="send">发送</string>
+    <string name="feedback_content_length_must_be_greater_than_x_char">反馈内容长度必须大于%d个字</string>
+    <string name="feedback_submit_error_x">提交反馈失败：%s</string>
+    <string name="submit_success">提交成功</string>
+    <string name="writing">正在写入</string>
+    <string name="keyword">关键字</string>
+    <string name="find_keyword_is_empty">查找关键字不能为空</string>
+    <string name="x_text_replaced">%d 个文本已经替换</string>
+    <string-array name="insert_datetime_lang">
+        <item>英语</item>
+        <item>中文</item>
+    </string-array>
+    <string-array name="wrap_char_list">
+        <item>转换为 \\n（Linux/OSX）</item>
+        <item>转换为 \\r\\n（Windows）</item>
+    </string-array>
+    <string name="screen_orientation">屏幕方向</string>
+    <string name="exit">退出</string>
+    <string name="unknown_exception_and_report_message_x">未知异常,请告诉我这是什么情况下发生的,谢谢\n代码:%s</string>
+    <string name="keep_backup_file">保留备份文件</string>
+    <string name="keep_backup_file_summary">建议保留备份文件，避免文件异外损坏而无法恢复文件</string>
+    <string name="save_all_without_new_document_message">全部保存将跳过新建文档</string>
+    <string name="clear_history">清除记录</string>
+    <string name="custom_symbol_list">自定义符号列表</string>
+    <string name="reset">重置</string>
+    <string name="change_theme">改变主题</string>
+    <string name="dark_theme">黑夜</string>
+    <string name="light_theme">白天</string>
+    <string name="default_theme">默认</string>
+    <string name="fullscreen_mode">全屏模式</string>
+    <string name="enable_fullscreen_mode_message">重启程序后将启用全屏模式</string>
+    <string name="disabled_fullscreen_mode_message">重启程序后将关闭全屏模式</string>
+    <string name="confirm_change_theme_message">改变主题不会自动保存当前文档, 确认放弃文档改变而改变主题?</string>
+
+    <string name="untitled_file_name">untitled.txt</string>
+    <string name="translate_confirm_message">要打开 getlocalization.com 网站翻译, 请按“网站翻译“按钮, 在本地翻译请按“本地翻译“按钮</string>
+    <string name="translate_external_text">网站翻译</string>
+    <string name="translate_internal_text">本地翻译</string>
+    <string name="cannt_load_lang_file">无法加载语言文件</string>
+    <string name="local_translate_message">翻译完成后请Email: jecelyin@gmail.com, 谢谢</string>
+    <string name="editor_initialing">编辑器正在初始化中…</string>
+    <string name="out_of_memory_error">内存不足</string>
+    <string name="enable_drawers">启用标签页和主菜单的滑动</string>
+    <string name="x_items_completed">%d 个文件已完成</string>
+    <string name="x_items_completed_and_error_x">%1$d 个文件已完成，但是有些文件发生一些错误： %2$s</string>
+    <string name="find_log">查找日志</string>
+    <string name="replace_log">替换日志</string>
+    <string name="use_regex_to_find_tip">替换关键字支持： \\r, \\n, \\t 和捕捉组 $0 ~ $9</string>
+    <string name="cannt_open_external_file_x">无法打开外部文件：%s</string>
+    <string name="call_external_app_or_share">调用外部程序/分享...</string>
+    <string name="call_markdown_render">Markdown 渲染</string>
+    <string name="share_menu">分享...</string>
+    <string name="share_html_menu">分享（HTML）...</string>
+    <string name="dark">黑色</string>
+    <string name="error_occurred_x">发生一个错误：\n%s</string>
+    <string name="goto_x">转到 %s</string>
+    <string name="copy_path">复制路径</string>
+    <string name="local">本地</string>
+
+    <string name="actionbar_webview_share">分享</string>
+    <string name="actionbar_webview_cope">复制链接</string>
+    <string name="actionbar_webview_open">浏览器打开</string>
+    <string name="actionbar_webview_refresh">刷新</string>
+    <string name="actionbar_webview_collect">添加到收藏</string>
+
+    <!--region manifest-->
+    <string name="manifest_ocr">OCR</string>
+    <string name="manifest_nlp">分词</string>
+    <string name="manifest_rawtext_editor">纯文本编辑器</string>
+    <string name="manifest_richtext_editor">富文本编辑器</string>
+    <string name="manifest_miniapps">零应用</string>
+    <!--endregion-->
+    <string name="burst_link">Burst Link !</string>
+
+    <string name="file_saved">File saved successfully</string>
+
+    <!--region statefulLayout-->
+    <!--<string name="stfErrorMessage">An error occurred please try again later</string>-->
+    <!--<string name="stfOfflineMessage">Please check your connection</string>-->
+    <!--<string name="stfLocationOffMessage">Please enable location services</string>-->
+    <!--<string name="stfEmptyMessage">There are no items</string>-->
+    <!--<string name="stfLoadingMessage">Loading..</string>-->
+    <!--<string name="stfButtonText">Retry</string>-->
+    <!--endregion-->
+</resources>

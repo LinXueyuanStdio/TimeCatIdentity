@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string formatted="false" name="feedbackURL">mailto:dev@loophabits.org?subject=Feedback%20about%20Loop%20Habit%20Tracker</string>
+    <string formatted="false" name="bugReportURL">mailto:dev@loophabits.org?subject=Bug%20Report%20-%20Loop%20Habit%20Tracker</string>
+    <string name="sourceCodeURL">https://github.com/iSoron/uhabits</string>
+    <string name="translateURL">http://translate.loophabits.org/</string>
+    <string name="bugReportTo">dev@loophabits.org</string>
+    <string name="bugReportSubject">Bug Report - Loop Habit Tracker</string>
+
+
+    <string-array name="frequencyQuickSelect" translatable="false">
+        <item>@string/every_day</item>
+        <item>@string/every_week</item>
+        <item>@string/two_times_per_week</item>
+        <item>@string/five_times_per_week</item>
+        <item>@string/custom_frequency</item>
+    </string-array>
+
+    <string-array name="actions" translatable="false">
+        <item>@string/check</item>
+        <item>@string/uncheck</item>
+        <item>@string/toggle</item>
+    </string-array>
+
+    <string-array name="strengthIntervalNames" translatable="false">
+        <item>@string/day</item>
+        <item>@string/week</item>
+        <item>@string/month</item>
+        <item>@string/quarter</item>
+        <item>@string/year</item>
+    </string-array>
+
+    <string-array name="strenghtIntervalValues" translatable="false">
+        <item>1</item>
+        <item>7</item>
+        <item>31</item>
+        <item>92</item>
+        <item>365</item>
+    </string-array>
+
+</resources>

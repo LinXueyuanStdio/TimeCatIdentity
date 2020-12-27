@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--region 修复系统的material-->
+    <!-- Overriding to add the missing searchViewStyle in Theme.MaterialComponents. -->
+    <style name="ThemeOverlay.MaterialComponents.ActionBar.Primary" parent="">
+        <item name="android:textColorPrimary">?attr/colorOnPrimary</item>
+        <item name="android:textColorSecondary">@color/material_on_primary_emphasis_medium</item>
+        <item name="actionMenuTextColor">?attr/colorOnPrimary</item>
+        <item name="colorControlNormal">?attr/colorOnPrimary</item>
+        <!-- Counteracts the effect of setting textColorPrimary for popup menus. -->
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <!-- Used to tint the ActionMode background and preserve the underline. -->
+        <item name="android:colorBackground">?attr/colorPrimary</item>
+        <item name="searchViewStyle">@style/Widget.AppCompat.SearchView.ActionBar</item>
+    </style>
+
+    <style name="ThemeOverlay.MaterialComponents.ActionBar.Surface" parent="">
+        <item name="android:textColorPrimary">@color/material_on_surface_emphasis_high_type</item>
+        <item name="android:textColorSecondary">@color/material_on_surface_emphasis_medium</item>
+        <item name="actionMenuTextColor">@color/material_on_surface_emphasis_medium</item>
+        <item name="colorControlNormal">@color/material_on_surface_emphasis_medium</item>
+        <!-- Counteracts the effect of setting textColorPrimary for popup menus. -->
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <!-- Used to tint the ActionMode background and preserve the underline. -->
+        <item name="android:colorBackground">?attr/colorSurface</item>
+        <item name="searchViewStyle">@style/Widget.AppCompat.SearchView.ActionBar</item>
+    </style>
+    <!--endregion-->
+
+    <!--
+  ~ See also drawable-v21/mtrl_popupmenu_background.xml and
+  ~ drawable-v23/mtrl_popupmenu_background_dark.xml which are overridden.
+  -->
+    <style name="Widget.Material.ListView.DropDown" parent="Widget.AppCompat.ListView.DropDown">
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+
+    <style name="Widget.MaterialFiles.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="android:stateListAnimator">@null</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeColor">@color/mtrl_btn_stroke_color_selector</item>
+        <item name="strokeWidth">@dimen/mtrl_btn_stroke_size</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Small">
+        <item name="android:textSize" tools:ignore="SpUsage">12dp</item>
+    </style>
+</resources>

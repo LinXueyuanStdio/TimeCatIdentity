@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fa_star" translatable="false">&#xf005;</string>
+    <string name="fa_star_o" translatable="false">&#xf006;</string>
+    <!--<string translatable="false" name="fa_star_half">&#xf089;</string>-->
+    <string name="fa_star_half_o" translatable="false">&#xf123;</string>
+    <string name="fa_check" translatable="false">&#xf00c;</string>
+    <string name="fa_times" translatable="false">&#xf00d;</string>
+</resources>

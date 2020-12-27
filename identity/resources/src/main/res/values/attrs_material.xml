@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="Dialog">
+        <attr name="android:layout_width" />
+        <attr name="android:layout_height" />
+        <attr format="float" name="di_dimAmount" />
+        <attr format="color|reference" name="di_backgroundColor" />
+        <attr format="dimension|reference" name="di_elevation" />
+        <attr format="dimension|reference" name="di_maxElevation" />
+        <attr format="dimension|reference" name="di_cornerRadius" />
+        <attr format="integer" name="di_layoutDirection">
+            <enum name="ltr" value="0" />
+            <enum name="rtl" value="1" />
+            <enum name="locale" value="3" />
+        </attr>
+        <attr format="dimension|reference" name="di_maxWidth" />
+        <attr format="dimension|reference" name="di_maxHeight" />
+        <attr format="reference" name="di_titleTextAppearance" />
+        <attr format="color|reference" name="di_titleTextColor" />
+        <attr format="reference" name="di_actionBackground" />
+        <attr format="reference" name="di_actionRipple" />
+        <attr format="reference" name="di_actionTextAppearance" />
+        <attr format="color|reference" name="di_actionTextColor" />
+        <attr format="reference" name="di_positiveActionBackground" />
+        <attr format="reference" name="di_positiveActionRipple" />
+        <attr format="reference" name="di_positiveActionTextAppearance" />
+        <attr format="color|reference" name="di_positiveActionTextColor" />
+        <attr format="reference" name="di_negativeActionBackground" />
+        <attr format="reference" name="di_negativeActionRipple" />
+        <attr format="reference" name="di_negativeActionTextAppearance" />
+        <attr format="color|reference" name="di_negativeActionTextColor" />
+        <attr format="reference" name="di_neutralActionBackground" />
+        <attr format="reference" name="di_neutralActionRipple" />
+        <attr format="reference" name="di_neutralActionTextAppearance" />
+        <attr format="color|reference" name="di_neutralActionTextColor" />
+        <attr format="color|reference" name="di_dividerColor" />
+        <attr format="dimension|reference" name="di_dividerHeight" />
+        <attr format="reference" name="di_inAnimation" />
+        <attr format="reference" name="di_outAnimation" />
+        <attr format="boolean" name="di_cancelable" />
+        <attr format="boolean" name="di_canceledOnTouchOutside" />
+    </declare-styleable>
+
+    <declare-styleable name="SimpleDialog">
+        <attr format="reference" name="di_messageTextAppearance" />
+        <attr format="color|reference" name="di_messageTextColor" />
+        <attr format="reference" name="di_radioButtonStyle" />
+        <attr format="reference" name="di_checkBoxStyle" />
+        <attr format="dimension|reference" name="di_itemHeight" />
+        <attr format="reference" name="di_itemTextAppearance" />
+    </declare-styleable>
+
+    <declare-styleable name="BottomSheetDialog">
+        <attr format="reference|integer" name="bsd_inDuration" />
+        <attr format="reference" name="bsd_inInterpolator" />
+        <attr format="reference|integer" name="bsd_outDuration" />
+        <attr format="reference" name="bsd_outInterpolator" />
+        <attr format="reference|boolean" name="bsd_cancelable" />
+        <attr format="reference|boolean" name="bsd_canceledOnTouchOutside" />
+        <attr format="reference|float" name="bsd_dimAmount" />
+        <attr name="android:layout_height" />
+    </declare-styleable>
+
+</resources>

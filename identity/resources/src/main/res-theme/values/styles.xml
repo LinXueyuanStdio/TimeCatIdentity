@@ -1,0 +1,6 @@
+<resources>
+
+    <style name="Widget.MyMaterial.Toolbar.PrimarySurface" parent="Widget.MaterialComponents.Toolbar.PrimarySurface" />
+
+    <style name="ThemeOverlay.MyMaterial.AppBarLayout" parent="@style/ThemeOverlay.MaterialComponents.ActionBar.Primary" />
+</resources>

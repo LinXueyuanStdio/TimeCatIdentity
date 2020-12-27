@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
+
+    <style name="ToolbarShadow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@drawable/toolbar_shadow</item>
+        <item name="android:alpha">0.2</item>
+    </style>
+
+    <style name="TransparentWidgetTheme" parent="ThemeDark">
+        <!--习惯小部件-->
+        <item name="cardBackgroundColor">@color/black</item>
+
+        <item name="highContrastTextColor">@color/white</item>
+        <item name="mediumContrastTextColor">@color/white_aa</item>
+        <item name="lowContrastTextColor">@color/white_a0</item>
+
+        <item name="highContrastReverseTextColor">@color/white</item>
+        <item name="mediumContrastReverseTextColor">@color/grey_500</item>
+        <item name="lowContrastReverseTextColor">@color/grey_800</item>
+
+        <item name="palette">@array/transparentWidgetPalette</item>
+
+        <item name="widgetShadowAlpha">0</item>
+        <item name="widgetBackgroundAlpha">0.25</item>
+    </style>
+
+    <style name="SmallSpinner">
+        <item name="android:textColor">@color/master_textColorPrimary</item>
+        <item name="android:textSize">@dimen/smallTextSize</item>
+    </style>
+
+    <style name="CardList">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/grey_200</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="CardCommon">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:background">@drawable/card_light_background</item>
+    </style>
+
+    <style name="Card" parent="CardCommon">
+        <item name="android:layout_marginBottom">1dp</item>
+    </style>
+
+    <style name="CardHeader">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:textSize">@dimen/regularTextSize</item>
+    </style>
+
+    <style name="CardRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+    </style>
+
+    <style name="CardLabel">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ListHabits">
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="ListHabits.Header">
+        <item name="android:background">#eeeeee</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:gravity">end</item>
+    </style>
+
+    <style name="ListHabits.Star">
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="ListHabits.Label">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:breakStrategy" tools:targetApi="m">balanced</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+
+    <style name="ListHabits.CheckmarkPanel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="ListHabits.Item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="ListHabits.HabitCard" parent="Card">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="ListHabits.Checkmark">
+        <item name="android:focusable">false</item>
+        <item name="android:minHeight">@dimen/checkmarkHeight</item>
+        <item name="android:width">@dimen/checkmarkWidth</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ListHabits.EmptyState">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textColor">#c0c0c0</item>
+    </style>
+
+    <style name="ShowHabit" />
+
+    <style name="ShowHabit.Subtitle">
+        <item name="android:background">@color/grey_200</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:elevation" tools:targetApi="lollipop">2dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingLeft">60dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingStart">60dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>

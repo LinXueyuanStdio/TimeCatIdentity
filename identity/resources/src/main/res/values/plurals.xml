@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="app_accesses">
+        <item quantity="other">应用</item>
+    </plurals>
+    <plurals name="calls">
+        <item quantity="other">电话</item>
+    </plurals>
+    <plurals name="calls_sms">
+        <item quantity="other">电话 &amp; 短信</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="other">%s 天</item>
+    </plurals>
+    <plurals name="days_raw">
+        <item quantity="other">天</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="other">%s 小时</item>
+    </plurals>
+    <plurals name="hours_raw">
+        <item quantity="other">小时</item>
+    </plurals>
+    <plurals name="mins">
+        <item quantity="other">分钟</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="other">%s 分钟</item>
+    </plurals>
+    <plurals name="minutes_raw">
+        <item quantity="other">分钟</item>
+    </plurals>
+    <plurals name="n_calls">
+        <item quantity="other">%s 电话</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="other">%s 秒</item>
+    </plurals>
+    <plurals name="seconds_raw">
+        <item quantity="other">秒</item>
+    </plurals>
+    <plurals name="sessions">
+        <item quantity="other">解锁</item>
+    </plurals>
+    <plurals name="texts">
+        <item quantity="other">短信</item>
+    </plurals>
+    <plurals name="times">
+        <item quantity="other">%s 次</item>
+    </plurals>
+    <plurals name="unlocks">
+        <item quantity="other">解锁</item>
+    </plurals>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <plurals name="quick_view_dawn_desc">
+        <item quantity="one">Yesterday is but a dream, there\'s %1$d event today.</item>
+        <item quantity="other">Yesterday is but a dream, there\'re %1$d events today.</item>
+    </plurals>
+    <plurals name="quick_view_morning_desc">
+        <item quantity="one">Morning, you have %1$d event today.</item>
+        <item quantity="other">Morning, you have %1$d events today.</item>
+    </plurals>
+    <plurals name="quick_view_afternoon_desc">
+        <item quantity="one">Good Afternoon, you still have %1$d event to deal with.</item>
+        <item quantity="other">Good Afternoon, you still have %1$d events to deal with.</item>
+    </plurals>
+    <plurals name="quick_view_evening_desc">
+        <item quantity="one">Good Evening, you have %1$d event left.</item>
+        <item quantity="other">Good Evening, you have %1$d events left.</item>
+    </plurals>
+    <string name="quick_view_no_event">No event toady, take a break.</string>
+    <string name="quick_view_check_today">Today\'s events</string>
+
+    <string name="gone">Gone</string>
+    <string name="ongoing">Ongoing</string>
+    <string name="waiting">Waiting</string>
+    <string name="got_it">Got it</string>
+
+    <!--Sorting Bottom Sheet-->
+    <string name="sorting_option_title">Sort By</string>
+    <string name="sorting_option_alphabetically">Alphabetically</string>
+    <string name="sorting_option_creation_date">Creation Date</string>
+    <string name="sorting_option_due_date">Due Date</string>
+    <string name="sorting_option_priority">Priority</string>
+    <string name="sorting_option_type">Type</string>
+    <string name="sorting_order_asc">Ascend</string>
+    <string name="sorting_order_desc">Descend</string>
+
+
+    <string name="chip_sort" formatted="false">%1s (%2s)</string>
+    <string name="chip_sort_type">Sort By Type</string>
+    <string name="chip_sort_alpha">Sort By Alpha</string>
+    <string name="chip_sort_due_date">Sort By Due date</string>
+    <string name="chip_sort_priority">Sort By Priority</string>
+    <string name="chip_sort_creation_date">Sort By Creation</string>
+    <string name="chip_sort_order_asc">Asc</string>
+    <string name="chip_sort_order_desc">Desc</string>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/edit"
+        android:title="编辑" />
+    <item
+        android:id="@+id/none"
+        android:title="纯文本" />
+    <item
+        android:id="@+id/markdown"
+        android:title="Markdown" />
+    <item
+        android:id="@+id/org"
+        android:title="Org" />
+    <item
+        android:id="@+id/video"
+        android:title="视频" />
+    <item
+        android:id="@+id/music"
+        android:title="音乐" />
+    <item
+        android:id="@+id/picture"
+        android:title="图片" />
+</menu>

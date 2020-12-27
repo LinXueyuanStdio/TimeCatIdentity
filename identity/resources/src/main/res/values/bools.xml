@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="globalSettings_allow_statistics">true</bool>
+    <bool name="globalSettings_filter_apps">true</bool>
+    <bool name="globalSettings_habit_logging">false</bool>
+    <bool name="globalSettings_profiles_enabled">true</bool>
+    <bool name="globalSettings_share_profile_start">false</bool>
+    <bool name="globalSettings_showReminder">false</bool>
+    <bool name="globalSettings_show_insights_notif">false</bool>
+    <bool name="is_community_translated">false</bool>
+    <bool name="replace_fonts">false</bool>
+
+    <!--region 主题换肤-->
+    <!--状态栏里的图标、字体显示为深色-->
+    <bool name="master_status_bar_dark_icon">true</bool>
+    <!--endregion-->
+</resources>

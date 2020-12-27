@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bar_length">120dp</dimen>
+    <dimen name="bar_pointer_halo_radius">14dp</dimen>
+    <dimen name="bar_pointer_radius">6dp</dimen>
+    <dimen name="bar_thickness">4dp</dimen>
+    <dimen name="color_center_halo_radius">24dp</dimen>
+    <dimen name="color_center_radius">24dp</dimen>
+    <dimen name="color_pointer_halo_radius">12dp</dimen>
+    <dimen name="color_pointer_radius">8dp</dimen>
+    <dimen name="color_wheel_radius">74dp</dimen>
+    <dimen name="color_wheel_thickness">4dp</dimen>
+</resources>

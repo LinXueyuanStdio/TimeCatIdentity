@@ -1,0 +1,5 @@
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#1f000000">
+
+    <item android:drawable="@drawable/card_light_background" />
+</ripple>

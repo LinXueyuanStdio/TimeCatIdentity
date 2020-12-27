@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="chat_title_bar_txt_size">20sp</dimen>
+    <dimen name="chat_image_margin_left">2.0dip</dimen>
+    <dimen name="chat_image_size">48.0dip</dimen>
+    <dimen name="chat_item_bottom_padding">3dp</dimen>
+    <dimen name="chat_item_left_padding">3dp</dimen>
+    <dimen name="chat_item_right_padding">3dp</dimen>
+    <dimen name="chat_item_top_padding">3dp</dimen>
+    <dimen name="chat_list_margin">8.0dip</dimen>
+    <dimen name="chat_message_emojicon_size">16.0sp</dimen>
+    <dimen name="chat_message_height">22.0dip</dimen>
+    <dimen name="chat_message_padding">1.0dip</dimen>
+    <dimen name="chat_message_text_size">13.0sp</dimen>
+    <dimen name="chat_name_emojicon_size">17.0sp</dimen>
+    <dimen name="chat_name_height">26.0dip</dimen>
+    <dimen name="chat_name_text_size">15.0sp</dimen>
+    <dimen name="chat_row_1_height">26.0dip</dimen>
+    <dimen name="chat_row_2_height">22.0dip</dimen>
+    <dimen name="chat_row_left_padding">12.0dip</dimen>
+    <dimen name="chat_row_right_padding">3.0dip</dimen>
+    <dimen name="chat_ticks_margin">1.0dip</dimen>
+    <dimen name="chat_ticks_size">18.0dip</dimen>
+
+    <dimen name="chat_item_avatar_width">@dimen/chat_item_avatar_size</dimen>
+    <dimen name="chat_item_avatar_height">@dimen/chat_item_avatar_size</dimen>
+    <dimen name="chat_item_avatar_size">48dp</dimen>
+</resources>

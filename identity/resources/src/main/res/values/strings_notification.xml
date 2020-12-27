@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fragment_enhance_notification_title">增强通知</string>
+    <string name="click_to_set_corner">点击设置圆角，使你的设备更圆滑</string>
+    <string name="about_me_description">小的android攻城狮一枚，欢迎加我好友哟，我们一起学习探讨android开发技术，等你！</string>
+    <string name="best_wishes">祝您生活愉快</string>
+    <string name="base_feature_settings">基本功能</string>
+    <string name="show_notification">开启通知快捷操作</string>
+    <string name="show_notification_summary">提供便捷操作，延长圆角寿命哟</string>
+    <string name="custom_settings">自定义</string>
+    <string name="desc_settings">说明</string>
+    <string name="corner_color">圆角颜色</string>
+    <string name="danmaku_bg_color">弹幕背景颜色</string>
+    <string name="danmaku_text_color">弹幕字体颜色</string>
+    <string name="corner_location">圆角显示位置</string>
+    <string name="corner_size">圆角大小</string>
+    <string name="corner_opacity">圆角透明度</string>
+    <string name="danmu_bg_opacity">弹幕背景透明度</string>
+    <string name="others">其他</string>
+    <string name="praise">求赞</string>
+    <string name="alert_window_permission_required">请允许显示悬浮窗</string>
+    <string name="notification_listen_permission_required">请允许监听通知</string>
+
+    <string name="advanced_feature_settings">高级设置</string>
+    <string name="start_when_boot_complete">自启动</string>
+    <string name="start_when_boot_complete_summary">请点击允许应用自启动</string>
+    <string name="start_when_boot_complete_tip">重启手机并进入桌面后，圆角将自动显示</string>
+    <string name="require_boot_complete_permission">请允许开机自启动权限</string>
+
+
+    <string name="general_feature_settings">常规操作</string>
+    <string name="select_notification_style">选择通知方式</string>
+    <string name="enhance_notification">开启增强通知</string>
+    <string name="light_screen_when_notify">来通知时增大屏幕亮度</string>
+    <string name="notification_show_when">显示配置</string>
+
+    <string name="notification_sticky_count">磁贴数量</string>
+    <string name="notification_sticky_count_desc">屏幕内最多可显示的磁贴数量</string>
+    <string name="notification_sticky_position">修改磁贴位置</string>
+    <string name="notification_sticky_direction">磁贴方向</string>
+    <string name="notification_sticky_direction_desc">开启为向下，关闭为向上</string>
+    <string name="notification_sticky_desc">磁贴会常驻于屏幕，点击展开或缩小，下滑删除选中的一个磁贴，右滑删除所有磁贴</string>
+
+    <string name="notification_bubble_count">气泡数量</string>
+    <string name="notification_bubble_count_desc">屏幕内最多可显示的气泡数量</string>
+    <string name="notification_bubble_position">修改气泡位置</string>
+    <string name="notification_bubble_direction">气泡方向</string>
+    <string name="notification_bubble_direction_desc">开启为向下，关闭为向上</string>
+    <string name="notification_bubble_time">气泡停留时间</string>
+    <string name="notification_bubble_time_desc">单位为秒，最多 3600 秒（ = 1 小时）</string>
+    <string name="notification_bubble_desc">气泡只停留一段时间（默认 3 秒）。点击响应，下滑删除选中的一个气泡，右滑删除所有气泡</string>
+
+    <string name="notification_always_on">动画一直炫，逼格一直在</string>
+    <string name="notification_show_when_notify">来通知时才显示动画</string>
+
+    <string name="notification_apps_manager">应用监听管理</string>
+    <string name="notification_apps_manager_summary">配置监听的应用，绑定颜色</string>
+
+    <string name="notification_mixed_colors">默认通知颜色配置</string>
+    <string name="notification_mixed_colors_config">颜色配置</string>
+    <string name="notification_line_size">通知线粗细</string>
+    <string name="notification_animation_duration">通知动画时长</string>
+    <string name="notification_animation_style">通知动画风格</string>
+
+    <string name="danmu_repeat_count">设置弹幕重复次数</string>
+    <string name="danmu_skin">个性皮肤</string>
+    <string name="danmu_skin_style">弹幕风格</string>
+
+    <string name="animation_style_fade_in_out">淡入淡出</string>
+    <string name="animation_style_lattice">闪点点</string>
+    <string name="animation_style_wind">绕圈圈</string>
+    <string name="animation_style_middle_out">中出</string>
+    <string name="animation_style_bottom_to_top">一飞冲天</string>
+    <string name="application_manager">应用管理</string>
+    <string name="application_config">应用配置</string>
+    <string name="enable_listen_notification">开启监听</string>
+    <string name="long_click_tip">长按图标配置颜色</string>
+    <string name="storage_permission_denied">请允许存储权限</string>
+
+    <string name="weichat_pay">微信赞助</string>
+    <string name="alipay">支付宝赞助</string>
+
+    <string name="danmu_random_style">随机弹幕风格</string>
+    <string name="danmu_big_style">增大弹幕</string>
+    <string name="danmu_random_style_summary">开启后弹幕大小,颜色，速度等随机确定</string>
+    <string name="icon_bg_color">图标背景色</string>
+    <string name="icon_show_duration">显示时长</string>
+    <string name="icon_is_collect">多应用通知聚合</string>
+    <string name="icon_is_collect_summary">开启后不同应用的通知将会归类到一个列表</string>
+    <string name="icon_shape">图标形状</string>
+    <string name="icon_size">图标大小</string>
+    <string name="app_not_found">没有找到app</string>
+    <string name="demo_notificaton">示例通知开心开心</string>
+</resources>

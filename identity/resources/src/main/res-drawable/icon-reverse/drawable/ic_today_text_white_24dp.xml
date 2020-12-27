@@ -1,0 +1,9 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="24dp"
+    android:viewportHeight="1024.0"
+    android:viewportWidth="1024.0"
+    android:width="24dp">
+    <path
+        android:fillColor="@color/master_icon_view_reverse"
+        android:pathData="M512 982.016c-259.2 0-470.016-210.848-470.016-470.016C41.984 252.832 252.832 41.984 512 41.984c259.168 0 470.016 210.848 470.016 470.016C982.016 771.168 771.168 982.016 512 982.016zM512 89.984C279.296 89.984 89.984 279.296 89.984 512c0 232.704 189.312 422.016 422.016 422.016 232.672 0 422.016-189.312 422.016-422.016C934.016 279.296 744.704 89.984 512 89.984z" />
+</vector>

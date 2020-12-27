@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TagGroup">
+        <!-- Whether the tag group is in append mode. -->
+        <attr format="boolean" name="atg_isAppendMode" />
+        <!-- If the tag group is in append mode, what the hint of input tag. -->
+        <attr format="string" name="atg_inputHint" />
+
+        <!-- The tag view outline border color. -->
+        <attr format="color" name="atg_borderColor" />
+        <!-- The tag view text color. -->
+        <attr format="color" name="atg_textColor" />
+        <!-- The tag view background color. -->
+        <attr format="color" name="atg_backgroundColor" />
+
+        <!-- The dash outline border color, when in append mode. -->
+        <attr format="color" name="atg_dashBorderColor" />
+        <!-- The input tag hint text color, when in append mode. -->
+        <attr format="color" name="atg_inputHintColor" />
+        <!-- The input tag type text color, when in append mode. -->
+        <attr format="color" name="atg_inputTextColor" />
+
+        <!-- The checked tag view outline border color. -->
+        <attr format="color" name="atg_checkedBorderColor" />
+        <!-- The checked text color. -->
+        <attr format="color" name="atg_checkedTextColor" />
+        <!-- The checked marker color. -->
+        <attr format="color" name="atg_checkedMarkerColor" />
+        <!-- The checked tag view background color. -->
+        <attr format="color" name="atg_checkedBackgroundColor" />
+
+        <!-- The tag view background color, when the tag view is being pressed. -->
+        <attr format="color" name="atg_pressedBackgroundColor" />
+
+        <!-- The tag view outline border stroke width. -->
+        <attr format="dimension" name="atg_borderStrokeWidth" />
+        <!-- The tag view text size. -->
+        <attr format="dimension" name="atg_textSize" />
+
+        <attr format="dimension" name="atg_horizontalSpacing" />
+        <attr format="dimension" name="atg_verticalSpacing" />
+        <attr format="dimension" name="atg_horizontalPadding" />
+        <attr format="dimension" name="atg_verticalPadding" />
+    </declare-styleable>
+</resources>

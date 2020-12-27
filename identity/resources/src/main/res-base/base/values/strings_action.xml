@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Import / Export -->
+    <string name="importing">正在导入…</string>
+    <string name="exporting">正在导出…</string>
+    <string name="importing_successful">导入成功</string>
+    <string name="exporting_successful">导出成功</string>
+    <string name="importing_failed">导入失败</string>
+    <string name="exporting_failed">导出失败</string>
+    <string name="importing_some_entries_failed">部分项目导入失败</string>
+    <string name="exporting_some_entries_failed">部分项目导出失败</string>
+    <string name="no_entries_for_importing">未找到要导入的项目</string>
+    <string name="no_entries_for_exporting">未找到要导出的项目</string>
+
+    <!-- OTG devices -->
+    <string name="usb">USB</string>
+    <string name="usb_detected">检测到有 USB 设备连接到您的设备。您需要授予额外的权限以确保文件能够正确显示。</string>
+    <string name="confirm_usb_storage_access_text">请在下一界面选择 USB 设备的根文件夹以授予访问权限</string>
+    <string name="wrong_root_selected_usb">选择错误，请正确选择 USB 设备的根文件夹</string>
+
+    <!-- Create new -->
+    <string name="create_new">新建</string>
+    <string name="folder">文件夹</string>
+    <string name="create_new_folder">新建文件夹</string>
+    <string name="name_taken">同名文件夹或文件已存在</string>
+    <string name="invalid_name">名称包含非法字符</string>
+    <string name="empty_name">请输入名称</string>
+    <string name="unknown_error_occurred">未知错误</string>
+
+    <!-- File operation conflicts -->
+    <string name="file_already_exists">文件 \"%s\" 已存在</string>
+    <string name="file_already_exists_overwrite">文件 \"%s\" 已存在。是否覆盖？</string>
+    <string name="folder_already_exists">文件夹 \"%s\" 已存在</string>
+    <string name="keep_both">保留两者</string>
+    <string name="overwrite">覆盖</string>
+    <string name="skip">跳过</string>
+    <string name="append">应用到 \'_1\'</string>
+    <string name="apply_to_all">应用到全部冲突项</string>
+</resources>

@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--region public 一族-->
+    <!-- Base application theme. -->
+    <style name="public_dialog_progress" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="SheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <!--<item name="android:windowCloseOnTouchOutside">false</item>-->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="public_Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:background">@drawable/public_btn_selector_corner_35dp</item>
+        <item name="android:textColor">@color/public_white</item>
+        <item name="android:textSize">@dimen/public_font_16sp</item>
+    </style>
+    <!--endregion-->
+
+    <!--region 主题换肤-->
+    <!--region Base application theme. -->
+    <style name="AppTheme.Fullscreen" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <!--endregion-->
+
+
+    <!--region titleBar样式-->
+    <style name="master_toolbar" parent="ThemeOverlay.AppCompat.Light"></style>
+
+    <style name="ToolbarStyle" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="actionBarItemBackground">@drawable/toolbarItemBackground</item>
+        <item name="selectableItemBackground">@drawable/toolbarItemBackground</item>
+        <item name="titleTextAppearance">@style/ToolBar.Title</item>
+        <item name="subtitleTextAppearance">@style/Toolbar.SubTitle</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:textSize">18sp</item> &lt;!&ndash;  搞掂字体大小&ndash;&gt;-->
+    </style>
+    <!--titlebar 标题-->
+    <style name="ToolBar.Title" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <!--titlebar 副标题-->
+    <style name="Toolbar.SubTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textSize">9.0sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <style name="Toolbar_TextAppearance_White">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Toolbar_TextAppearance_Expanded">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <!--endregion-->
+
+
+    <!--region 动画-->
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit_anim</item>
+    </style>
+
+    <style name="SheetDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/sheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/sheet_dialog_out</item>
+    </style>
+
+    <!-- 淡入淡出动画 -->
+    <!-- 第一个表示新的activity创建进入效果， 第2个表示activity还没有finish()下退出效果， 第3个表示上一个activity返回进入效果，
+    第4个表示的是activity finish()之后退出效果 比如有两个activity A和B, A上面有个按钮可以打开
+    B, 点击按钮后，此时A执行第二个动画（android:activityOpenExitAnimation） B执行第一个动画(android:activityOpenEnterAnimation) 如此此时按下返回键,
+    B退出，A显示，则此时A执行动画3（android:activityCloseEnterAnimation） B执行动画4（android:activityCloseExitAnimation） -->
+    <style name="fade" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:activityCloseExitAnimation">@android:anim/fade_out</item>
+    </style>
+    <!--endregion-->
+
+
+    <!--region AppTheme AppBaseTheme一族-->
+    <style name="AppTheme" parent="@style/ThemeLight">
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/status_bar_color
+        </item>
+        <item name="overlapAnchor">false</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="colorControlNormal">@color/master_icon_view</item>
+    </style>
+
+    <style name="AppTheme.Label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#444</item>
+    </style>
+
+    <style name="AppTheme.Label.Layout">
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+
+    <style name="AppTheme.Label.Title">
+        <item name="android:textColor">#333</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="AppTheme.Label.Title.Large">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTheme.Label.Title.Small">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="AppTheme.Label.Small">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AppTheme.Label.Discription">
+        <item name="android:gravity">top</item>
+        <item name="android:lineSpacingExtra">5dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">false</item>
+    </style>
+
+    <style name="AppTheme.Dark" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+
+        <item name="android:windowBackground">@color/primary</item>
+
+        <item name="colorControlNormal">@color/iron</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="android:textColorHint">@color/iron</item>
+
+        <item name="colorButtonNormal">@color/primary_darker</item>
+    </style>
+
+    <style name="AppTheme.Dark.Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/white</item>
+        <item name="android:textColorPrimary">@color/iron</item>
+        <item name="android:background">@color/primary</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme" />
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="AppTheme.NoActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NoActionBar.SwipeBack">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!--endregion-->
+
+
+    <!--region 特殊组件的样式-->
+    <style name="ProgressDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Animation_Toast" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/toast_enter</item>
+        <item name="android:windowExitAnimation">@anim/toast_exit</item>
+    </style>
+
+    <style name="CustomSeekBarStyle">
+        <item name="android:maxHeight">3dp</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@color/colorPrimary</item>
+        <item name="android:progressDrawable">@drawable/seekbar_progress_drawable</item>
+        <item name="android:minHeight">3dp</item>
+        <item name="android:layout_marginTop">@dimen/margin_double</item>
+        <item name="android:layout_marginBottom">@dimen/margin_double</item>
+    </style>
+
+    <style name="CalendarCell">
+        <item name="android:id">@android:id/text1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textColor">@color/foreground_semi</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="EditorActionBarButton">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:contentDescription">@null</item>
+        <item name="android:background">?android:selectableItemBackground</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+    <style name="weekName">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="iv_line_schedule">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#08000000</item>
+    </style>
+
+
+    <style name="TagText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
+        <item name="android:background">@drawable/right_round_rectangle_primary_bg</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingRight">30dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="Spinner" parent="Widget.AppCompat.Spinner">
+        <item name="android:dropDownWidth">160dp</item>
+    </style>
+
+    <style name="SpinnerItem" parent="Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:background">@drawable/selector_item_light</item>
+        <item name="android:textAppearance">@style/TextAppearanceSpinnerItem</item>
+    </style>
+
+    <style name="TextAppearanceSpinnerItem" parent="TextAppearance.AppCompat.Widget.TextView.SpinnerItem">
+        <item name="android:textColor">@color/purple_500</item>
+    </style>
+
+    <style name="PopUpMenuStyle" parent="@style/Base.TextAppearance.AppCompat.Menu">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="selectableItemBackgrond">
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="cardViewTextView" parent="selectableItemBackgrond">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/card_line_height</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/master_textColorPrimary</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:paddingLeft">@dimen/card_padding_width</item>
+        <item name="android:paddingRight">@dimen/card_padding_width_double</item>
+    </style>
+
+    <style name="cardViewTextViewInLayoutLeft">
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/card_line_height</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">@color/master_textColorPrimary</item>
+    </style>
+
+    <style name="cardViewTextViewInLayoutRight">
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/card_line_height</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">@color/master_textColorPrimary</item>
+        <item name="android:maxLength">20</item>
+    </style>
+
+    <style name="cardViewRelativeLayoutSelector" parent="selectableItemBackgrond">
+        <item name="android:paddingLeft">@dimen/card_padding_width</item>
+        <item name="android:paddingRight">@dimen/card_padding_width</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/card_line_height</item>
+    </style>
+
+    <style name="switchStyle" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/height_normal</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:clickable">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+
+    <style name="spinnerStyle" parent="Widget.AppCompat.DropDownItem.Spinner">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/height_normal</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:entries">@array/click_or_long_click</item>
+        <item name="android:spinnerMode">dropdown</item>
+        <item name="android:dropDownWidth">@dimen/spinner_drop_down_width</item>
+    </style>
+
+    <style name="spinnerBrowserStyle" parent="Widget.AppCompat.DropDownItem.Spinner">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/height_normal</item>
+        <item name="android:entries">@array/browser_list</item>
+        <item name="android:spinnerMode">dropdown</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:dropDownWidth">@dimen/spinner_drop_down_width</item>
+
+    </style>
+
+
+    <style name="MonthDropTheme" parent="Widget.AppCompat.DropDownItem.Spinner">
+        <item name="android:textColor">@color/master_textColorPrimary</item>
+        <item name="colorControlNormal">@color/master_colorAccent</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+
+    <style name="BrowserMonthDropTheme">
+        <item name="android:textColor">@color/master_textColorPrimary</item>
+        <item name="colorControlNormal">@color/master_colorAccent</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+
+    <style name="CheckBoxTheme" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="colorControlNormal">@color/master_colorAccent</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+
+    <style name="spinnerItemStyle" parent="android:Widget.TextView.SpinnerItem">
+
+    </style>
+
+    <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+
+    </style>
+
+    <style name="HintTextViewRelativeLayoutSelector" parent="cardViewRelativeLayoutSelector">
+        <item name="android:layout_height">@dimen/card_detail_line_height</item>
+    </style>
+
+    <style name="HintTextViewInLayoutLeft" parent="cardViewTextViewInLayoutLeft">
+        <item name="android:layout_height">@dimen/card_detail_line_height</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="HintTextViewSwitchStyle" parent="switchStyle">
+        <item name="android:layout_height">@dimen/card_detail_line_height</item>
+    </style>
+
+    <style name="diyOcrKeyTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_double</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+
+    <style name="fabTheme">
+        <item name="colorAccent">@color/master_colorAccent</item>
+    </style>
+
+    <style name="tab_text_apparence" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/text_color_half_trans</item>
+        <item name="android:textSize">@dimen/text_size_title</item>
+    </style>
+
+    <style name="weekIndicatorStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#ff25adff</item>
+    </style>
+
+    <style name="next_button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:height">50dp</item>
+        <item name="android:background">@color/android_blue_dark</item>
+    </style>
+
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!--region TagGroup-->
+    <style name="TagGroup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="atg_isAppendMode">false</item>
+        <item name="atg_inputHint">@string/app_name</item>
+        <item name="atg_borderColor">#49C120</item>
+        <item name="atg_textColor">#49C120</item>
+        <item name="atg_backgroundColor">#FFFFFF</item>
+        <item name="atg_dashBorderColor">#AAAAAA</item>
+        <item name="atg_inputHintColor">#80000000</item>
+        <item name="atg_inputTextColor">#DE000000</item>
+        <item name="atg_checkedBorderColor">#49C120</item>
+        <item name="atg_checkedTextColor">#FFFFFF</item>
+        <item name="atg_checkedMarkerColor">#FFFFFF</item>
+        <item name="atg_checkedBackgroundColor">#49C120</item>
+        <item name="atg_pressedBackgroundColor">#EDEDED</item>
+        <item name="atg_borderStrokeWidth">0.5dp</item>
+        <item name="atg_textSize">13sp</item>
+        <item name="atg_horizontalSpacing">8dp</item>
+        <item name="atg_verticalSpacing">4dp</item>
+        <item name="atg_horizontalPadding">12dp</item>
+        <item name="atg_verticalPadding">3dp</item>
+    </style>
+
+    <style name="TagGroup.Small" parent="TagGroup">
+        <item name="atg_textSize">10sp</item>
+        <item name="atg_horizontalSpacing">10dp</item>
+        <item name="atg_verticalSpacing">5dp</item>
+        <item name="atg_horizontalPadding">10dp</item>
+        <item name="atg_verticalPadding">5dp</item>
+    </style>
+
+    <style name="TagGroup.Large" parent="TagGroup">
+        <item name="atg_borderStrokeWidth">0.7dp</item>
+        <item name="atg_textSize">15sp</item>
+        <item name="atg_horizontalSpacing">9dp</item>
+        <item name="atg_verticalSpacing">5dp</item>
+        <item name="atg_horizontalPadding">14dp</item>
+        <item name="atg_verticalPadding">4dp</item>
+    </style>
+
+    <style name="TagGroup.Beauty_Red" parent="TagGroup">
+        <item name="atg_borderColor">#FF3D7F</item>
+        <item name="atg_textColor">#FF3D7F</item>
+        <item name="atg_checkedBorderColor">#FF3D7F</item>
+        <item name="atg_checkedBackgroundColor">#FF3D7F</item>
+    </style>
+
+    <style name="TagGroup.Beauty_Red.Inverse" parent="TagGroup">
+        <item name="atg_borderColor">#FF3D7F</item>
+        <item name="atg_textColor">#FFFFFF</item>
+        <item name="atg_backgroundColor">#FF3D7F</item>
+        <item name="atg_inputHintColor">#80FFFFFF</item>
+        <item name="atg_inputTextColor">#DEFFFFFF</item>
+        <item name="atg_checkedBorderColor">#FF3D7F</item>
+        <item name="atg_checkedTextColor">#FF3D7F</item>
+        <item name="atg_checkedMarkerColor">#FF3D7F</item>
+        <item name="atg_checkedBackgroundColor">#FFFFFF</item>
+        <item name="atg_pressedBackgroundColor">#FF99B1</item>
+    </style>
+    <!--endregion-->
+    <!--endregion-->
+
+    <!--region 特殊页面的样式-->
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:textColorHighlight">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textCursorDrawable">@drawable/custom_cursor_light</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="PomodoroActivityTheme" parent="@style/ThemeDark">
+        <item name="android:textColor">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+    <style name="TimeCatTheme" parent="Theme.AppCompat.Dialog">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="listPreferredItemPaddingLeft">0dp</item>
+        <item name="listPreferredItemPaddingRight">0dp</item>
+
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowAnimationStyle">@style/fade</item>
+        <item name="android:windowBackground">@drawable/timecat_activity_window_bg</item>
+    </style>
+
+    <style name="ScreenCaptureTheme" parent="OverlayTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>
+        <item name="android:windowTranslucentNavigation" tools:targetApi="kitkat">true</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent
+        </item>
+    </style>
+
+    <style name="MiniHistoryTheme" parent="ScreenCaptureTheme">
+        <item name="android:activityOpenEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:activityCloseExitAnimation">@android:anim/fade_out</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="WebActivityTheme" parent="TimeCatTheme">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="KeepAliveActivtyTheme" parent="TimeCatTheme">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+
+    <style name="SettingsTheme" parent="AppTheme">
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textColor">@color/text_color_message</item>
+        <item name="android:divider">@android:drawable/divider_horizontal_bright</item>
+        <item name="android:dividerPadding">16dp</item>
+        <item name="android:showDividers">middle</item>
+    </style>
+
+    <style name="OverlayTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!--        <item name="android:fitsSystemWindows">true</item>-->
+        <!--        <item name="overlapAnchor">false</item>-->
+        <!--        <item name="windowActionModeOverlay">true</item>-->
+        <!--        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/status_bar_color-->
+        <!--        </item>-->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!--可输入对话框的样式 InfoOperationActivity-->
+    <style name="EditDialogStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="icon_color">@color/darkWindowBackground</item>
+        <!-- to display the icons properly since this theme is the default -->
+        <item name="colorPrimary">@color/master_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/master_colorPrimaryDark</item>
+        <item name="colorAccent">@color/master_colorAccent</item>
+        <!--//设置背景-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowSoftInputMode">adjustResize|stateHidden</item>
+        <!--//Dialog的windowFrame框为无-->
+        <item name="android:windowFrame">@null</item>
+        <!--//是否显示标题，true则去掉默认的标题栏-->
+        <item name="android:windowNoTitle">true</item>
+        <!--//是否浮现在activity之上，false的话会被软键盘覆盖-->
+        <item name="android:windowIsFloating">true</item>
+        <!--//是否半透明，为false时背景为黑色不透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--//是否有覆盖-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!--//Activity的动画效果-->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <!--//背景是否模糊显示，为false时效果为全透明-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--//点击空白处时是否销毁Activity-->
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+    <!--endregion-->
+    <!--endregion-->
+</resources>

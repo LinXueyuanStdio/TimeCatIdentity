@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorActivityBack">#263238</color>
+    <color name="colorActivityBackDark">#212b30</color>
+    <color name="colorActivityBackLight">#FFFFFF</color>
+    <color name="colorEdgeEffect">#3c4f58</color>
+    <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark
+    </color>
+    <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_light
+    </color>
+</resources>

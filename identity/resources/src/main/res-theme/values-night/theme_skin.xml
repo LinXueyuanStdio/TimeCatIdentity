@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--这里放能自定义的 皮肤 相关资源-->
+    <dimen name="t_miniPlayBarHeight">57dp</dimen>
+
+    <bool name="t_isLightTheme">false</bool>
+
+    <!--region 主题颜色-->
+    <color name="status_bar_color">@color/tool_bar_color</color>
+    <color name="tool_bar_color">@color/trans</color>
+    <color name="tool_bar_under_color">@color/tool_bar_color</color>
+
+    <!--AppCompat-->
+    <color name="master_colorPrimary">@color/purple_200</color>
+    <color name="master_colorPrimaryDark">@color/master_colorPrimaryVariant</color>
+    <color name="master_colorSecondary">@color/teal_200</color>
+    <color name="master_colorAccent">@color/teal_200</color>
+    <color name="master_colorError">@color/red_300</color>
+
+    <!--Material-->
+    <color name="master_colorPrimaryVariant">@color/purple_700</color>
+    <color name="master_colorSecondaryVariant">@color/teal_200</color>
+    <color name="master_colorSurface">@color/black</color>
+
+    <color name="master_colorOnPrimary">@color/black</color>
+    <color name="master_colorOnSecondary">@color/black</color>
+    <color name="master_colorOnBackground">@color/white</color>
+    <color name="master_colorOnError">@color/black</color>
+    <color name="master_colorOnSurface">@color/white</color>
+
+    <!--AppCompat-->
+    <color name="master_windowBackground">@color/background_material_dark</color>
+    <color name="master_colorForeground">@color/foreground_material_dark</color>
+    <color name="master_colorForegroundInverse">@color/foreground_material_light</color>
+    <color name="master_colorBackground">@color/background_material_dark</color>
+    <color name="master_colorBackgroundCacheHint">
+        @color/abc_background_cache_hint_selector_material_dark
+    </color>
+    <color name="master_colorBackgroundFloating">@color/background_floating_material_dark</color>
+
+    <color name="master_textColorPrimary">@color/abc_primary_text_material_dark</color>
+    <color name="master_textColorPrimaryInverse">@color/abc_primary_text_material_light</color>
+    <color name="master_textColorPrimaryPressed">@color/master_textColorPrimaryInverse</color>
+    <color name="master_textColorPrimaryDisableOnly">
+        @color/abc_primary_text_disable_only_material_dark
+    </color>
+    <color name="master_textColorSecondary">@color/abc_secondary_text_material_dark</color>
+    <color name="master_textColorSecondaryInverse">@color/abc_secondary_text_material_light</color>
+    <color name="master_textColorSecondaryPressed">@color/master_textColorSecondaryInverse</color>
+    <color name="master_textColorTertiary">@color/abc_secondary_text_material_dark</color>
+    <color name="master_textColorTertiaryInverse">@color/abc_secondary_text_material_light</color>
+    <color name="master_textColorTertiaryPressed">@color/master_textColorTertiaryInverse</color>
+    <color name="master_textColorHint">@color/abc_hint_foreground_material_dark</color>
+    <color name="master_textColorHintInverse">@color/abc_hint_foreground_material_light</color>
+    <color name="master_textColorHighlight">@color/highlighted_text_material_dark</color>
+
+    <color name="master_colorControlNormal">@color/master_textColorSecondary</color>
+    <color name="master_colorControlHighlight">@color/ripple_material_dark</color>
+    <color name="master_colorButtonNormal">@color/button_material_dark</color>
+    <color name="master_colorSwitchThumbNormal">@color/switch_thumb_material_dark</color>
+
+    <color name="master_textBackground">@color/master_background</color>
+    <color name="master_textColorSelected">@color/white</color>
+    <color name="master_textColorUnSelected">@color/master_textColorPrimary</color>
+
+    <color name="master_background">@color/master_colorBackground</color>
+    <color name="master_background_dark">@color/background_material_dark</color>
+    <color name="master_SliderBackgroundColor">@color/master_background</color>
+
+    <color name="master_icon_view">@color/master_textColorPrimary</color>
+    <color name="master_icon_view_special">@color/themeColor</color>
+    <color name="master_icon_view_hint">@color/master_textColorSecondary</color>
+
+    <color name="master_background_reverse">#aa000000</color>
+    <color name="master_icon_view_reverse">@color/master_textColorPrimary_reverse</color>
+    <color name="master_textColorPrimary_reverse">@color/master_background</color>
+
+    <color name="master_divider">#80949494</color>
+    <color name="master_patch_addition_color">#CCFFCC</color>
+    <color name="master_patch_deletion_color">#FFDDDD</color>
+    <color name="master_patch_ref_color">#EEEEEE</color>
+    <!--endregion-->
+    <!--region 主题颜色-->
+    <color name="t_bubbleBg">#ff4141</color>
+    <color name="t_chatBubbleLeftBg">#eaeaea</color>
+    <color name="t_chatBubbleLeftBgPrs">#e5e5e5</color>
+    <color name="t_chatBubbleRightBg">#aeecf4</color>
+    <color name="t_chatBubbleRightBgPrs">#9fe0e8</color>
+    <color name="t_chatLeftText">#333</color>
+    <color name="t_chatRightText">#333</color>
+    <color name="t_dialogBackground">#309a91</color>
+    <color name="t_link">#84d9fc</color>
+    <color name="t_messageBarIcon">#fffce3</color>
+    <color name="t_miniPlayBarIcon">#fffce3</color>
+    <color name="t_miniPlayBarSubtitle">#fffce3</color>
+    <color name="t_miniPlayBarTitle">#fffce3</color>
+    <color name="themeColor">@color/light_accent</color>
+    <!--endregion-->
+</resources>

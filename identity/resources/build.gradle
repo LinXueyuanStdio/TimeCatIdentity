@@ -1,0 +1,42 @@
+apply from: "${project.rootDir}/gradle/library_header.gradle"
+
+android {
+
+    lintOptions {
+        disable 'MissingTranslation'
+    }
+    sourceSets {
+        main {
+            res.srcDirs = [
+                    'src/main/res',
+                    'src/main/res-base/base',
+                    'src/main/res-adapt',
+                    'src/main/res-theme',
+                    'src/main/res-page/block',
+                    'src/main/res-page/github',
+                    'src/main/res-page/habit',
+                    'src/main/res-page/miniapp',
+                    'src/main/res-page/reminder',
+
+                    //drawable 分类管理(具体每个包的定义请查看README)
+                    'src/main/res-drawable/icon',
+                    'src/main/res-drawable/icon-colorful',
+                    'src/main/res-drawable/icon-reverse',
+                    'src/main/res-drawable/icon-special',
+                    'src/main/res-drawable/icon-hint',
+                    'src/main/res-drawable/icon-animate',
+                    'src/main/res-drawable/shape',
+                    'src/main/res-drawable/selector',
+            ]
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "androidx.appcompat:appcompat:1.2.0"
+    implementation "com.google.android.material:material:1.2.1"
+    implementation "androidx.preference:preference:1.1.1"
+}
+
+apply from: "${project.rootDir}/gradle/library_tail.gradle"

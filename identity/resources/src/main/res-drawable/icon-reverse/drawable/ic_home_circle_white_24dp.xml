@@ -1,0 +1,10 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="24dp"
+    android:viewportHeight="1024"
+    android:viewportWidth="1024"
+    android:width="24dp">
+
+    <path
+        android:fillColor="@color/master_icon_view_reverse"
+        android:pathData="M511.8 63.3c-247.7 0-448.5 200.8-448.5 448.5s200.8 448.5 448.5 448.5 448.5-200.8 448.5-448.5S759.5 63.3 511.8 63.3z m259.5 477.5h-57.6v201.7c0 15.9-12.9 28.8-28.8 28.8h-86.4c-15.9 0-28.8-12.9-28.8-28.8V627.3H454.4v115.2c0 15.9-12.9 28.8-28.8 28.8h-86.4c-15.9 0-28.8-12.9-28.8-28.8V540.8h-57.6c-15.9 0-28.8-12.9-28.8-28.8 0-9.1 4.4-16.8 10.3-22.1 99.1-82.9 276-235.6 277.8-237.2 1.8 1.6 178.7 154.3 277.1 237.2 6.6 5.3 11 13 11 22.1-0.1 15.9-13 28.8-28.9 28.8z" />
+</vector>

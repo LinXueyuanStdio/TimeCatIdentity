@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <!--region common-->
+    <string name="cancel">取消</string>
+    <string name="about">关于</string>
+    <string name="feed_back">反馈</string>
+    <string name="setting">设置</string>
+    <string name="copyed">已复制</string>
+    <string name="in_progress">加载中，请稍等…</string>
+    <string name="error">错误</string>
+    <!--endregion-->
+</resources>
