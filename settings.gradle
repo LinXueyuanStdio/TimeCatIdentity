@@ -1,10 +1,10 @@
 include ':app'
 include ':identity:anim'
 include ':identity:font'
+include ':identity:readonly'
 include ':identity:resources'
 include ':identity:service'
 include ':identity:skin'
-include ':identity:readonly'
 
 rootProject.name = "TimeCatIdentity"
 
