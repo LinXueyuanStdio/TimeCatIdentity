@@ -6,6 +6,8 @@ buildscript {
     }
     def localMavenDir = file(moduleConfigProps.localMavenPath)
 
+    ext.kotlin_version = '1.4.20'
+
     repositories {
         maven { url "file://${localMavenDir.absolutePath}" }
 
@@ -19,20 +21,21 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:4.0.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.4'
         classpath "com.github.breadmoirai:github-release:2.2.12"
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
     }
 }
 
+def moduleConfigProps = new Properties()
+File moduleConfig = rootProject.file("moduleConfig.properties")
+if (moduleConfig.exists()) {
+    moduleConfigProps.load(new FileInputStream(moduleConfig))
+}
+def localMavenDir = file(moduleConfigProps.localMavenPath)
+def localGradleDir = file(moduleConfigProps.localGradlePath)
+
 allprojects {
-    def moduleConfigProps = new Properties()
-    File moduleConfig = rootProject.file("moduleConfig.properties")
-    if (moduleConfig.exists()) {
-        moduleConfigProps.load(new FileInputStream(moduleConfig))
-    }
-    def localMavenDir = file(moduleConfigProps.localMavenPath)
 
     repositories {
         maven { url "file://${localMavenDir.absolutePath}" }
@@ -50,3 +53,5 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+apply from: "${localGradleDir}/deps.gradle"

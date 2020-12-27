@@ -1,6 +1,6 @@
 ext {
     composing_dependencies = [
-            MLang = [
+            [
                     // 是否本地依赖
                     isLocal     : false,
                     // 项目的路径
