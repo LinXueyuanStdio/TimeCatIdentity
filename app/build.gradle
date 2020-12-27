@@ -57,8 +57,8 @@ android {
 }
 
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'androidx.appcompat:appcompat:1.2.0'
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    compileOnly rootProject.ext.androidx_lib["appcompat"]
 //    TODO 为你的库写一个演示 demo
 //    implementation project(':template')
 //    implementation project(':template:template')

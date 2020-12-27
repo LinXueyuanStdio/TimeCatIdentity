@@ -1,5 +1,6 @@
 include ':app'
 include ':identity:anim'
+include ':identity:data'
 include ':identity:font'
 include ':identity:readonly'
 include ':identity:resources'

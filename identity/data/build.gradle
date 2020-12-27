@@ -1,0 +1,13 @@
+apply from: "${project.rootDir}/gradle/library_header.gradle"
+
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    compileOnly rootProject.ext.androidx_lib["appcompat"]
+    api rootProject.ext.dependencies["joda-time"]
+    api rootProject.ext.dependencies["fastjson"]
+}
+
+apply from: "${project.rootDir}/gradle/library_tail.gradle"
