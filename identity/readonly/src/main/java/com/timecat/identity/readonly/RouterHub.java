@@ -292,17 +292,23 @@ public interface RouterHub {
     String USER_WorldActivity = USER + "/WorldActivity";
     String USER_RecommendActivity = USER + "/RecommendActivity";
     String USER_CustomChannelActivity = USER + "/CustomChannelActivity";
-    String USER_AddMomentActivity = USER + "/AddMomentActivity";
-    String USER_AddCommentActivity = USER + "/AddCommentActivity";
-    String USER_AddPostActivity = USER + "/AddPostActivity";
+
     String USER_CommentDetailActivity = USER + "/CommentDetailActivity";
     String USER_MomentDetailActivity = USER + "/MomentDetailActivity";
     String USER_PostDetailActivity = USER + "/PostDetailActivity";
-    String USER_EditUserActivity = USER + "/EditUserActivity";
     String USER_AddForumActivity = USER + "/AddForumActivity";
     String USER_ForumDetailActivity = USER + "/ForumDetailActivity";
     String USER_TopicDetailActivity = USER + "/TopicDetailActivity";
     String USER_TagDetailActivity = USER + "/TagDetailActivity";
+    String USER_RecommendDetailActivity = USER + "/RecommendDetailActivity";
+    String USER_LeaderBoardDetailActivity = USER + "/LeaderBoardDetailActivity";
+
+    String USER_EditUserActivity = USER + "/EditUserActivity";
+    String USER_RecommendEditorActivity = USER + "/RecommendEditorActivity";
+
+    String USER_AddMomentActivity = USER + "/AddMomentActivity";
+    String USER_AddCommentActivity = USER + "/AddCommentActivity";
+    String USER_AddPostActivity = USER + "/AddPostActivity";
     String USER_AddTopicActivity = USER + "/AddTopicActivity";
     String USER_AddTagActivity = USER + "/AddTagActivity";
     String USER_AddMetaPermissionActivity = USER + "/AddMetaPermissionActivity";
@@ -310,6 +316,9 @@ public interface RouterHub {
     String USER_AddRoleActivity = USER + "/AddRoleActivity";
     String USER_AddIdentityActivity = USER + "/AddIdentityActivity";
     String USER_AddAuthActivity = USER + "/AddAuthActivity";
+    String USER_AddRecommendActivity = USER + "/AddRecommendActivity";
+    String USER_AddLeaderBoardActivity = USER + "/AddLeaderBoardActivity";
+
     String USER_AllAuthActivity = USER + "/AllAuthActivity";
     String USER_AllForumActivity = USER + "/AllForumActivity";
     String USER_AllMomentActivity = USER + "/AllMomentActivity";
@@ -320,6 +329,9 @@ public interface RouterHub {
     String USER_AllRoleActivity = USER + "/AllRoleActivity";
     String USER_AllIdentityActivity = USER + "/AllIdentityActivity";
     String USER_AllUserActivity = USER + "/AllUserActivity";
+    String USER_AllLeaderBoardActivity = USER + "/AllLeaderBoardActivity";
+    String USER_AllRecommendActivity = USER + "/AllRecommendActivity";
+    String USER_AllAppActivity = USER + "/AllAppActivity";
 
     String LEADERBOARD_LeaderBoardHomeActivity = LEADERBOARD + "/LeaderBoardHomeActivity";
     String LEADERBOARD_LeaderBoardDetailActivity = LEADERBOARD + "/LeaderBoardDetailActivity";

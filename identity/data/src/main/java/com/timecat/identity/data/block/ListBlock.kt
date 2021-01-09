@@ -1,8 +1,11 @@
 package com.timecat.identity.data.block
 
 import com.alibaba.fastjson.JSON
+import com.alibaba.fastjson.JSONArray
 import com.alibaba.fastjson.JSONObject
 import com.timecat.identity.data.base.IJson
+import com.timecat.identity.data.getStringList
+import java.io.Serializable
 
 /**
  * @author 林学渊
@@ -11,22 +14,22 @@ import com.timecat.identity.data.base.IJson
  * @description 使用 child 字段实现 list
  * @usage null
  */
-data class ListBlock(
-    val theme: Int = 0
-) : IJson {
+class ListBlock(
+    val list: MutableList<String> = mutableListOf()
+) : IJson, Serializable {
     companion object {
         fun fromJson(json: String) = fromJson(JSON.parseObject(json))
         fun fromJson(jsonObject: JSONObject): ListBlock {
-            val theme = jsonObject.getInteger("theme")
-            return ListBlock(
-                theme
-            )
+            val list = jsonObject.getStringList("list")
+            return ListBlock(list)
         }
     }
 
     override fun toJsonObject(): JSONObject {
         val jsonObject = JSONObject()
-        jsonObject.put("theme", theme)
+        val jsonArray = JSONArray()
+        jsonArray.addAll(list)
+        jsonObject["list"] = jsonArray
         return jsonObject
     }
 }

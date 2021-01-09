@@ -179,7 +179,6 @@ data class AndroidApp(
     }
 }
 
-
 data class WebApp(
     val appUrl: String,//应用地址
     val show: MutableList<String>
