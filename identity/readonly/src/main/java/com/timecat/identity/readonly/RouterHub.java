@@ -318,6 +318,13 @@ public interface RouterHub {
     String USER_AddAuthActivity = USER + "/AddAuthActivity";
     String USER_AddRecommendActivity = USER + "/AddRecommendActivity";
     String USER_AddLeaderBoardActivity = USER + "/AddLeaderBoardActivity";
+    String USER_AddAndroidAppActivity = USER + "/AddAndroidAppActivity";
+    String USER_AddiOSAppActivity = USER + "/AddiOSAppActivity";
+    String USER_AddMacAppActivity = USER + "/AddMacAppActivity";
+    String USER_AddPluginAppActivity = USER + "/AddPluginAppActivity";
+    String USER_AddWebAppActivity = USER + "/AddWebAppActivity";
+    String USER_AddWindowsAppActivity = USER + "/AddWindowsAppActivity";
+    String USER_EditPluginAppActivity = USER + "/EditPluginAppActivity";
 
     String USER_AllAuthActivity = USER + "/AllAuthActivity";
     String USER_AllForumActivity = USER + "/AllForumActivity";
