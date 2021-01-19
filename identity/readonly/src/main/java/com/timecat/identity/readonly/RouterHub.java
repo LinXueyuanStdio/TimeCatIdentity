@@ -249,6 +249,8 @@ public interface RouterHub {
     String MASTER_EditConversationActivity = MASTER + "/EditConversationActivity";
     String MASTER_NewRecordActivity = MASTER + "/NewRecordActivity";
     String MASTER_EditRecordActivity = MASTER + "/EditRecordActivity";
+    String MASTER_NewLinkActivity = MASTER + "/NewLinkActivity";
+    String MASTER_EditLinkActivity = MASTER + "/EditLinkActivity";
 
     //region 任务分组
     String TASK_TaskDetailActivity = EDITOR + MASTER + TASK + "/TaskDetailActivity";
@@ -325,6 +327,10 @@ public interface RouterHub {
     String USER_AddWebAppActivity = USER + "/AddWebAppActivity";
     String USER_AddWindowsAppActivity = USER + "/AddWindowsAppActivity";
     String USER_EditPluginAppActivity = USER + "/EditPluginAppActivity";
+    String USER_MailEditorActivity = USER + "/MailEditorActivity";
+    String USER_CubeEditorActivity = USER + "/CubeEditorActivity";
+    String USER_CubeSkillEditorActivity = USER + "/CubeSkillEditorActivity";
+    String USER_CubeStarEditorActivity = USER + "/CubeStarEditorActivity";
 
     String USER_AllAuthActivity = USER + "/AllAuthActivity";
     String USER_AllForumActivity = USER + "/AllForumActivity";
@@ -341,6 +347,7 @@ public interface RouterHub {
     String USER_AllAppActivity = USER + "/AllAppActivity";
     String USER_AllTraceActivity = USER + "/AllTraceActivity";
     String USER_AllCubeActivity = USER + "/AllCubeActivity";
+    String USER_AllMailActivity = USER + "/AllMailActivity";
 
     String LEADERBOARD_LeaderBoardHomeActivity = LEADERBOARD + "/LeaderBoardHomeActivity";
     String LEADERBOARD_LeaderBoardDetailActivity = LEADERBOARD + "/LeaderBoardDetailActivity";
@@ -348,6 +355,10 @@ public interface RouterHub {
 
     String USER_FocusFragment = USER + FRAGMENT + "/FocusFragment";
     String USER_TraceFragment = USER + FRAGMENT + "/TraceFragment";
+    String USER_MailFragment = USER + FRAGMENT + "/MailFragment";
+    String USER_MailDetailFragment = USER + FRAGMENT + "/MailDetailFragment";
+    String USER_BagFragment = USER + FRAGMENT + "/BagFragment";
+    String USER_BagItemDetailFragment = USER + FRAGMENT + "/BagItemDetailFragment";
     String USER_WorldFragment = USER + FRAGMENT + "/WorldFragment";
     String USER_ForumFragment = USER + FRAGMENT + "/ForumFragment";
     String USER_RecommendFragment = USER + FRAGMENT + "/RecommendFragment";

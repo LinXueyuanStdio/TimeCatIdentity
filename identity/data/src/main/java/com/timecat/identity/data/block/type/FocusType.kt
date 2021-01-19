@@ -9,7 +9,6 @@ import androidx.annotation.IntDef
  * @description BLOCK_PAGE 类型的 subType
  * @usage null
  */
-
 @IntDef(
     FOCUS_Pomodoro,
     FOCUS_Plant

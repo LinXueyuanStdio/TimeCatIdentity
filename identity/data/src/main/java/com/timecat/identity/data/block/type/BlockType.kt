@@ -35,6 +35,7 @@ import androidx.annotation.IntDef
     BLOCK_CODE,
     BLOCK_DIALOG,
     BLOCK_PLUGIN,
+    BLOCK_LINK,
     BLOCK_BUTTON,
     BLOCK_FORUM,
     BLOCK_POST,
@@ -74,12 +75,12 @@ const val BLOCK_PLUGIN: Int = 22 // 插件
 
 const val BLOCK_LINK: Int = 23 // 间接符文，代表某个符文
 const val BLOCK_BUTTON: Int = 24 // 执行按钮：按模板复制、打开、改变颜色等可编程的按钮
+
 const val BLOCK_FORUM: Int = 25 // 论坛<<<<云端>>>>
 const val BLOCK_POST: Int = 26 // 帖子<<<<云端>>>>
 const val BLOCK_PERMISSION: Int = 27 // 权限<<<<云端>>>>
 const val BLOCK_IDENTITY: Int = 28 // 身份<<<<云端>>>>
 const val BLOCK_ROLE: Int = 29 // 角色<<<<云端>>>>
 
-//region
+//------
 const val BLOCK_NEXT: Int = 30 // 类型总数
-//endregion
