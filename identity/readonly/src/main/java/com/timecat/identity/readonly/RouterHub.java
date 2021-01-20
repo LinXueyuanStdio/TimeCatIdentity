@@ -249,8 +249,13 @@ public interface RouterHub {
     String MASTER_EditConversationActivity = MASTER + "/EditConversationActivity";
     String MASTER_NewRecordActivity = MASTER + "/NewRecordActivity";
     String MASTER_EditRecordActivity = MASTER + "/EditRecordActivity";
-    String MASTER_NewLinkActivity = MASTER + "/NewLinkActivity";
-    String MASTER_EditLinkActivity = MASTER + "/EditLinkActivity";
+    String MASTER_NewButtonActivity = MASTER + "/NewButtonActivity";
+    String MASTER_EditButtonActivity = MASTER + "/EditButtonActivity";
+    String MASTER_NewMediaActivity = MASTER + "/NewMediaActivity";
+    String MASTER_EditMediaActivity = MASTER + "/EditMediaActivity";
+    String MASTER_NewPathActivity = MASTER + "/NewPathActivity";
+    String MASTER_EditPathActivity = MASTER + "/EditPathActivity";
+    String MASTER_HomeActivity = MASTER + "/HomeActivity";
 
     //region 任务分组
     String TASK_TaskDetailActivity = EDITOR + MASTER + TASK + "/TaskDetailActivity";

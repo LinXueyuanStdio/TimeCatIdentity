@@ -63,15 +63,15 @@ const val BLOCK_RECOMMEND: Int = 13 // 推荐<<<<云端>>>>
 const val BLOCK_CONVERSATION: Int = 14 // 本地聊天通道
 
 const val BLOCK_CONTAINER: Int = 15 // 文件夹 : 收藏集、清单、笔记本、文件夹、列表
-const val BLOCK_DIVIDER: Int = 16 // 分隔符
+const val BLOCK_DIVIDER: Int = 16 // <废弃，等待创新定义>分隔符，RECORD的子类型已有
 
 const val BLOCK_FOCUS: Int = 17 // 专注，有番茄钟专注或种树专注等等子类型
 const val BLOCK_PATH: Int = 18 // 文件夹路径(本地文件夹、云端文件夹等)
-const val BLOCK_CODE: Int = 19 // 脚本自动化
+const val BLOCK_CODE: Int = 19 // <废弃，等待创新定义>脚本自动化，用虚拟文件夹代理脚本组件即可，不用耦合到一个数据结构里
 
 const val BLOCK_MOMENT: Int = 20 // 动态<<<<云端>>>>
 const val BLOCK_DIALOG: Int = 21 // 即时通讯<<<<云端>>>>
-const val BLOCK_PLUGIN: Int = 22 // 插件
+const val BLOCK_PLUGIN: Int = 22 // 插件<<<<云端>>>>
 
 const val BLOCK_LINK: Int = 23 // 间接符文，代表某个符文
 const val BLOCK_BUTTON: Int = 24 // 执行按钮：按模板复制、打开、改变颜色等可编程的按钮
