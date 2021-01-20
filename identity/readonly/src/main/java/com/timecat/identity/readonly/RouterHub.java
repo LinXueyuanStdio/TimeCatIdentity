@@ -249,6 +249,8 @@ public interface RouterHub {
     String MASTER_EditConversationActivity = MASTER + "/EditConversationActivity";
     String MASTER_NewRecordActivity = MASTER + "/NewRecordActivity";
     String MASTER_EditRecordActivity = MASTER + "/EditRecordActivity";
+    String MASTER_NewLinkActivity = MASTER + "/NewLinkActivity";
+    String MASTER_EditLinkActivity = MASTER + "/EditLinkActivity";
     String MASTER_NewButtonActivity = MASTER + "/NewButtonActivity";
     String MASTER_EditButtonActivity = MASTER + "/EditButtonActivity";
     String MASTER_NewMediaActivity = MASTER + "/NewMediaActivity";

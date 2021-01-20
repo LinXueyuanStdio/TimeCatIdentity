@@ -10,13 +10,15 @@ import androidx.annotation.IntDef
  * @usage 路径类型，该类型包含了组件里的一列数据结构
  */
 @IntDef(
-    PATH_File,
-    PATH_Git,
-    PATH_Novel
+    PATH_OpenRouteUrl,
+    PATH_AppInPhone,
+    PATH_PluginOfTimeCat
 )
 @Retention(AnnotationRetention.SOURCE)
 annotation class PathType
 
-const val PATH_File: Int = 0 //文件组件，如某个文件夹
-const val PATH_Git: Int = 1 //git组件，如仓库主页
-const val PATH_Novel: Int = 2 //阅读组件，如书架
+const val PATH_OpenRouteUrl: Int = 0 //时光猫开放路径
+const val PATH_AppInPhone: Int = 1 //本机已安装的应用
+const val PATH_PluginOfTimeCat: Int = 2 //时光猫已安装插件
+
+

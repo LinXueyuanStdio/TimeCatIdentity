@@ -26,3 +26,7 @@ const val MEDIA_AUDIO = 2
 const val MEDIA_VIDEO = 3
 const val MEDIA_CODE = 4
 const val MEDIA_FILE = 5
+
+const val MEDIA_ModuleFile = 6 // 文件路径
+const val MEDIA_ModuleGit = 7 // Git
+const val MEDIA_ModuleReader = 8 // 阅读
