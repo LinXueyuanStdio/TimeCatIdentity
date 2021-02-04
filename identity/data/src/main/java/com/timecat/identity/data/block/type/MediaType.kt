@@ -15,7 +15,9 @@ import androidx.annotation.IntDef
     MEDIA_AUDIO,
     MEDIA_VIDEO,
     MEDIA_CODE,
-    MEDIA_FILE
+    MEDIA_FILE,
+    MEDIA_DIRECTORY,
+    MEDIA_BLOCK
 )
 @Retention(AnnotationRetention.SOURCE)
 annotation class MediaType
@@ -30,3 +32,6 @@ const val MEDIA_FILE = 5
 const val MEDIA_ModuleFile = 6 // 文件路径
 const val MEDIA_ModuleGit = 7 // Git
 const val MEDIA_ModuleReader = 8 // 阅读
+
+const val MEDIA_DIRECTORY = 9
+const val MEDIA_BLOCK = 10

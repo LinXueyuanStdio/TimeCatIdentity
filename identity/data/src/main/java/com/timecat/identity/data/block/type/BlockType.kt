@@ -73,7 +73,7 @@ const val BLOCK_MOMENT: Int = 20 // 动态<<<<云端>>>>
 const val BLOCK_DIALOG: Int = 21 // 即时通讯<<<<云端>>>>
 const val BLOCK_PLUGIN: Int = 22 // 插件<<<<云端>>>>
 
-const val BLOCK_LINK: Int = 23 // 间接符文，代表某个符文
+const val BLOCK_LINK: Int = 23 // 指针符文，代表某个符文
 const val BLOCK_BUTTON: Int = 24 // 执行按钮：按模板复制、打开、改变颜色等可编程的按钮
 
 const val BLOCK_FORUM: Int = 25 // 论坛<<<<云端>>>>

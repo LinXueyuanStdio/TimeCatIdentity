@@ -355,6 +355,8 @@ public interface RouterHub {
     String USER_AllTraceActivity = USER + "/AllTraceActivity";
     String USER_AllCubeActivity = USER + "/AllCubeActivity";
     String USER_AllMailActivity = USER + "/AllMailActivity";
+    String USER_GameHomeActivity = USER + "/GameHomeActivity";
+    String USER_ItemEditorActivity = USER + "/ItemEditorActivity";
 
     String LEADERBOARD_LeaderBoardHomeActivity = LEADERBOARD + "/LeaderBoardHomeActivity";
     String LEADERBOARD_LeaderBoardDetailActivity = LEADERBOARD + "/LeaderBoardDetailActivity";
