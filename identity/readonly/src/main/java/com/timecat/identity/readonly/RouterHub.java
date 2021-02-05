@@ -357,6 +357,11 @@ public interface RouterHub {
     String USER_AllMailActivity = USER + "/AllMailActivity";
     String USER_GameHomeActivity = USER + "/GameHomeActivity";
     String USER_ItemEditorActivity = USER + "/ItemEditorActivity";
+    String USER_ThingItemEditorActivity = USER + "/ThingItemEditorActivity";
+    String USER_PackageItemEditorActivity = USER + "/PackageItemEditorActivity";
+    String USER_DataItemEditorActivity = USER + "/DataItemEditorActivity";
+    String USER_EquipItemEditorActivity = USER + "/EquipItemEditorActivity";
+    String USER_BuffItemEditorActivity = USER + "/BuffItemEditorActivity";
 
     String LEADERBOARD_LeaderBoardHomeActivity = LEADERBOARD + "/LeaderBoardHomeActivity";
     String LEADERBOARD_LeaderBoardDetailActivity = LEADERBOARD + "/LeaderBoardDetailActivity";
@@ -367,7 +372,7 @@ public interface RouterHub {
     String USER_MailFragment = USER + FRAGMENT + "/MailFragment";
     String USER_MailDetailFragment = USER + FRAGMENT + "/MailDetailFragment";
     String USER_BagFragment = USER + FRAGMENT + "/BagFragment";
-    String USER_BagItemDetailFragment = USER + FRAGMENT + "/BagItemDetailFragment";
+    String USER_ItemDetailFragment = USER + FRAGMENT + "/ItemDetailFragment";
     String USER_WorldFragment = USER + FRAGMENT + "/WorldFragment";
     String USER_ForumFragment = USER + FRAGMENT + "/ForumFragment";
     String USER_RecommendFragment = USER + FRAGMENT + "/RecommendFragment";

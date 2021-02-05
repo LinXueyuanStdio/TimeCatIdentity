@@ -28,7 +28,6 @@ import androidx.annotation.IntDef
     BLOCK_RECOMMEND,
     BLOCK_CONVERSATION,
     BLOCK_CONTAINER,
-    BLOCK_DIVIDER,
 
     BLOCK_FOCUS,
     BLOCK_PATH,
@@ -79,8 +78,9 @@ const val BLOCK_BUTTON: Int = 24 // 执行按钮：按模板复制、打开、�
 const val BLOCK_FORUM: Int = 25 // 论坛<<<<云端>>>>
 const val BLOCK_POST: Int = 26 // 帖子<<<<云端>>>>
 const val BLOCK_PERMISSION: Int = 27 // 权限<<<<云端>>>>
-const val BLOCK_IDENTITY: Int = 28 // 身份<<<<云端>>>>
+const val BLOCK_IDENTITY: Int = 28 // 身份<<<<云端>>>>方块
 const val BLOCK_ROLE: Int = 29 // 角色<<<<云端>>>>
+const val BLOCK_ITEM: Int = 30 // 物品<<<<云端>>>>
 
 //------
-const val BLOCK_NEXT: Int = 30 // 类型总数
+const val BLOCK_NEXT: Int = 31 // 类型总数
