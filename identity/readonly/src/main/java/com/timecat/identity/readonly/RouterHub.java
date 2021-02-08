@@ -362,6 +362,9 @@ public interface RouterHub {
     String USER_DataItemEditorActivity = USER + "/DataItemEditorActivity";
     String USER_EquipItemEditorActivity = USER + "/EquipItemEditorActivity";
     String USER_BuffItemEditorActivity = USER + "/BuffItemEditorActivity";
+    String USER_CubeItemEditorActivity = USER + "/CubeItemEditorActivity";
+    String USER_TaskActivity = USER + "/TaskActivity";
+    String USER_AllTaskActivity = USER + "/AllTaskActivity";
 
     String LEADERBOARD_LeaderBoardHomeActivity = LEADERBOARD + "/LeaderBoardHomeActivity";
     String LEADERBOARD_LeaderBoardDetailActivity = LEADERBOARD + "/LeaderBoardDetailActivity";
@@ -378,6 +381,13 @@ public interface RouterHub {
     String USER_RecommendFragment = USER + FRAGMENT + "/RecommendFragment";
     String USER_CloudFragment = USER + FRAGMENT + "/CloudFragment";
     String USER_UserFragment = USER + FRAGMENT + "/UserFragment";
+    String USER_ActivityPriceFragment = USER + FRAGMENT + "/ActivityPriceFragment";
+    String USER_ActivityMainFragment = USER + FRAGMENT + "/ActivityMainFragment";
+    String USER_ActivityLifeFragment = USER + FRAGMENT + "/ActivityLifeFragment";
+    String USER_ActivityDreamFragment = USER + FRAGMENT + "/ActivityDreamFragment";
+    String USER_ActivityCustomFragment = USER + FRAGMENT + "/ActivityCustomFragment";
+    String USER_ActivityCardFragment = USER + FRAGMENT + "/ActivityCardFragment";
+    String USER_ActivityAchieveFragment = USER + FRAGMENT + "/ActivityAchieveFragment";
 
     String USER_GameHomeFragment = USER + FRAGMENT + "/GameHomeFragment";
     String USER_BagActivity = USER + "/BagActivity";
