@@ -365,6 +365,19 @@ public interface RouterHub {
     String USER_CubeItemEditorActivity = USER + "/CubeItemEditorActivity";
     String USER_TaskActivity = USER + "/TaskActivity";
     String USER_AllTaskActivity = USER + "/AllTaskActivity";
+    String USER_AllItemActivity = USER + "/AllItemActivity";
+    String USER_UrlActivityEditorActivity = USER + "/UrlActivityEditorActivity";
+    String USER_TextUrlActivityEditorActivity = USER + "/TextUrlActivityEditorActivity";
+    String USER_OneTaskActivityEditorActivity = USER + "/OneTaskActivityEditorActivity";
+    String USER_SevenDaySignActivityEditorActivity = USER + "/SevenDaySignActivityEditorActivity";
+    String USER_AchievementActivityEditorActivity = USER + "/AchievementActivityEditorActivity";
+    String USER_CardActivityEditorActivity = USER + "/CardActivityEditorActivity";
+    String USER_DoubleActivityEditorActivity = USER + "/DoubleActivityEditorActivity";
+    String USER_DreamActivityEditorActivity = USER + "/DreamActivityEditorActivity";
+    String USER_EveryDayMainActivityEditorActivity = USER + "/EveryDayMainActivityEditorActivity";
+    String USER_GetBackActivityEditorActivity = USER + "/GetBackActivityEditorActivity";
+    String USER_LifeActivityEditorActivity = USER + "/LifeActivityEditorActivity";
+    String USER_PriceActivityEditorActivity = USER + "/PriceActivityEditorActivity";
 
     String LEADERBOARD_LeaderBoardHomeActivity = LEADERBOARD + "/LeaderBoardHomeActivity";
     String LEADERBOARD_LeaderBoardDetailActivity = LEADERBOARD + "/LeaderBoardDetailActivity";
