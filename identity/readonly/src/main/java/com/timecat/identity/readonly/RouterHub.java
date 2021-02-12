@@ -404,6 +404,7 @@ public interface RouterHub {
     String USER_ActivityAchieveFragment = USER + FRAGMENT + "/ActivityAchieveFragment";
     String USER_ActivityDoubleFragment = USER + FRAGMENT + "/ActivityDoubleFragment";
     String USER_ActivityGetBackFragment = USER + FRAGMENT + "/ActivityGetBackFragment";
+    String USER_OwnItemDetailFragment = USER + FRAGMENT + "/OwnItemDetailFragment";
 
     String USER_GameHomeFragment = USER + FRAGMENT + "/GameHomeFragment";
     String USER_BagActivity = USER + "/BagActivity";

@@ -134,7 +134,7 @@ data class Reward(
 
     override fun toJsonObject(): JSONObject {
         val jsonObject = JSONObject()
-        jsonObject["where"] = uuid
+        jsonObject["uuid"] = uuid
         jsonObject["count"] = count
         return jsonObject
     }

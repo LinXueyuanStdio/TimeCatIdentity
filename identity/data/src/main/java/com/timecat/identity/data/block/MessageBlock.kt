@@ -4,6 +4,7 @@ import androidx.annotation.IntDef
 import com.alibaba.fastjson.JSON
 import com.alibaba.fastjson.JSONObject
 import com.timecat.identity.data.base.*
+import com.timecat.identity.data.getRewardList
 
 /**
  * @author 林学渊
@@ -63,11 +64,12 @@ data class MailBlock(
      */
     val atScope: AtScope? = null,
     val content: NoteBody? = null,
+    val rewards: List<Reward> = mutableListOf(),
     val header: PageHeader = PageHeader()
 ) : IJson {
     companion object {
         fun fromJson(json: String) = fromJson(JSON.parseObject(json))
-        fun fromJson(jsonObject: JSONObject): ItemBlock {
+        fun fromJson(jsonObject: JSONObject): MailBlock {
             val mediaScope: JSONObject? = jsonObject.getJSONObject("mediaScope")
             val topicScope: JSONObject? = jsonObject.getJSONObject("topicScope")
             val atScope: JSONObject? = jsonObject.getJSONObject("atScope")
@@ -75,12 +77,14 @@ data class MailBlock(
             val header = jsonObject.getJSONObject("header") ?: PageHeader().toJsonObject()
             val type = jsonObject.getInteger("type")
             val structure = jsonObject.getString("structure")
-            return ItemBlock(
+            val rewards = jsonObject.getRewardList("rewards")
+            return MailBlock(
                 type, structure,
                 mediaScope?.let { AttachmentTail.fromJson(it) },
                 topicScope?.let { TopicScope.fromJson(it) },
                 atScope?.let { AtScope.fromJson(it) },
                 content?.let { NoteBody.fromJson(it) },
+                rewards,
                 PageHeader.fromJson(header),
             )
         }
@@ -90,6 +94,7 @@ data class MailBlock(
         val jsonObject = JSONObject()
         jsonObject["type"] = type
         jsonObject["structure"] = structure
+        jsonObject["rewards"] = rewards
         jsonObject["header"] = header.toJsonObject()
         content?.let { jsonObject["content"] = it.toJsonObject() }
         mediaScope?.let { jsonObject["mediaScope"] = it.toJsonObject() }

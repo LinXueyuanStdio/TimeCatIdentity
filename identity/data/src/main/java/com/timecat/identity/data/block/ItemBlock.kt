@@ -3,6 +3,7 @@ package com.timecat.identity.data.block
 import com.alibaba.fastjson.JSON
 import com.alibaba.fastjson.JSONObject
 import com.timecat.identity.data.base.*
+import com.timecat.identity.data.getRewardList
 import com.timecat.identity.data.getStringList
 
 /**
@@ -91,12 +92,12 @@ data class ThingItemBlock(
  * 礼包
  */
 data class PackageItemBlock(
-    val items: List<String>,
+    val items: List<Reward>,
 ) : IJson {
     companion object {
         fun fromJson(json: String) = fromJson(JSON.parseObject(json))
         fun fromJson(jsonObject: JSONObject): PackageItemBlock {
-            val items = jsonObject.getStringList("items")
+            val items = jsonObject.getRewardList("items")
             return PackageItemBlock(
                 items,
             )
@@ -126,16 +127,6 @@ data class DataItemBlock(
                 where, num,
             )
         }
-
-        const val WHERE_UserExp = "user/exp"
-        const val WHERE_UserWater = "user/water"
-        const val WHERE_UserCharge = "user/charge"
-        const val WHERE_UserCurrency = "user/currency"
-        const val WHERE_UserStar = "user/star"
-        const val WHERE_CubeExp = "cube/exp"
-        const val WHERE_CubeStar = "cube/star"
-        const val WHERE_EquipExp = "equip/exp"
-        const val WHERE_EquipStar = "equip/star"
     }
 
     override fun toJsonObject(): JSONObject {
