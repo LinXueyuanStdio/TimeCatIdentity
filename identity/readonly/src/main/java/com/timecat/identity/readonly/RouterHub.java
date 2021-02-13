@@ -41,10 +41,11 @@ public interface RouterHub {
     //endregion
 
     /**
-     * Intent pendingIntent = new Intent(Intent.ACTION_VIEW); pendingIntent.setData(Uri.parse(RouterHub.URL_HEADER
+     * Intent pendingIntent = new Intent(Intent.ACTION_VIEW);
+     * pendingIntent.setData(Uri.parse(RouterHub.URL_HEADER
      * + RouterHub.MASTER_MainActivity));
      */
-    String URL_HEADER = "timecat://router";
+    String URL_HEADER = "timecat://";
 
     /**
      * 组名

@@ -16,7 +16,7 @@ import com.timecat.identity.data.block.type.IdentityType
 data class IdentityBlock(
     @IdentityType
     val type: Int = IDENTITY_Base,
-    val structure: String = "",
+    val structure: JSONObject = JSONObject(),
     /**
      * 媒体域
      */
@@ -41,7 +41,7 @@ data class IdentityBlock(
             val content = jsonObject.getJSONObject("content")
             val header = jsonObject.getJSONObject("header") ?: PageHeader().toJsonObject()
             val type = jsonObject.getInteger("type")
-            val structure = jsonObject.getString("structure")
+            val structure = jsonObject.getJSONObject("structure")
             return IdentityBlock(
                 type, structure,
                 mediaScope?.let { AttachmentTail.fromJson(it) },
@@ -69,9 +69,15 @@ data class IdentityBlock(
 
 /**
  * 方块，可养成
+ * 功能拟人化
  */
 data class CubeBlock(
     val type: Int? = null,
+    /**
+     * 方块的自定义设置
+     * 这里的是默认的，用户持有一份自定义的
+     */
+    val setting: JSONObject = JSONObject(),
 ) : IJson {
     companion object {
         fun fromJson(json: String) = fromJson(JSON.parseObject(json))

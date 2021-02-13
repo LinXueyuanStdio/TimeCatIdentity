@@ -20,7 +20,7 @@ data class RecommendBlock(
     var content: String,
     var extra: String = "",
     @RecommendType val type: Int,
-    val structure: String
+    val structure: JSONObject
 ) : IJson {
     companion object {
         @LongDef(
@@ -57,7 +57,7 @@ data class RecommendBlock(
             val content = jsonObject.getString("content")
             val extra = jsonObject.getString("extra")
             val type = jsonObject.getInteger("type")
-            val structure = jsonObject.getString("structure")
+            val structure = jsonObject.getJSONObject("structure")
             return RecommendBlock(
                 title,
                 content,

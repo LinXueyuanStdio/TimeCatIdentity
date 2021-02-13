@@ -15,7 +15,7 @@ import com.timecat.identity.data.base.PageHeader
  */
 data class AppBlock(
     @AppType val type: Int,
-    val structure: String,
+    val structure: JSONObject,
     val header: PageHeader? = null
 ) : IJson {
     companion object {
@@ -23,7 +23,7 @@ data class AppBlock(
         fun fromJson(jsonObject: JSONObject): AppBlock {
             val type = jsonObject.getInteger("type")
             val header: JSONObject? = jsonObject.getJSONObject("header")
-            val structure = jsonObject.getString("structure")
+            val structure = jsonObject.getJSONObject("structure")
             return AppBlock(
                 type,
                 structure,

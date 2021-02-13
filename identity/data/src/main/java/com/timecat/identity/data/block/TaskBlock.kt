@@ -17,7 +17,7 @@ import com.timecat.identity.data.getTaskRuleList
 data class TaskBlock(
     @TaskType
     val type: Int,
-    val structure: String,
+    val structure: JSONObject,
     /**
      * 媒体域
      */
@@ -43,7 +43,7 @@ data class TaskBlock(
             val content = jsonObject.getJSONObject("content")
             val header = jsonObject.getJSONObject("header") ?: PageHeader().toJsonObject()
             val type = jsonObject.getInteger("type")
-            val structure = jsonObject.getString("structure")
+            val structure = jsonObject.getJSONObject("structure")
             val rewards = jsonObject.getRewardList("rewards")
             return TaskBlock(
                 type, structure,

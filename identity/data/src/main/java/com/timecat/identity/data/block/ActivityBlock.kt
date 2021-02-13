@@ -17,7 +17,7 @@ import com.timecat.identity.data.block.type.ActivityType
 data class ActivityBlock(
     @ActivityType
     val type: Int,
-    val structure: String,
+    val structure: JSONObject,
     /**
      * 媒体域
      */
@@ -42,7 +42,7 @@ data class ActivityBlock(
             val content = jsonObject.getJSONObject("content")
             val header = jsonObject.getJSONObject("header") ?: PageHeader().toJsonObject()
             val type = jsonObject.getInteger("type")
-            val structure = jsonObject.getString("structure")
+            val structure = jsonObject.getJSONObject("structure")
             return ActivityBlock(
                 type, structure,
                 mediaScope?.let { AttachmentTail.fromJson(it) },

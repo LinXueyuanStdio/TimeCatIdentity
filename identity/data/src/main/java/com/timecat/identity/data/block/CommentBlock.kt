@@ -16,7 +16,7 @@ import com.timecat.identity.data.base.*
 // 评论
 data class CommentBlock(
     @CommentType val type: Int,
-    val structure: String
+    val structure: JSONObject
 ) : IJson {
     companion object {
         fun fromJson(json: String) =
@@ -24,7 +24,7 @@ data class CommentBlock(
 
         fun fromJson(jsonObject: JSONObject): CommentBlock {
             val type = jsonObject.getInteger("type")
-            val structure = jsonObject.getString("structure")
+            val structure = jsonObject.getJSONObject("structure")
             return CommentBlock(
                 type,
                 structure

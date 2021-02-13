@@ -15,7 +15,7 @@ import com.timecat.identity.data.getStringList
  */
 data class ItemBlock(
     val type: Int,
-    val structure: String,
+    val structure: JSONObject,
     /**
      * 媒体域
      */
@@ -40,7 +40,7 @@ data class ItemBlock(
             val content = jsonObject.getJSONObject("content")
             val header = jsonObject.getJSONObject("header") ?: PageHeader().toJsonObject()
             val type = jsonObject.getInteger("type")
-            val structure = jsonObject.getString("structure")
+            val structure = jsonObject.getJSONObject("structure")
             return ItemBlock(
                 type, structure,
                 mediaScope?.let { AttachmentTail.fromJson(it) },

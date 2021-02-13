@@ -50,7 +50,7 @@ const val BLOCK_MAIL: Int = 10 // 表情包
 
 data class MailBlock(
     val type: Int = 0,
-    val structure: String? = null,
+    val structure: JSONObject? = null,
     /**
      * 媒体域
      */
@@ -76,7 +76,7 @@ data class MailBlock(
             val content = jsonObject.getJSONObject("content")
             val header = jsonObject.getJSONObject("header") ?: PageHeader().toJsonObject()
             val type = jsonObject.getInteger("type")
-            val structure = jsonObject.getString("structure")
+            val structure = jsonObject.getJSONObject("structure")
             val rewards = jsonObject.getRewardList("rewards")
             return MailBlock(
                 type, structure,

@@ -12,4 +12,5 @@ public interface UiHub {
     String CHECKBOX = "checkbox";
     String EDITTEXT = "edittext";
     String DRAWER_ITEM_MANAGER = "drawer_item_manager";
+    String MASTER_MainActivity_drawer_manager = RouterHub.MASTER_MainActivity + "/drawer_item_manager";
 }

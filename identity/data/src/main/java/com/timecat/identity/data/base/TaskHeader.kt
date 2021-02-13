@@ -505,14 +505,14 @@ const val LIFECYCLE_BEGIN_END: Int = 2 // 起止
 const val LIFECYCLE_REPEAT_NEVER_STOP: Int = 3 // 重复
 const val LIFECYCLE_CUSTOM: Int = 4 // 自定义
 
-data class Behavior(val type: String, val structure: String) : Serializable, IJson {
+data class Behavior(val type: String, val structure: JSONObject) : Serializable, IJson {
     companion object {
         fun fromJson(json: String) =
             fromJson(JSON.parseObject(json))
 
         fun fromJson(jsonObject: JSONObject): Behavior {
             val type = jsonObject.getString("type")
-            val structure = jsonObject.getString("structure")
+            val structure = jsonObject.getJSONObject("structure")
             return Behavior(
                 type,
                 structure
