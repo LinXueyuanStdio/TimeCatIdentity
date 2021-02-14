@@ -15,54 +15,8 @@ import com.timecat.identity.data.base.*
 //region 高级结构：评论
 // 评论
 data class CommentBlock(
-    @CommentType val type: Int,
-    val structure: JSONObject
-) : IJson {
-    companion object {
-        fun fromJson(json: String) =
-            fromJson(JSON.parseObject(json))
-
-        fun fromJson(jsonObject: JSONObject): CommentBlock {
-            val type = jsonObject.getInteger("type")
-            val structure = jsonObject.getJSONObject("structure")
-            return CommentBlock(
-                type,
-                structure
-            )
-        }
-    }
-
-    override fun toJsonObject(): JSONObject {
-        val jsonObject = JSONObject()
-        jsonObject["type"] = type
-        jsonObject["structure"] = structure
-        return jsonObject
-    }
-
-}
-
-@IntDef(
-    COMMENT_SIMPLE,
-    COMMENT_LONG,
-    COMMENT_TEXT,
-    COMMENT_VIDEO
-)
-@Retention(AnnotationRetention.SOURCE)
-annotation class CommentType
-
-//评论的子类
-const val BLOCK_COMMENT_SIMPLE: Int = 16 // 普通评论
-const val BLOCK_COMMENT_LONG: Int = 17 // 长评+评分
-const val BLOCK_COMMENT_TEXT: Int = 18 // 划线、本章说
-const val BLOCK_COMMENT_VIDEO: Int = 19 // 弹幕
-const val COMMENT_SIMPLE: Int = BLOCK_COMMENT_SIMPLE // 普通评论
-const val COMMENT_LONG: Int = BLOCK_COMMENT_LONG // 长评+评分
-const val COMMENT_TEXT: Int = BLOCK_COMMENT_TEXT // 划线、本章说
-const val COMMENT_VIDEO: Int = BLOCK_COMMENT_VIDEO // 弹幕
-
-// 普通评论
-data class SimpleComment(
-    val content: NoteBody = NoteBody(),
+    val structure: JSONObject = JSONObject(),
+    val content: NoteBody? = null,
     /**
      * 媒体域
      */
@@ -78,53 +32,79 @@ data class SimpleComment(
     /**
      * 地域
      */
-    val posScope: PosScope? = null,
-    /**
-     * 转发域
-     */
-    val relayScope: RelayScope? = null
+    val posScope: PosScope? = null
 ) : IJson {
     companion object {
         fun fromJson(json: String) = fromJson(JSON.parseObject(json))
-        fun fromJson(jsonObject: JSONObject): SimpleComment {
-            val content = jsonObject.getJSONObject("content")
+        fun fromJson(jsonObject: JSONObject): CommentBlock {
+            val structure = jsonObject.getJSONObject("structure")
+            val content: JSONObject? = jsonObject.getJSONObject("content")
             val mediaScope: JSONObject? = jsonObject.getJSONObject("mediaScope")
             val topicScope: JSONObject? = jsonObject.getJSONObject("topicScope")
             val atScope: JSONObject? = jsonObject.getJSONObject("atScope")
             val posScope: JSONObject? = jsonObject.getJSONObject("posScope")
-            val relayScope: JSONObject? = jsonObject.getJSONObject("relayScope")
-            return SimpleComment(
-                NoteBody.fromJson(content),
+            return CommentBlock(
+                structure,
+                content?.let { NoteBody.fromJson(it) },
                 mediaScope?.let { AttachmentTail.fromJson(it) },
                 topicScope?.let { TopicScope.fromJson(it) },
                 atScope?.let { AtScope.fromJson(it) },
                 posScope?.let { PosScope.fromJson(it) },
-                relayScope?.let { RelayScope.fromJson(it) }
             )
         }
     }
 
     override fun toJsonObject(): JSONObject {
         val jsonObject = JSONObject()
-        jsonObject["content"] = content.toJsonObject()
+        jsonObject["structure"] = structure
+        content?.let { jsonObject["content"] = it.toJsonObject() }
         mediaScope?.let { jsonObject["mediaScope"] = it.toJsonObject() }
         topicScope?.let { jsonObject["topicScope"] = it.toJsonObject() }
         atScope?.let { jsonObject["atScope"] = it.toJsonObject() }
         posScope?.let { jsonObject["posScope"] = it.toJsonObject() }
-        relayScope?.let { jsonObject["relayScope"] = it.toJsonObject() }
+        return jsonObject
+    }
+}
+
+@IntDef(
+    COMMENT_SIMPLE,
+    COMMENT_REPLY,
+    COMMENT_SCORE,
+    COMMENT_TEXT,
+    COMMENT_VIDEO
+)
+@Retention(AnnotationRetention.SOURCE)
+annotation class CommentType
+
+//评论的子类
+const val COMMENT_SIMPLE: Int = 0 // 普通评论
+const val COMMENT_REPLY: Int = 1 // 回复
+const val COMMENT_SCORE: Int = 2 // 评分
+const val COMMENT_TEXT: Int = 3 // 划线、本章说
+const val COMMENT_VIDEO: Int = 4 // 弹幕
+
+// 普通评论或回复
+class SimpleComment() : IJson {
+    companion object {
+        fun fromJson(json: String) = fromJson(JSON.parseObject(json))
+        fun fromJson(jsonObject: JSONObject): SimpleComment {
+            return SimpleComment()
+        }
+    }
+
+    override fun toJsonObject(): JSONObject {
+        val jsonObject = JSONObject()
         return jsonObject
     }
 }
 
 // 长评+评分
-data class LongComment(
-    val score: Int,
-    val content: BlockMini
+data class ScoreComment(
+    val score: Int
 ) : IJson {
     override fun toJsonObject(): JSONObject {
         val jsonObject = JSONObject()
         jsonObject["score"] = score
-        jsonObject["content"] = content
         return jsonObject
     }
 
@@ -132,12 +112,10 @@ data class LongComment(
         fun fromJson(json: String) =
             fromJson(JSON.parseObject(json))
 
-        fun fromJson(jsonObject: JSONObject): LongComment {
+        fun fromJson(jsonObject: JSONObject): ScoreComment {
             val score = jsonObject.getInteger("score")
-            val content = jsonObject.getJSONObject("content")
-            return LongComment(
-                score,
-                BlockMini.fromJson(content)
+            return ScoreComment(
+                score
             )
         }
     }

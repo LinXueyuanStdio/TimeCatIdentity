@@ -295,3 +295,27 @@ class RelayScope(
         return jsonObject
     }
 }
+
+/**
+ * 回复某人
+ */
+class ReplyScope(
+    val objectId: String
+) : IJson {
+    companion object {
+        fun fromJson(json: String) = fromJson(JSON.parseObject(json))
+
+        fun fromJson(jsonObject: JSONObject): ReplyScope {
+            val objectId = jsonObject.getString("objectId")
+            return ReplyScope(
+                objectId
+            )
+        }
+    }
+
+    override fun toJsonObject(): JSONObject {
+        val jsonObject = JSONObject()
+        jsonObject["objectId"] = objectId
+        return jsonObject
+    }
+}
