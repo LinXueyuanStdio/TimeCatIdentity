@@ -336,6 +336,8 @@ public interface RouterHub {
     String USER_AddWindowsAppActivity = USER + "/AddWindowsAppActivity";
     String USER_EditPluginAppActivity = USER + "/EditPluginAppActivity";
     String USER_MailEditorActivity = USER + "/MailEditorActivity";
+    String USER_SendMailActivity = USER + "/SendMailActivity";
+    String USER_SendItemActivity = USER + "/SendItemActivity";
     String USER_CubeEditorActivity = USER + "/CubeEditorActivity";
     String USER_CubeSkillEditorActivity = USER + "/CubeSkillEditorActivity";
     String USER_CubeStarEditorActivity = USER + "/CubeStarEditorActivity";
@@ -354,8 +356,11 @@ public interface RouterHub {
     String USER_AllRecommendActivity = USER + "/AllRecommendActivity";
     String USER_AllAppActivity = USER + "/AllAppActivity";
     String USER_AllTraceActivity = USER + "/AllTraceActivity";
-    String USER_AllCubeActivity = USER + "/AllCubeActivity";
     String USER_AllMailActivity = USER + "/AllMailActivity";
+    String USER_AllOwnMailActivity = USER + "/AllOwnMailActivity";
+    String USER_AllOwnCubeActivity = USER + "/AllOwnCubeActivity";
+    String USER_AllShopActivity = USER + "/AllShopActivity";
+    String USER_ShopEditorActivity = USER + "/ShopEditorActivity";
     String USER_GameHomeActivity = USER + "/GameHomeActivity";
     String USER_ItemEditorActivity = USER + "/ItemEditorActivity";
     String USER_ThingItemEditorActivity = USER + "/ThingItemEditorActivity";

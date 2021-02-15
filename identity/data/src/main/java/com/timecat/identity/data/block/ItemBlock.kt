@@ -4,7 +4,6 @@ import com.alibaba.fastjson.JSON
 import com.alibaba.fastjson.JSONObject
 import com.timecat.identity.data.base.*
 import com.timecat.identity.data.getRewardList
-import com.timecat.identity.data.getStringList
 
 /**
  * @author 林学渊
@@ -14,7 +13,6 @@ import com.timecat.identity.data.getStringList
  * @usage null
  */
 data class ItemBlock(
-    val type: Int,
     val structure: JSONObject,
     /**
      * 媒体域
@@ -39,10 +37,9 @@ data class ItemBlock(
             val atScope: JSONObject? = jsonObject.getJSONObject("atScope")
             val content = jsonObject.getJSONObject("content")
             val header = jsonObject.getJSONObject("header") ?: PageHeader().toJsonObject()
-            val type = jsonObject.getInteger("type")
             val structure = jsonObject.getJSONObject("structure")
             return ItemBlock(
-                type, structure,
+                structure,
                 mediaScope?.let { AttachmentTail.fromJson(it) },
                 topicScope?.let { TopicScope.fromJson(it) },
                 atScope?.let { AtScope.fromJson(it) },
@@ -54,7 +51,6 @@ data class ItemBlock(
 
     override fun toJsonObject(): JSONObject {
         val jsonObject = JSONObject()
-        jsonObject["type"] = type
         jsonObject["structure"] = structure
         jsonObject["header"] = header.toJsonObject()
         content?.let { jsonObject["content"] = it.toJsonObject() }
@@ -142,7 +138,7 @@ data class DataItemBlock(
  * 装备
  */
 data class EquipItemBlock(
-    val type: Int?=0,
+    val type: Int? = 0,
 ) : IJson {
     companion object {
         fun fromJson(json: String) = fromJson(JSON.parseObject(json))

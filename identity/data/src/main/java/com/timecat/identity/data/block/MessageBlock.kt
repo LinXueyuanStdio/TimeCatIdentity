@@ -76,7 +76,7 @@ data class MailBlock(
             val content = jsonObject.getJSONObject("content")
             val header = jsonObject.getJSONObject("header") ?: PageHeader().toJsonObject()
             val type = jsonObject.getInteger("type")
-            val structure = jsonObject.getJSONObject("structure")
+            val structure = jsonObject.getJSONObject("structure") ?: JSONObject()
             val rewards = jsonObject.getRewardList("rewards")
             return MailBlock(
                 type, structure,
