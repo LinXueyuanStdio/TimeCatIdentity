@@ -393,6 +393,7 @@ public interface RouterHub {
     String USER_FocusFragment = USER + FRAGMENT + "/FocusFragment";
     String USER_TraceFragment = USER + FRAGMENT + "/TraceFragment";
     String USER_MailFragment = USER + FRAGMENT + "/MailFragment";
+    String USER_OwnMailFragment = USER + FRAGMENT + "/OwnMailFragment";
     String USER_MailDetailFragment = USER + FRAGMENT + "/MailDetailFragment";
     String USER_BagFragment = USER + FRAGMENT + "/BagFragment";
     String USER_ItemDetailFragment = USER + FRAGMENT + "/ItemDetailFragment";
@@ -428,6 +429,9 @@ public interface RouterHub {
     String SEARCH_SelectMetaPermissionFragment = SEARCH + "/SelectMetaPermissionFragment";
     String SEARCH_SelectIdentityFragment = SEARCH + "/SelectIdentityFragment";
     String SEARCH_SelectRoleFragment = SEARCH + "/SelectRoleFragment";
+    String SEARCH_SelectAppFragment = SEARCH + "/SelectAppFragment";
+    String SEARCH_SelectMailFragment = SEARCH + "/SelectMailFragment";
+    String SEARCH_SelectBlockFragment = SEARCH + "/SelectBlockFragment";
     //endregion
 
     //region 小说
