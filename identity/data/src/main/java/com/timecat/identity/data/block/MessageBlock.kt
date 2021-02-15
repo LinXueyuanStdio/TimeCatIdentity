@@ -50,7 +50,7 @@ const val BLOCK_MAIL: Int = 10 // 表情包
 
 data class MailBlock(
     val type: Int = 0,
-    val structure: JSONObject? = null,
+    val structure: JSONObject = JSONObject(),
     /**
      * 媒体域
      */

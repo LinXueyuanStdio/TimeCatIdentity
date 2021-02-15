@@ -30,10 +30,6 @@ data class PluginApp(
      */
     var updateInfo: MutableList<UpdateInfo> = mutableListOf(),
     /**
-     * 预览该 App 的媒体资源
-     */
-    var preview_urls: MutableList<String> = mutableListOf(),
-    /**
      * 提供的 Activity 列表
      * 每一项是 Activity 的完整名字
      */
@@ -51,7 +47,6 @@ data class PluginApp(
         j["openSourceUrl"] = openSourceUrl
         j["partKey"] = partKey
         j["updateInfo"] = updateInfo
-        j["preview_urls"] = preview_urls
         j["activity_class_names"] = activity_class_names
         j["service_class_names"] = service_class_names
         return j
@@ -66,7 +61,6 @@ data class PluginApp(
             val openSourceUrl = jsonObject.getString("openSourceUrl")
             val partKey = jsonObject.getString("partKey")
             val updateInfo = jsonObject.getUpdateInfoList("updateInfo")
-            val preview_urls = jsonObject.getStringList("preview_urls")
             val activity_class_names = jsonObject.getStringList("activity_class_names")
             val service_class_names = jsonObject.getStringList("service_class_names")
             return PluginApp(
@@ -75,7 +69,6 @@ data class PluginApp(
                 partKey,
                 openSourceUrl,
                 updateInfo,
-                preview_urls,
                 activity_class_names,
                 service_class_names
             )

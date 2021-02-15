@@ -3,8 +3,7 @@ package com.timecat.identity.data.block
 import androidx.annotation.IntDef
 import com.alibaba.fastjson.JSON
 import com.alibaba.fastjson.JSONObject
-import com.timecat.identity.data.base.IJson
-import com.timecat.identity.data.base.PageHeader
+import com.timecat.identity.data.base.*
 
 /**
  * @author 林学渊
@@ -14,29 +13,54 @@ import com.timecat.identity.data.base.PageHeader
  * @usage null
  */
 data class AppBlock(
-    @AppType val type: Int,
+    val url: String,
     val structure: JSONObject,
-    val header: PageHeader? = null
+    /**
+     * 媒体域
+     */
+    val mediaScope: AttachmentTail? = null,
+    /**
+     * 话题域
+     */
+    val topicScope: TopicScope? = null,
+    /**
+     * @ 域
+     */
+    val atScope: AtScope? = null,
+    val content: NoteBody? = null,
+    val header: PageHeader = PageHeader()
 ) : IJson {
     companion object {
         fun fromJson(json: String) = fromJson(JSON.parseObject(json))
         fun fromJson(jsonObject: JSONObject): AppBlock {
-            val type = jsonObject.getInteger("type")
-            val header: JSONObject? = jsonObject.getJSONObject("header")
+            val url = jsonObject.getString("url")
             val structure = jsonObject.getJSONObject("structure")
+            val mediaScope: JSONObject? = jsonObject.getJSONObject("mediaScope")
+            val topicScope: JSONObject? = jsonObject.getJSONObject("topicScope")
+            val atScope: JSONObject? = jsonObject.getJSONObject("atScope")
+            val content: JSONObject? = jsonObject.getJSONObject("content")
+            val header = jsonObject.getJSONObject("header")
             return AppBlock(
-                type,
+                url,
                 structure,
-                header?.let { PageHeader.fromJson(it) }
+                mediaScope?.let { AttachmentTail.fromJson(it) },
+                topicScope?.let { TopicScope.fromJson(it) },
+                atScope?.let { AtScope.fromJson(it) },
+                content?.let { NoteBody.fromJson(it) },
+                PageHeader.fromJson(header)
             )
         }
     }
 
     override fun toJsonObject(): JSONObject {
         val jsonObject = JSONObject()
-        jsonObject["type"] = type
         jsonObject["structure"] = structure
-        header?.let { jsonObject["header"] = it.toJsonObject() }
+        jsonObject["url"] = url
+        jsonObject["header"] = header.toJsonObject()
+        content?.let { jsonObject["content"] = it.toJsonObject() }
+        mediaScope?.let { jsonObject["mediaScope"] = it.toJsonObject() }
+        topicScope?.let { jsonObject["topicScope"] = it.toJsonObject() }
+        atScope?.let { jsonObject["atScope"] = it.toJsonObject() }
         return jsonObject
     }
 }
@@ -133,10 +157,6 @@ data class AndroidApp(
      * 更新时间
      */
     val lastUpdateTime: Long = 0L,
-    /**
-     * 展示
-     */
-    val show: MutableList<String>?
 ) : IJson {
     override fun toJsonObject(): JSONObject {
         val j = JSONObject()
@@ -146,7 +166,6 @@ data class AndroidApp(
         j["minROM"] = minROM
         j["updateInfo"] = updateInfo
         j["lastUpdateTime"] = lastUpdateTime
-        j["show"] = show
         return j
     }
 
@@ -161,60 +180,61 @@ data class AndroidApp(
             val minROM = jsonObject.getString("minROM")
             val updateInfo = jsonObject.getString("updateInfo")
             val lastUpdateTime = jsonObject.getLong("lastUpdateTime")
-            val showArray = jsonObject.getJSONArray("show")
-            val list: MutableList<String> = mutableListOf()
-            for (i in showArray) {
-                list.add((i as JSONObject).toString())
-            }
             return AndroidApp(
                 packageName,
                 latestVersion,
                 packageSize,
                 minROM,
                 updateInfo,
-                lastUpdateTime,
-                list
+                lastUpdateTime
             )
         }
     }
 }
 
-data class WebApp(
-    val appUrl: String,//应用地址
-    val show: MutableList<String>
-) : IJson {
+class WebApp() : IJson {
     override fun toJsonObject(): JSONObject {
         val j = JSONObject()
-        j["appUrl"] = appUrl
-        j["show"] = show
         return j
     }
 
     companion object {
         fun fromJson(json: String) = fromJson(JSON.parseObject(json))
         fun fromJson(jsonObject: JSONObject): WebApp {
-            val appUrl = jsonObject.getString("appUrl")
-            val showArray = jsonObject.getJSONArray("show")
-            val list: MutableList<String> = mutableListOf()
-            for (i in showArray) {
-                list.add((i as String).toString())
-            }
-            return WebApp(
-                appUrl,
-                list
-            )
+            return WebApp()
         }
     }
 }
 
 data class iOSApp(
-    val appUrl: String,//应用地址
-    val show: MutableList<String>
+    /**
+     * 应用包名
+     */
+    val packageName: String,
+    /**
+     * 最新版本
+     */
+    val latestVersion: String? = "",
+    /**
+     * 软件大小
+     */
+    val packageSize: String? = "",
+    /**
+     * 更新信息
+     */
+    val updateInfo: String? = "",
+    /**
+     * 更新时间
+     */
+    val lastUpdateTime: Long = 0L,
 ) : IJson {
     override fun toJsonObject(): JSONObject {
         val j = JSONObject()
-        j["appUrl"] = appUrl
-        j["show"] = show
+        j["packageName"] = packageName
+        j["latestVersion"] = latestVersion
+        j["packageSize"] = packageSize
+        j["updateInfo"] = updateInfo
+        j["lastUpdateTime"] = lastUpdateTime
         return j
     }
 
@@ -223,28 +243,51 @@ data class iOSApp(
             fromJson(JSON.parseObject(json))
 
         fun fromJson(jsonObject: JSONObject): iOSApp {
-            val appUrl = jsonObject.getString("appUrl")
-            val showArray = jsonObject.getJSONArray("show")
-            val list: MutableList<String> = mutableListOf()
-            for (i in showArray) {
-                list.add((i as JSONObject).toString())
-            }
+            val packageName = jsonObject.getString("packageName")
+            val latestVersion = jsonObject.getString("latestVersion")
+            val packageSize = jsonObject.getString("packageSize")
+            val updateInfo = jsonObject.getString("updateInfo")
+            val lastUpdateTime = jsonObject.getLong("lastUpdateTime")
             return iOSApp(
-                appUrl,
-                list
+                packageName,
+                latestVersion,
+                packageSize,
+                updateInfo,
+                lastUpdateTime
             )
         }
     }
 }
 
 data class MacApp(
-    val appUrl: String,//应用地址
-    val show: MutableList<String>
+    /**
+     * 应用包名
+     */
+    val packageName: String,
+    /**
+     * 最新版本
+     */
+    val latestVersion: String? = "",
+    /**
+     * 软件大小
+     */
+    val packageSize: String? = "",
+    /**
+     * 更新信息
+     */
+    val updateInfo: String? = "",
+    /**
+     * 更新时间
+     */
+    val lastUpdateTime: Long = 0L,
 ) : IJson {
     override fun toJsonObject(): JSONObject {
         val j = JSONObject()
-        j["appUrl"] = appUrl
-        j["show"] = show
+        j["packageName"] = packageName
+        j["latestVersion"] = latestVersion
+        j["packageSize"] = packageSize
+        j["updateInfo"] = updateInfo
+        j["lastUpdateTime"] = lastUpdateTime
         return j
     }
 
@@ -253,28 +296,51 @@ data class MacApp(
             fromJson(JSON.parseObject(json))
 
         fun fromJson(jsonObject: JSONObject): MacApp {
-            val appUrl = jsonObject.getString("appUrl")
-            val showArray = jsonObject.getJSONArray("show")
-            val list: MutableList<String> = mutableListOf()
-            for (i in showArray) {
-                list.add((i as JSONObject).toString())
-            }
+            val packageName = jsonObject.getString("packageName")
+            val latestVersion = jsonObject.getString("latestVersion")
+            val packageSize = jsonObject.getString("packageSize")
+            val updateInfo = jsonObject.getString("updateInfo")
+            val lastUpdateTime = jsonObject.getLong("lastUpdateTime")
             return MacApp(
-                appUrl,
-                list
+                packageName,
+                latestVersion,
+                packageSize,
+                updateInfo,
+                lastUpdateTime
             )
         }
     }
 }
 
 data class LinuxApp(
-    val appUrl: String,//应用地址
-    val show: MutableList<String>
+    /**
+     * 应用包名
+     */
+    val packageName: String,
+    /**
+     * 最新版本
+     */
+    val latestVersion: String? = "",
+    /**
+     * 软件大小
+     */
+    val packageSize: String? = "",
+    /**
+     * 更新信息
+     */
+    val updateInfo: String? = "",
+    /**
+     * 更新时间
+     */
+    val lastUpdateTime: Long = 0L,
 ) : IJson {
     override fun toJsonObject(): JSONObject {
         val j = JSONObject()
-        j["appUrl"] = appUrl
-        j["show"] = show
+        j["packageName"] = packageName
+        j["latestVersion"] = latestVersion
+        j["packageSize"] = packageSize
+        j["updateInfo"] = updateInfo
+        j["lastUpdateTime"] = lastUpdateTime
         return j
     }
 
@@ -283,28 +349,51 @@ data class LinuxApp(
             fromJson(JSON.parseObject(json))
 
         fun fromJson(jsonObject: JSONObject): LinuxApp {
-            val appUrl = jsonObject.getString("appUrl")
-            val showArray = jsonObject.getJSONArray("show")
-            val list: MutableList<String> = mutableListOf()
-            for (i in showArray) {
-                list.add((i as JSONObject).toString())
-            }
+            val packageName = jsonObject.getString("packageName")
+            val latestVersion = jsonObject.getString("latestVersion")
+            val packageSize = jsonObject.getString("packageSize")
+            val updateInfo = jsonObject.getString("updateInfo")
+            val lastUpdateTime = jsonObject.getLong("lastUpdateTime")
             return LinuxApp(
-                appUrl,
-                list
+                packageName,
+                latestVersion,
+                packageSize,
+                updateInfo,
+                lastUpdateTime
             )
         }
     }
 }
 
 data class WindowsApp(
-    val appUrl: String,//应用地址
-    val show: MutableList<String>
+    /**
+     * 应用包名
+     */
+    val packageName: String,
+    /**
+     * 最新版本
+     */
+    val latestVersion: String? = "",
+    /**
+     * 软件大小
+     */
+    val packageSize: String? = "",
+    /**
+     * 更新信息
+     */
+    val updateInfo: String? = "",
+    /**
+     * 更新时间
+     */
+    val lastUpdateTime: Long = 0L,
 ) : IJson {
     override fun toJsonObject(): JSONObject {
         val j = JSONObject()
-        j["appUrl"] = appUrl
-        j["show"] = show
+        j["packageName"] = packageName
+        j["latestVersion"] = latestVersion
+        j["packageSize"] = packageSize
+        j["updateInfo"] = updateInfo
+        j["lastUpdateTime"] = lastUpdateTime
         return j
     }
 
@@ -313,15 +402,17 @@ data class WindowsApp(
             fromJson(JSON.parseObject(json))
 
         fun fromJson(jsonObject: JSONObject): WindowsApp {
-            val appUrl = jsonObject.getString("appUrl")
-            val showArray = jsonObject.getJSONArray("show")
-            val list: MutableList<String> = mutableListOf()
-            for (i in showArray) {
-                list.add((i as JSONObject).toString())
-            }
+            val packageName = jsonObject.getString("packageName")
+            val latestVersion = jsonObject.getString("latestVersion")
+            val packageSize = jsonObject.getString("packageSize")
+            val updateInfo = jsonObject.getString("updateInfo")
+            val lastUpdateTime = jsonObject.getLong("lastUpdateTime")
             return WindowsApp(
-                appUrl,
-                list
+                packageName,
+                latestVersion,
+                packageSize,
+                updateInfo,
+                lastUpdateTime
             )
         }
     }
