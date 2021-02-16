@@ -338,9 +338,12 @@ public interface RouterHub {
     String USER_MailEditorActivity = USER + "/MailEditorActivity";
     String USER_SendMailActivity = USER + "/SendMailActivity";
     String USER_SendItemActivity = USER + "/SendItemActivity";
-    String USER_CubeEditorActivity = USER + "/CubeEditorActivity";
+    String USER_SendCubeActivity = USER + "/SendCubeActivity";
     String USER_CubeSkillEditorActivity = USER + "/CubeSkillEditorActivity";
     String USER_CubeStarEditorActivity = USER + "/CubeStarEditorActivity";
+    String USER_CubeRolesEditorActivity = USER + "/CubeRolesEditorActivity";
+    String USER_CubeAttrEditorActivity = USER + "/CubeAttrEditorActivity";
+    String USER_CubeSettingEditorActivity = USER + "/CubeSettingEditorActivity";
 
     String USER_AllAuthActivity = USER + "/AllAuthActivity";
     String USER_AllForumActivity = USER + "/AllForumActivity";

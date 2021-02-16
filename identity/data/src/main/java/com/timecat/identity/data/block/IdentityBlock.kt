@@ -14,8 +14,6 @@ import com.timecat.identity.data.block.type.IdentityType
  * @usage null
  */
 data class IdentityBlock(
-    @IdentityType
-    val type: Int = IDENTITY_Base,
     val structure: JSONObject = JSONObject(),
     /**
      * 媒体域
@@ -40,10 +38,9 @@ data class IdentityBlock(
             val atScope: JSONObject? = jsonObject.getJSONObject("atScope")
             val content = jsonObject.getJSONObject("content")
             val header = jsonObject.getJSONObject("header") ?: PageHeader().toJsonObject()
-            val type = jsonObject.getInteger("type")
-            val structure = jsonObject.getJSONObject("structure")
+            val structure = jsonObject.getJSONObject("structure") ?: JSONObject()
             return IdentityBlock(
-                type, structure,
+                structure,
                 mediaScope?.let { AttachmentTail.fromJson(it) },
                 topicScope?.let { TopicScope.fromJson(it) },
                 atScope?.let { AtScope.fromJson(it) },
@@ -55,7 +52,6 @@ data class IdentityBlock(
 
     override fun toJsonObject(): JSONObject {
         val jsonObject = JSONObject()
-        jsonObject["type"] = type
         jsonObject["structure"] = structure
         jsonObject["header"] = header.toJsonObject()
         content?.let { jsonObject["content"] = it.toJsonObject() }
