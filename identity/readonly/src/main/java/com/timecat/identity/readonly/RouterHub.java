@@ -490,6 +490,10 @@ public interface RouterHub {
     String GLOBAL_HabitService = GLOBAL + "time" + SERVICE + "/HabitServiceImpl";
     String GLOBAL_PictureBedService = GLOBAL + "plugin" + SERVICE + "/PictureBedServiceImpl";
     String GLOBAL_PluginService = GLOBAL + "plugin" + SERVICE + "/PluginServiceImpl";
+    String GLOBAL_FileContainerService = GLOBAL + "file" + SERVICE + "/FileContainerServiceImpl";
+    String GLOBAL_OnlineContainerService = GLOBAL + "file" + SERVICE + "/OnlineContainerServiceImpl";
+    String GLOBAL_BrowserContainerService = GLOBAL + "file" + SERVICE + "/BrowserContainerServiceImpl";
+    String GLOBAL_ReaderContainerService = GLOBAL + "file" + SERVICE + "/ReaderContainerServiceImpl";
 
     String GLOBAL_TaskFloatService = GLOBAL + "floatview_task" + SERVICE + "/TaskFloatServiceImpl";
     String GLOBAL_NoteFloatService = GLOBAL + "floatview_note" + SERVICE + "/NoteFloatServiceImpl";

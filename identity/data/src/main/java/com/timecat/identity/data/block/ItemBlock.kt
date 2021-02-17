@@ -35,7 +35,7 @@ data class ItemBlock(
             val mediaScope: JSONObject? = jsonObject.getJSONObject("mediaScope")
             val topicScope: JSONObject? = jsonObject.getJSONObject("topicScope")
             val atScope: JSONObject? = jsonObject.getJSONObject("atScope")
-            val content = jsonObject.getJSONObject("content")
+            val content: JSONObject? = jsonObject.getJSONObject("content")
             val header = jsonObject.getJSONObject("header") ?: PageHeader().toJsonObject()
             val structure = jsonObject.getJSONObject("structure")
             return ItemBlock(
@@ -111,22 +111,25 @@ data class PackageItemBlock(
  * 数值
  */
 data class DataItemBlock(
+    val tableName: String,
     val where: String,
     val num: Long = 0,
 ) : IJson {
     companion object {
         fun fromJson(json: String) = fromJson(JSON.parseObject(json))
         fun fromJson(jsonObject: JSONObject): DataItemBlock {
+            val tableName = jsonObject.getString("tableName")
             val where = jsonObject.getString("where")
             val num = jsonObject.getLong("num")
             return DataItemBlock(
-                where, num,
+                tableName, where, num,
             )
         }
     }
 
     override fun toJsonObject(): JSONObject {
         val jsonObject = JSONObject()
+        jsonObject["tableName"] = tableName
         jsonObject["where"] = where
         jsonObject["num"] = num
         return jsonObject
@@ -191,7 +194,7 @@ data class CubeItemBlock(
     companion object {
         fun fromJson(json: String) = fromJson(JSON.parseObject(json))
         fun fromJson(jsonObject: JSONObject): CubeItemBlock {
-            val uuid = jsonObject.getString("type")
+            val uuid = jsonObject.getString("uuid")
             return CubeItemBlock(
                 uuid
             )
