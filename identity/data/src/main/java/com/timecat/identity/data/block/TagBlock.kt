@@ -2,10 +2,7 @@ package com.timecat.identity.data.block
 
 import com.alibaba.fastjson.JSON
 import com.alibaba.fastjson.JSONObject
-import com.timecat.identity.data.base.AttachmentTail
-import com.timecat.identity.data.base.IJson
-import com.timecat.identity.data.base.NoteBody
-import com.timecat.identity.data.base.PageHeader
+import com.timecat.identity.data.base.*
 
 /**
  * @author 林学渊
@@ -18,20 +15,26 @@ data class TagBlock(
     val content: NoteBody = NoteBody(),
     val header: PageHeader? = null,
     /**
-     * 媒体域
+     * 话题域
      */
-    val mediaScope: AttachmentTail? = null,
-): IJson {
+    val topicScope: TopicScope? = null,
+    /**
+     * @ 域
+     */
+    val atScope: AtScope? = null,
+) : IJson {
     companion object {
         fun fromJson(json: String) = fromJson(JSON.parseObject(json))
         fun fromJson(jsonObject: JSONObject): TagBlock {
             val content = jsonObject.getJSONObject("content") ?: NoteBody().toJsonObject()
-            val mediaScope: JSONObject? = jsonObject.getJSONObject("mediaScope")
+            val topicScope: JSONObject? = jsonObject.getJSONObject("topicScope")
+            val atScope: JSONObject? = jsonObject.getJSONObject("atScope")
             val header: JSONObject? = jsonObject.getJSONObject("header")
             return TagBlock(
                 NoteBody.fromJson(content),
                 header?.let { PageHeader.fromJson(it) },
-                mediaScope?.let { AttachmentTail.fromJson(it) },
+                topicScope?.let { TopicScope.fromJson(it) },
+                atScope?.let { AtScope.fromJson(it) },
             )
         }
     }
@@ -39,7 +42,8 @@ data class TagBlock(
     override fun toJsonObject(): JSONObject {
         val jsonObject = JSONObject()
         jsonObject["content"] = content.toJsonObject()
-        mediaScope?.let { jsonObject["mediaScope"] = it.toJsonObject() }
+        topicScope?.let { jsonObject["topicScope"] = it.toJsonObject() }
+        atScope?.let { jsonObject["atScope"] = it.toJsonObject() }
         header?.let { jsonObject["header"] = it.toJsonObject() }
         return jsonObject
     }
