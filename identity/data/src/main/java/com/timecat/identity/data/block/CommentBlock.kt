@@ -15,7 +15,7 @@ import com.timecat.identity.data.base.*
 //region 高级结构：评论
 // 评论
 data class CommentBlock(
-    val structure: JSONObject = JSONObject(),
+    val structure: JSONObject? = null,
     val content: NoteBody? = null,
     /**
      * 媒体域
@@ -37,7 +37,7 @@ data class CommentBlock(
     companion object {
         fun fromJson(json: String) = fromJson(JSON.parseObject(json))
         fun fromJson(jsonObject: JSONObject): CommentBlock {
-            val structure = jsonObject.getJSONObject("structure")
+            val structure: JSONObject? = jsonObject.getJSONObject("structure")
             val content: JSONObject? = jsonObject.getJSONObject("content")
             val mediaScope: JSONObject? = jsonObject.getJSONObject("mediaScope")
             val topicScope: JSONObject? = jsonObject.getJSONObject("topicScope")
@@ -56,7 +56,7 @@ data class CommentBlock(
 
     override fun toJsonObject(): JSONObject {
         val jsonObject = JSONObject()
-        jsonObject["structure"] = structure
+        structure?.let { jsonObject["structure"] = it }
         content?.let { jsonObject["content"] = it.toJsonObject() }
         mediaScope?.let { jsonObject["mediaScope"] = it.toJsonObject() }
         topicScope?.let { jsonObject["topicScope"] = it.toJsonObject() }
@@ -84,16 +84,23 @@ const val COMMENT_TEXT: Int = 3 // 划线、本章说
 const val COMMENT_VIDEO: Int = 4 // 弹幕
 
 // 普通评论或回复
-class SimpleComment() : IJson {
+class ReplyComment(
+    val replyUserId: String,
+    val replyUserName: String,
+) : IJson {
     companion object {
         fun fromJson(json: String) = fromJson(JSON.parseObject(json))
-        fun fromJson(jsonObject: JSONObject): SimpleComment {
-            return SimpleComment()
+        fun fromJson(jsonObject: JSONObject): ReplyComment {
+            val replyUserId = jsonObject.getString("replyUserId")
+            val replyUserName = jsonObject.getString("replyUserName")
+            return ReplyComment(replyUserId, replyUserName)
         }
     }
 
     override fun toJsonObject(): JSONObject {
         val jsonObject = JSONObject()
+        jsonObject["replyUserId"] = replyUserId
+        jsonObject["replyUserName"] = replyUserName
         return jsonObject
     }
 }
