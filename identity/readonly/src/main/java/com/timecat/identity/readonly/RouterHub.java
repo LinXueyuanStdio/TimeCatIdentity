@@ -495,6 +495,8 @@ public interface RouterHub {
     String GLOBAL_BrowserContainerService = GLOBAL + "file" + SERVICE + "/BrowserContainerServiceImpl";
     String GLOBAL_ReaderContainerService = GLOBAL + "file" + SERVICE + "/ReaderContainerServiceImpl";
     String GLOBAL_GitContainerService = GLOBAL + "git" + SERVICE + "/GitContainerServiceImpl";
+    String GLOBAL_RecordCategoryContainerService = GLOBAL + "master" + SERVICE + "/RecordCategoryContainerServiceImpl";
+    String GLOBAL_ContainerCreatorService = GLOBAL + "master" + SERVICE + "/ContainerCreatorServiceImpl";
 
     String GLOBAL_TaskFloatService = GLOBAL + "floatview_task" + SERVICE + "/TaskFloatServiceImpl";
     String GLOBAL_NoteFloatService = GLOBAL + "floatview_note" + SERVICE + "/NoteFloatServiceImpl";
