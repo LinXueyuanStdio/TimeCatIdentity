@@ -32,6 +32,9 @@ const val MEDIA_FILE = 5
 const val MEDIA_ModuleFile = 6 // 文件路径
 const val MEDIA_ModuleGit = 7 // Git
 const val MEDIA_ModuleReader = 8 // 阅读
+const val MEDIA_ModuleBrowser = 11 // 浏览器
+const val MEDIA_ModuleOnline = 12 // 在线
+const val MEDIA_ModuleCategory = 13 // 分类
 
 const val MEDIA_DIRECTORY = 9
 const val MEDIA_BLOCK = 10
