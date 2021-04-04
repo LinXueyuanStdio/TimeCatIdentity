@@ -235,6 +235,9 @@ public interface RouterHub {
     String MASTER_BookListFragment = MASTER + FRAGMENT + "/BookListFragment";
     String MASTER_PageListFragment = MASTER + FRAGMENT + "/PageListFragment";
 
+    String MASTER_BrowserFragment = MASTER + FRAGMENT + "/BrowserFragment";
+    String MASTER_IncognitoFragment = MASTER + FRAGMENT + "/IncognitoFragment";
+
     String MASTER_SelfChatFragment = MASTER + "im" + FRAGMENT + "/SelfChatFragment";
     String MASTER_LocalChatFragment = MASTER + FRAGMENT + "/LocalChatFragment";
     String MASTER_IMLocalChatFragment = MASTER + FRAGMENT + "/what/IMLocalChatFragment";
