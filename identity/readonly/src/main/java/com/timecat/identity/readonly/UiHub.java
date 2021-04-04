@@ -8,9 +8,10 @@ package com.timecat.identity.readonly;
  * @usage null
  */
 public interface UiHub {
+    String UiSchema = "ui://";
     String BUTTON = "button";
     String CHECKBOX = "checkbox";
     String EDITTEXT = "edittext";
     String DRAWER_ITEM_MANAGER = "drawer_item_manager";
-    String MASTER_MainActivity_drawer_manager = RouterHub.MASTER_MainActivity + "/drawer_item_manager";
+    String MASTER_MainActivity_drawer_manager = UiSchema + RouterHub.MASTER_MainActivity + "/drawer_item_manager";
 }
