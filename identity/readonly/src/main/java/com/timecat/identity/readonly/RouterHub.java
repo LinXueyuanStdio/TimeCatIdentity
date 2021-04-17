@@ -247,6 +247,9 @@ public interface RouterHub {
     String MASTER_RecordSettingsActivity = MASTER + "org" + "/RecordSettingsActivity";
     String MASTER_RecordStatisticActivity = MASTER + "org" + "/StatisticActivity";
 
+    String MASTER_ManageSpaceActivity = MASTER + "/ManageSpaceActivity";
+    String MASTER_NewSpaceActivity = MASTER + "/NewSpaceActivity";
+    String MASTER_EditSpaceActivity = MASTER + "/EditSpaceActivity";
     String MASTER_NewDatabaseActivity = MASTER + "/NewDatabaseActivity";
     String MASTER_EditDatabaseActivity = MASTER + "/EditDatabaseActivity";
     String MASTER_NewContainerActivity = MASTER + "/NewContainerActivity";
