@@ -531,6 +531,7 @@ public interface RouterHub {
 
     //region artifact 造物
     String ARTIFACT_MainActivity = ARTIFACT + "/MainActivity";
+    String ARTIFACT_SettingActivity = ARTIFACT + "/SettingActivity";
     //endregion
 
     // region 详情页
