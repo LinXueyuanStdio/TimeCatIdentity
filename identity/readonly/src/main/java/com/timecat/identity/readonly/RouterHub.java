@@ -382,6 +382,9 @@ public interface RouterHub {
     String USER_CubeItemEditorActivity = USER + "/CubeItemEditorActivity";
     String USER_TaskActivity = USER + "/TaskActivity";
     String USER_AllTaskActivity = USER + "/AllTaskActivity";
+    String USER_AllActivityActivity = USER + "/AllActivityActivity";
+    String USER_AllOwnActivityActivity = USER + "/AllOwnActivityActivity";
+    String USER_AllOwnTaskActivity = USER + "/AllOwnTaskActivity";
     String USER_AllItemActivity = USER + "/AllItemActivity";
     String USER_UrlActivityEditorActivity = USER + "/UrlActivityEditorActivity";
     String USER_TextUrlActivityEditorActivity = USER + "/TextUrlActivityEditorActivity";
