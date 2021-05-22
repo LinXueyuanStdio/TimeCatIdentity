@@ -385,6 +385,7 @@ public interface RouterHub {
     String USER_AllActivityActivity = USER + "/AllActivityActivity";
     String USER_AllOwnActivityActivity = USER + "/AllOwnActivityActivity";
     String USER_AllOwnTaskActivity = USER + "/AllOwnTaskActivity";
+    String USER_SendActivityActivity = USER + "/SendActivityActivity";
     String USER_AllItemActivity = USER + "/AllItemActivity";
     String USER_UrlActivityEditorActivity = USER + "/UrlActivityEditorActivity";
     String USER_TextUrlActivityEditorActivity = USER + "/TextUrlActivityEditorActivity";
@@ -444,6 +445,8 @@ public interface RouterHub {
     String SEARCH_SelectIdentityFragment = SEARCH + "/SelectIdentityFragment";
     String SEARCH_SelectRoleFragment = SEARCH + "/SelectRoleFragment";
     String SEARCH_SelectAppFragment = SEARCH + "/SelectAppFragment";
+    String SEARCH_SelectActivityFragment = SEARCH + "/SelectActivityFragment";
+    String SEARCH_SelectTaskFragment = SEARCH + "/SelectTaskFragment";
     String SEARCH_SelectMailFragment = SEARCH + "/SelectMailFragment";
     String SEARCH_SelectBlockFragment = SEARCH + "/SelectBlockFragment";
     //endregion
