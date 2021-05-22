@@ -63,14 +63,14 @@ data class ShopBlock(
 
 data class Good(
     var itemId: String,
-    var value: Float
+    var value: Long
 ) {
     companion object {
         fun fromJson(json: String) = fromJson(JSON.parseObject(json))
 
         fun fromJson(jsonObject: JSONObject): Good {
             val itemId = jsonObject.getString("itemId")
-            val value = jsonObject.getFloat("value")
+            val value = jsonObject.getLong("value")
             return Good(
                 itemId,
                 value,
