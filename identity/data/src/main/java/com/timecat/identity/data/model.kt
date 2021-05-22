@@ -2,6 +2,7 @@ package com.timecat.identity.data
 
 import com.alibaba.fastjson.JSONArray
 import com.alibaba.fastjson.JSONObject
+import com.timecat.identity.data.block.Good
 import com.timecat.identity.data.block.Reward
 import com.timecat.identity.data.block.TaskRule
 import com.timecat.identity.data.block.UpdateInfo
@@ -19,6 +20,10 @@ fun JSONObject.getUpdateInfoList(key: String): MutableList<UpdateInfo> {
 
 fun JSONObject.getStringList(key: String): MutableList<String> {
     return getJSONArray(key)?.toListString() ?: mutableListOf()
+}
+
+fun JSONObject.getGoodList(key: String): MutableList<Good> {
+    return getJSONArray(key)?.toGoodList() ?: mutableListOf()
 }
 fun JSONObject.getTaskRuleList(key: String): MutableList<TaskRule> {
     return getJSONArray(key)?.toTaskRuleList() ?: mutableListOf()
@@ -39,6 +44,13 @@ fun JSONArray.toListString(): MutableList<String> {
     val list: MutableList<String> = mutableListOf()
     for (i in this) {
         list.add((i as JSONObject).toString())
+    }
+    return list
+}
+fun JSONArray.toGoodList(): MutableList<Good> {
+    val list: MutableList<Good> = mutableListOf()
+    for (i in this) {
+        list.add(Good.fromJson(i as JSONObject))
     }
     return list
 }

@@ -1,11 +1,9 @@
 package com.timecat.identity.data.block
 
 import com.alibaba.fastjson.JSON
-import com.alibaba.fastjson.JSONArray
 import com.alibaba.fastjson.JSONObject
 import com.timecat.identity.data.base.*
-import com.timecat.identity.data.getStringList
-import com.timecat.identity.data.getUpdateInfoList
+import com.timecat.identity.data.getGoodList
 
 /**
  * @author 林学渊
@@ -63,25 +61,47 @@ data class ShopBlock(
     }
 }
 
+data class Good(
+    var itemId: String,
+    var value: Float
+) {
+    companion object {
+        fun fromJson(json: String) = fromJson(JSON.parseObject(json))
+
+        fun fromJson(jsonObject: JSONObject): Good {
+            val itemId = jsonObject.getString("itemId")
+            val value = jsonObject.getFloat("value")
+            return Good(
+                itemId,
+                value,
+            )
+        }
+    }
+}
+
 /**
  * 基础
  */
 data class BasicShopBlock(
-    val type: Int? = null,
+    val moneyId: String,
+    val goods: List<Good>
 ) : IJson {
     companion object {
         fun fromJson(json: String) = fromJson(JSON.parseObject(json))
         fun fromJson(jsonObject: JSONObject): BasicShopBlock {
-            val type = jsonObject.getInteger("type")
+            val money = jsonObject.getString("moneyId")
+            val goods = jsonObject.getGoodList("goods")
             return BasicShopBlock(
-                type
+                money,
+                goods
             )
         }
     }
 
     override fun toJsonObject(): JSONObject {
         val jsonObject = JSONObject()
-        jsonObject["type"] = type
+        jsonObject["moneyId"] = moneyId
+        jsonObject["goods"] = goods
         return jsonObject
     }
 }
