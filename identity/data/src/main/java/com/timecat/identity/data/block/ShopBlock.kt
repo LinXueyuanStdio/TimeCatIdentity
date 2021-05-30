@@ -63,7 +63,8 @@ data class ShopBlock(
 
 data class Good(
     var itemId: String,
-    var value: Long
+    var value: Long,
+    var max: Int,
 ) {
     companion object {
         fun fromJson(json: String) = fromJson(JSON.parseObject(json))
@@ -71,9 +72,11 @@ data class Good(
         fun fromJson(jsonObject: JSONObject): Good {
             val itemId = jsonObject.getString("itemId")
             val value = jsonObject.getLong("value")
+            val max = jsonObject.getInteger("max")
             return Good(
                 itemId,
                 value,
+                max,
             )
         }
     }

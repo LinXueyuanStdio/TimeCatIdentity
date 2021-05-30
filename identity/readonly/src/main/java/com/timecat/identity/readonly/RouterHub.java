@@ -370,6 +370,8 @@ public interface RouterHub {
     String USER_AllMailActivity = USER + "/AllMailActivity";
     String USER_AllOwnMailActivity = USER + "/AllOwnMailActivity";
     String USER_AllOwnCubeActivity = USER + "/AllOwnCubeActivity";
+    String USER_AllOwnShopActivity = USER + "/AllOwnShopActivity";
+    String USER_AllOwnItemActivity = USER + "/AllOwnItemActivity";
     String USER_AllShopActivity = USER + "/AllShopActivity";
     String USER_ShopEditorActivity = USER + "/ShopEditorActivity";
     String USER_GameHomeActivity = USER + "/GameHomeActivity";
@@ -410,7 +412,7 @@ public interface RouterHub {
     String USER_MailFragment = USER + FRAGMENT + "/MailFragment";
     String USER_OwnMailFragment = USER + FRAGMENT + "/OwnMailFragment";
     String USER_MailDetailFragment = USER + FRAGMENT + "/MailDetailFragment";
-    String USER_BagFragment = USER + FRAGMENT + "/BagFragment";
+    String USER_AllOwnItemFragment = USER + FRAGMENT + "/AllOwnItemFragment";
     String USER_ItemDetailFragment = USER + FRAGMENT + "/ItemDetailFragment";
     String USER_WorldFragment = USER + FRAGMENT + "/WorldFragment";
     String USER_ForumFragment = USER + FRAGMENT + "/ForumFragment";
@@ -427,9 +429,9 @@ public interface RouterHub {
     String USER_ActivityDoubleFragment = USER + FRAGMENT + "/ActivityDoubleFragment";
     String USER_ActivityGetBackFragment = USER + FRAGMENT + "/ActivityGetBackFragment";
     String USER_OwnItemDetailFragment = USER + FRAGMENT + "/OwnItemDetailFragment";
+    String USER_BuyItemFragment = USER + FRAGMENT + "/BuyItemFragment";
 
     String USER_GameHomeFragment = USER + FRAGMENT + "/GameHomeFragment";
-    String USER_BagActivity = USER + "/BagActivity";
     String USER_ShopActivity = USER + "/ShopActivity";
     String USER_CubeActivity = USER + "/CubeActivity";
     String USER_CardActivity = USER + "/CardActivity";
@@ -449,6 +451,7 @@ public interface RouterHub {
     String SEARCH_SelectTaskFragment = SEARCH + "/SelectTaskFragment";
     String SEARCH_SelectMailFragment = SEARCH + "/SelectMailFragment";
     String SEARCH_SelectBlockFragment = SEARCH + "/SelectBlockFragment";
+    String SEARCH_SelectItemFragment = SEARCH + "/SelectItemFragment";
     //endregion
 
     //region 小说
