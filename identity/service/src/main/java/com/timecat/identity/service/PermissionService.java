@@ -1,5 +1,7 @@
 package com.timecat.identity.service;
 
+import androidx.lifecycle.LifecycleOwner;
+
 /**
  * @author 林学渊
  * @email linxy59@mail2.sysu.edu.cn
@@ -16,8 +18,18 @@ public interface PermissionService {
     void validate(String permissionId, Callback callback);
 
     interface Callback {
+        /**
+         * 用户有这个权限
+         * 接受
+         */
         void onPass();
+
+        /**
+         * 用户没有这个权限
+         * 拒绝
+         */
+        void onReject();
     }
 
-    void initPermission();
+    void initPermission(LifecycleOwner owner);
 }
