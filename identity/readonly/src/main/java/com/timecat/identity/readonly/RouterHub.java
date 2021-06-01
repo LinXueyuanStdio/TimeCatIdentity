@@ -217,6 +217,8 @@ public interface RouterHub {
     String MASTER_SchedulesSupportWeekFragment = MASTER + FRAGMENT + "/SchedulesSupportWeekFragment";
     String MASTER_SchedulesSupportFlowFragment = MASTER + "org" + FRAGMENT + "/SchedulesSupportFlowFragment";
     String MASTER_SchedulesSupportYMWDFragment = MASTER + FRAGMENT + "/SchedulesSupportYMWDFragment";
+    String MASTER_ControllerFragment = MASTER + FRAGMENT + "/ControllerFragment";
+    String MASTER_StatisticFragment = MASTER + FRAGMENT + "/StatisticFragment";
 
 //    String MASTER_PlanDetailKanbanFragment = MASTER + FRAGMENT + "/PlanDetailKanbanFragment";
 //    String MASTER_PlanDetailKanbanFragment = MASTER + FRAGMENT + "/PlanDetailKanbanFragment";
