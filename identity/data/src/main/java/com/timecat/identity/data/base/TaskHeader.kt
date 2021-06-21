@@ -192,6 +192,7 @@ interface ITaskStatus : IStatus {
     fun isUnderWay(): Boolean = isStatusEnabled(TASK_UNDERWAY)
     fun isFavourite(): Boolean = isStatusEnabled(TASK_FAVOURITE)
     fun isDisableBackup(): Boolean = isStatusEnabled(TASK_DISABLE_BACKUP)
+    fun isTemplate(): Boolean = isStatusEnabled(TASK_TEMPLATE)
 
     fun setReadOnly(yes: Boolean) = updateStatus(TASK_READ_ONLY, yes)
     fun setFinished(yes: Boolean) = updateStatus(TASK_FINISH, yes)
@@ -210,6 +211,7 @@ interface ITaskStatus : IStatus {
     fun setUnderWay(yes: Boolean) = updateStatus(TASK_UNDERWAY, yes)
     fun setFavourite(yes: Boolean) = updateStatus(TASK_FAVOURITE, yes)
     fun setDisableBackup(yes: Boolean) = updateStatus(TASK_DISABLE_BACKUP, yes)
+    fun setTemplate(yes: Boolean) = updateStatus(TASK_TEMPLATE, yes)
 
     override fun statusDescription(): String {
         val stringBuilder = StringBuilder()
@@ -230,6 +232,7 @@ interface ITaskStatus : IStatus {
         stringBuilder.append(if (isUnderWay()) "将要开始 " else "")
         stringBuilder.append(if (isFavourite()) "喜欢 " else "")
         stringBuilder.append(if (isDisableBackup()) "禁用对此的备份 " else "")
+        stringBuilder.append(if (isTemplate()) "是模板 " else "")
         return stringBuilder.toString()
     }
 }
@@ -251,6 +254,7 @@ const val TASK_OPEN_REMINDER: Long = 0x00002000//打开提醒
 const val TASK_UNDERWAY: Long = 0x00004000//将要到来
 const val TASK_FAVOURITE: Long = 0x00008000//喜欢，收藏夹
 const val TASK_DISABLE_BACKUP: Long = 0x00010000//禁用对此模型的备份
+const val TASK_TEMPLATE: Long = 0x00020000//设为模板
 
 const val TASK_MODE_INIT: Long = TASK_UNDERWAY
 const val TASK_MODE_FALSE: Long = TASK_DELETE or TASK_FINISH or TASK_ARCHIVE
