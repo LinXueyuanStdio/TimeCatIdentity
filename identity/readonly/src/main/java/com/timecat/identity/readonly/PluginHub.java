@@ -7,13 +7,15 @@ package com.timecat.identity.readonly;
  * @description null
  * @usage null
  */
-public interface PluginManagerAgreement {
+public interface PluginHub {
     // 启动 activity
-    int FROM_ID_START_ACTIVITY = 1001;
+    long FROM_ID_START_ACTIVITY = 1001;
     // 启动服务
-    int FROM_ID_CALL_SERVICE = 1002;
+    long FROM_ID_CALL_SERVICE = 1002;
     // 图床加载
-    int FROM_ID_LOAD_PICTURE = 1003;
+    long FROM_ID_LOAD_PICTURE = 1003;
+    // 加载自定义 view
+    long FROM_ID_LOAD_VIEW = 1004;
 
     String KEY_PLUGIN_ZIP_PATH = "pluginZipPath";
     String KEY_ACTIVITY_CLASSNAME = "KEY_ACTIVITY_CLASSNAME";
