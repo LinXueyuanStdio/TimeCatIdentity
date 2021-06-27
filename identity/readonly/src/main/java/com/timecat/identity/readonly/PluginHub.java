@@ -17,11 +17,11 @@ public interface PluginHub {
     // 加载自定义 view
     long FROM_ID_LOAD_VIEW = 1004;
 
-    String KEY_PLUGIN_ZIP_PATH = "pluginZipPath";
-    String KEY_ACTIVITY_CLASSNAME = "KEY_ACTIVITY_CLASSNAME";
+    String KEY_PLUGIN_ZIP_PATH = "KEY_PLUGIN_ZIP_PATH";
     String KEY_PLUGIN_PART_KEY = "KEY_PLUGIN_PART_KEY";
 
-    String KEY_EXTRAS = "KEY_EXTRAS";
+    String KEY_CLASSNAME = "KEY_CLASSNAME"; //可能是Activity，也可能是Service
+    String KEY_EXTRAS = "KEY_EXTRAS";// intent.replaceExtra()
     String KEY_ACTION = "KEY_ACTION";// intent.setAction()
     String KEY_DATA = "KEY_DATA";// intent.setData()
 
