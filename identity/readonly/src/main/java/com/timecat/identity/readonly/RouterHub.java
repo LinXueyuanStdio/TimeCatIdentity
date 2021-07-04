@@ -517,6 +517,7 @@ public interface RouterHub {
     String GLOBAL_GitContainerService = GLOBAL + "git" + SERVICE + "/GitContainerServiceImpl";
     String GLOBAL_RecordCategoryContainerService = GLOBAL + "master" + SERVICE + "/RecordCategoryContainerServiceImpl";
     String GLOBAL_RecordDatabaseService = GLOBAL + "master" + SERVICE + "/RecordDatabaseServiceImpl";
+    String GLOBAL_RecordMessageService = GLOBAL + "master" + SERVICE + "/RecordMessageServiceImpl";
 
     String GLOBAL_ContainerCreatorService = GLOBAL + "master" + SERVICE + "/ContainerCreatorServiceImpl";
 
