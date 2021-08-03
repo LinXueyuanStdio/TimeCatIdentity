@@ -519,6 +519,13 @@ public interface RouterHub {
     String GLOBAL_RecordDatabaseService = GLOBAL + "master" + SERVICE + "/RecordDatabaseServiceImpl";
     String GLOBAL_RecordMessageService = GLOBAL + "master" + SERVICE + "/RecordMessageServiceImpl";
 
+    String GLOBAL_WorldMapService = GLOBAL + "master" + SERVICE + "/WorldMapServiceImpl";
+
+    String GLOBAL_LocalTocService = GLOBAL + "master" + SERVICE + "/LocalTocServiceImpl";
+    String GLOBAL_OnlineTocService = GLOBAL + "master" + SERVICE + "/OnlineTocServiceImpl";
+    String GLOBAL_OfficialOnlineTocService = GLOBAL + "master" + SERVICE + "/OfficialOnlineTocServiceImpl";
+    String GLOBAL_MineTocService = GLOBAL + "master" + SERVICE + "/MineTocServiceImpl";
+
     String GLOBAL_ContainerCreatorService = GLOBAL + "master" + SERVICE + "/ContainerCreatorServiceImpl";
 
     String GLOBAL_TaskFloatService = GLOBAL + "floatview_task" + SERVICE + "/TaskFloatServiceImpl";
