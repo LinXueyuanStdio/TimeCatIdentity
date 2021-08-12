@@ -499,14 +499,21 @@ public interface RouterHub {
     String GLOBAL_BuglyService = GLOBAL + "bugly" + SERVICE + "/BuglyServiceImpl";
     String GLOBAL_BlockService = GLOBAL + "block" + SERVICE + "/BlockServiceImpl";
     String GLOBAL_MtaService = GLOBAL + "mta" + SERVICE + "/MtaServiceImpl";
+
     String GLOBAL_MonitorService = GLOBAL + "monitor" + SERVICE + "/MonitorServiceImpl";
+
     String GLOBAL_BookShelfService = GLOBAL + "book" + SERVICE + "/BookShelfServiceImpl";
+
     String GLOBAL_UserService = GLOBAL + "user" + SERVICE + "/UserServiceImpl";
     String GLOBAL_ImageUploadService = GLOBAL + "user" + SERVICE + "/ImageUploadServiceImpl";
     String GLOBAL_ForumService = GLOBAL + "user" + SERVICE + "/ForumServiceImpl";
     String GLOBAL_PermissionService = GLOBAL + "user" + SERVICE + "/PermissionServiceImpl";
+    String GLOBAL_UserDetailService = GLOBAL + "user" + SERVICE + "/UserDetailServiceImpl";
+    String GLOBAL_BlockDetailService = GLOBAL + "user" + SERVICE + "/BlockDetailServiceImpl";
+
     String GLOBAL_ChangeReminderService = GLOBAL + "time" + SERVICE + "/ChangeReminderServiceImpl";
     String GLOBAL_HabitService = GLOBAL + "time" + SERVICE + "/HabitServiceImpl";
+
     String GLOBAL_PictureBedService = GLOBAL + "plugin" + SERVICE + "/PictureBedServiceImpl";
     String GLOBAL_PluginService = GLOBAL + "plugin" + SERVICE + "/PluginServiceImpl";
 
@@ -514,7 +521,9 @@ public interface RouterHub {
     String GLOBAL_OnlineContainerService = GLOBAL + "file" + SERVICE + "/OnlineContainerServiceImpl";
     String GLOBAL_BrowserContainerService = GLOBAL + "file" + SERVICE + "/BrowserContainerServiceImpl";
     String GLOBAL_ReaderContainerService = GLOBAL + "file" + SERVICE + "/ReaderContainerServiceImpl";
+
     String GLOBAL_GitContainerService = GLOBAL + "git" + SERVICE + "/GitContainerServiceImpl";
+
     String GLOBAL_RecordCategoryContainerService = GLOBAL + "master" + SERVICE + "/RecordCategoryContainerServiceImpl";
     String GLOBAL_RecordDatabaseService = GLOBAL + "master" + SERVICE + "/RecordDatabaseServiceImpl";
     String GLOBAL_RecordMessageService = GLOBAL + "master" + SERVICE + "/RecordMessageServiceImpl";
@@ -522,9 +531,9 @@ public interface RouterHub {
     String GLOBAL_WorldMapService = GLOBAL + "master" + SERVICE + "/WorldMapServiceImpl";
 
     String GLOBAL_LocalTocService = GLOBAL + "master" + SERVICE + "/LocalTocServiceImpl";
-    String GLOBAL_OnlineTocService = GLOBAL + "master" + SERVICE + "/OnlineTocServiceImpl";
-    String GLOBAL_OfficialOnlineTocService = GLOBAL + "master" + SERVICE + "/OfficialOnlineTocServiceImpl";
-    String GLOBAL_MineTocService = GLOBAL + "master" + SERVICE + "/MineTocServiceImpl";
+    String GLOBAL_OnlineTocService = GLOBAL + "user" + SERVICE + "/OnlineTocServiceImpl";
+    String GLOBAL_OfficialOnlineTocService = GLOBAL + "user" + SERVICE + "/OfficialOnlineTocServiceImpl";
+    String GLOBAL_MineTocService = GLOBAL + "user" + SERVICE + "/MineTocServiceImpl";
 
     String GLOBAL_ContainerCreatorService = GLOBAL + "master" + SERVICE + "/ContainerCreatorServiceImpl";
 

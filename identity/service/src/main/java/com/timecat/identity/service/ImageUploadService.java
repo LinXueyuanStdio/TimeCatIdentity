@@ -14,10 +14,4 @@ import androidx.annotation.Nullable;
  */
 public interface ImageUploadService {
     void upload(@NonNull Activity activity, @NonNull String path, @Nullable UploadCallback uploadCallback);
-
-    interface UploadCallback {
-        void onSuccess(@NonNull String url);
-
-        void onFail(@NonNull String e);
-    }
 }
