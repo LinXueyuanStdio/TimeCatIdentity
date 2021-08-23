@@ -84,6 +84,7 @@ const val BLOCK_ROLE: Int = 29 // 角色<<<<云端>>>>
 const val BLOCK_ITEM: Int = 30 // 物品<<<<云端>>>>
 const val BLOCK_MAIL: Int = 31 // 游戏邮件<<<<云端>>>>
 const val BLOCK_SHOP: Int = 32 // 商店<<<<云端>>>>
+const val BLOCK_SPACE: Int = 33 // 超空间<<<<云端>>>>
 
 //------
-const val BLOCK_NEXT: Int = 33 // 类型总数
+const val BLOCK_NEXT: Int = 34 // 类型总数
