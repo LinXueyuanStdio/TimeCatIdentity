@@ -489,7 +489,6 @@ public interface RouterHub {
 
     //region global service 服务
     String GLOBAL_WindowServiceImpl = GLOBAL + "controller" + SERVICE + "/WindowService";
-    String GLOBAL_WidgetServiceImpl = GLOBAL + "master" + SERVICE + "/WidgetService";
     String GLOBAL_NotificationServiceImpl = GLOBAL + SERVICE + "/NotificationService";
     String GLOBAL_TileServiceImpl = GLOBAL + SERVICE + "/TileService";
     String GLOBAL_BubbleServiceImpl = GLOBAL + SERVICE + "/BubbleService";
@@ -511,6 +510,10 @@ public interface RouterHub {
     String GLOBAL_UserDetailService = GLOBAL + "user" + SERVICE + "/UserDetailServiceImpl";
     String GLOBAL_BlockDetailService = GLOBAL + "user" + SERVICE + "/BlockDetailServiceImpl";
 
+    String GLOBAL_OnlineTocService = GLOBAL + "user" + SERVICE + "/OnlineTocServiceImpl";
+    String GLOBAL_OfficialOnlineTocService = GLOBAL + "user" + SERVICE + "/OfficialOnlineTocServiceImpl";
+    String GLOBAL_MineTocService = GLOBAL + "user" + SERVICE + "/MineTocServiceImpl";
+
     String GLOBAL_ChangeReminderService = GLOBAL + "time" + SERVICE + "/ChangeReminderServiceImpl";
     String GLOBAL_HabitService = GLOBAL + "time" + SERVICE + "/HabitServiceImpl";
 
@@ -524,16 +527,14 @@ public interface RouterHub {
 
     String GLOBAL_GitContainerService = GLOBAL + "git" + SERVICE + "/GitContainerServiceImpl";
 
+    String GLOBAL_WidgetServiceImpl = GLOBAL + "master" + SERVICE + "/WidgetService";
     String GLOBAL_RecordCategoryContainerService = GLOBAL + "master" + SERVICE + "/RecordCategoryContainerServiceImpl";
     String GLOBAL_RecordDatabaseService = GLOBAL + "master" + SERVICE + "/RecordDatabaseServiceImpl";
     String GLOBAL_RecordMessageService = GLOBAL + "master" + SERVICE + "/RecordMessageServiceImpl";
+    String GLOBAL_LocalContainerService = GLOBAL + "master" + SERVICE + "/LocalContainerServiceImpl";
 
     String GLOBAL_WorldMapService = GLOBAL + "master" + SERVICE + "/WorldMapServiceImpl";
-
     String GLOBAL_LocalTocService = GLOBAL + "master" + SERVICE + "/LocalTocServiceImpl";
-    String GLOBAL_OnlineTocService = GLOBAL + "user" + SERVICE + "/OnlineTocServiceImpl";
-    String GLOBAL_OfficialOnlineTocService = GLOBAL + "user" + SERVICE + "/OfficialOnlineTocServiceImpl";
-    String GLOBAL_MineTocService = GLOBAL + "user" + SERVICE + "/MineTocServiceImpl";
 
     String GLOBAL_ContainerCreatorService = GLOBAL + "master" + SERVICE + "/ContainerCreatorServiceImpl";
 
