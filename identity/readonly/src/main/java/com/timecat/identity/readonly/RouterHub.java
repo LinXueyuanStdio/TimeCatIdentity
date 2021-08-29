@@ -532,8 +532,8 @@ public interface RouterHub {
     String GLOBAL_RecordDatabaseService = GLOBAL + "master" + SERVICE + "/RecordDatabaseServiceImpl";
     String GLOBAL_RecordMessageService = GLOBAL + "master" + SERVICE + "/RecordMessageServiceImpl";
     String GLOBAL_RecordButtonService = GLOBAL + "master" + SERVICE + "/RecordButtonServiceImpl";
-    String GLOBAL_RecordRunnerButtonService = GLOBAL + "master" + SERVICE + "/RecordRunnerButtonServiceImpl";
-    String GLOBAL_RecordAbsoluteRunnerButtonService = GLOBAL + "master" + SERVICE + "/RecordAbsoluteRunnerButtonServiceImpl";
+    String GLOBAL_RecordButtonRunnerService = GLOBAL + "master" + SERVICE + "/RecordButtonRunnerServiceImpl";
+    String GLOBAL_RecordButtonLoopRunnerService = GLOBAL + "master" + SERVICE + "/RecordButtonLoopRunnerServiceImpl";
     String GLOBAL_LocalContainerService = GLOBAL + "master" + SERVICE + "/LocalContainerServiceImpl";
 
     String GLOBAL_WorldMapService = GLOBAL + "master" + SERVICE + "/WorldMapServiceImpl";
