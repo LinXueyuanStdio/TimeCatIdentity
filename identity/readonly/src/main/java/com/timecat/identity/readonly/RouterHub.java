@@ -527,6 +527,9 @@ public interface RouterHub {
 
     String GLOBAL_GitContainerService = GLOBAL + "git" + SERVICE + "/GitContainerServiceImpl";
 
+    String GLOBAL_PluginContainerService = GLOBAL + "plugin" + SERVICE + "/PluginContainerServiceImpl";
+    String GLOBAL_PluginApiContainerService = GLOBAL + "plugin" + SERVICE + "/PluginApiContainerServiceImpl";
+
     String GLOBAL_WidgetServiceImpl = GLOBAL + "master" + SERVICE + "/WidgetService";
     String GLOBAL_RecordCategoryContainerService = GLOBAL + "master" + SERVICE + "/RecordCategoryContainerServiceImpl";
     String GLOBAL_RecordDatabaseService = GLOBAL + "master" + SERVICE + "/RecordDatabaseServiceImpl";
@@ -630,6 +633,10 @@ public interface RouterHub {
     //region plugin
     String PLUGIN_PluginListActivity = PLUGIN + "user" + "/PluginListActivity";
     String PLUGIN_PictureBedActivity = PLUGIN + "/PictureBedActivity";
+    String PLUGIN_PluginCloudActivity = PLUGIN + "/PluginCloudActivity";
+    String PLUGIN_PluginDownloadActivity = PLUGIN + "/PluginDownloadActivity";
+    String PLUGIN_PluginRouterActivity = PLUGIN + "/PluginRouterActivity";
+    String PLUGIN_PluginUpdateActivity = PLUGIN + "/PluginUpdateActivity";
     //endregion
 
     //region 文件浏览器
