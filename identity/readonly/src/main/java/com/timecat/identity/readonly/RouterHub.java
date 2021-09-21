@@ -130,6 +130,14 @@ public interface RouterHub {
     String APP_ExportActivity = HOST_APP + "scarlet" + "/ExportActivity";
     String APP_AutoExportActivity = HOST_APP + "scarlet" + "/AutoExportActivity";
 
+    //工具-通知
+    String APP_SettingNotifyActivity = HOST_APP + "/SettingNotifyActivity";
+    String APP_SettingNotifyBubbleActivity = HOST_APP + "/SettingNotifyBubbleActivity";
+    String APP_SettingNotifyDanmakuActivity = HOST_APP + "/SettingNotifyDanmakuActivity";
+    String APP_SettingNotifyIconActivity = HOST_APP + "/SettingNotifyIconActivity";
+    String APP_SettingNotifyLineActivity = HOST_APP + "/SettingNotifyLineActivity";
+    String APP_SettingNotifyStickyActivity = HOST_APP + "/SettingNotifyStickyActivity";
+
     //工具
     String APP_SettingNotificationActivity = HOST_APP + "/SettingNotificationActivity";
     String APP_SettingTimeCatActivity = HOST_APP + "/SettingTimeCatActivity";
