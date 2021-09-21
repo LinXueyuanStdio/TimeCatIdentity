@@ -500,6 +500,7 @@ public interface RouterHub {
     String GLOBAL_NotificationServiceImpl = GLOBAL + SERVICE + "/NotificationService";
     String GLOBAL_TileServiceImpl = GLOBAL + SERVICE + "/TileService";
     String GLOBAL_BubbleServiceImpl = GLOBAL + SERVICE + "/BubbleService";
+    String GLOBAL_DanmuServiceImpl = GLOBAL + SERVICE + "/DanmuService";
     String GLOBAL_AlarmServiceImpl = GLOBAL + SERVICE + "/AlarmService";
     String GLOBAL_DegradeServiceImpl = GLOBAL + SERVICE + "/DegradeServiceImpl";
     String GLOBAL_PathReplaceServiceImpl = GLOBAL + SERVICE + "/PathReplaceServiceImpl";
