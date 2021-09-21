@@ -40,7 +40,7 @@ public interface TileService {
      * @param content 内容
      * @param listener 点击磁贴后触发
      */
-    void show(@Nullable Drawable drawable, String title, String content, DanmuService.Listener listener);
+    void show(@Nullable Drawable drawable, String title, String content, Listener listener);
 
     /**
      * 显示磁贴
@@ -48,7 +48,7 @@ public interface TileService {
      * @param content 内容
      * @param listener 点击磁贴后触发
      */
-    void show(@Nullable Drawable drawable, String content, DanmuService.Listener listener);
+    void show(@Nullable Drawable drawable, String content, Listener listener);
 
     /**
      * 显示磁贴，默认头像为应用图标

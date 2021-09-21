@@ -40,7 +40,7 @@ public interface BubbleService {
      * @param content 内容
      * @param listener 点击气泡后触发
      */
-    void show(@Nullable Drawable drawable, String title, String content, DanmuService.Listener listener);
+    void show(@Nullable Drawable drawable, String title, String content, Listener listener);
 
     /**
      * 显示气泡
@@ -48,7 +48,7 @@ public interface BubbleService {
      * @param content 内容
      * @param listener 点击气泡后触发
      */
-    void show(@Nullable Drawable drawable, String content, DanmuService.Listener listener);
+    void show(@Nullable Drawable drawable, String content, Listener listener);
 
     /**
      * 显示气泡，默认头像为应用图标
