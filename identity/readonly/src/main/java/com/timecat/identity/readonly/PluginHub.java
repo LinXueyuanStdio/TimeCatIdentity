@@ -26,4 +26,7 @@ public interface PluginHub {
     String KEY_DATA = "KEY_DATA";// intent.setData()
 
     String KEY_PICTURE_PATH = "picturePath";
+
+    String PPS = "com.timecat.module.plugin.container.MainPluginProcessService";
+    String PPS2 = "com.timecat.module.plugin.container.SecondPluginProcessPPS";
 }
