@@ -79,6 +79,7 @@ public interface RouterHub {
     String ORG = "org";//org 编辑器组件
     String IM = "im";//im 即时通讯组件
     String THEME = "theme";//换肤组件
+    String SKIN = "skin";//换肤组件
     String PLUGIN = "plugin";//插件管理相关的组件
     String APP_DETAIL = "app_detail";//详情页组件
     String TERMINAL = "terminal";//命令行组件
@@ -637,6 +638,11 @@ public interface RouterHub {
 
     //region theme
     String THEME_ThemeActivity = THEME + "/ThemeActivity";
+    //endregion
+
+    //region skin
+    String SKIN_SkinActivity = SKIN + "/SkinActivity";
+    String SKIN_SkinDetailActivity = SKIN + "/SkinDetailActivity";
     //endregion
 
     //region plugin
