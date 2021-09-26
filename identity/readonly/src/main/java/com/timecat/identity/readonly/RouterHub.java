@@ -643,6 +643,7 @@ public interface RouterHub {
     //region skin
     String SKIN_SkinActivity = SKIN + "/SkinActivity";
     String SKIN_SkinDetailActivity = SKIN + "/SkinDetailActivity";
+    String SKIN_SkinDesignActivity = SKIN + "/SkinDesignActivity";
     //endregion
 
     //region plugin
