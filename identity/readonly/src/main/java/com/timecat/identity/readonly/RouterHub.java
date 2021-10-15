@@ -641,18 +641,18 @@ public interface RouterHub {
     //endregion
 
     //region skin
-    String SKIN_SkinActivity = SKIN + "/SkinActivity";
     String SKIN_SkinDetailActivity = SKIN + "/SkinDetailActivity";
     String SKIN_SkinDesignActivity = SKIN + "/SkinDesignActivity";
+    String SKIN_SkinCloudActivity = SKIN + "/SkinCloudActivity";
+    String SKIN_SkinDownloadActivity = SKIN + "/SkinDownloadActivity";
+    String SKIN_SkinUpdateActivity = SKIN + "/SkinUpdateActivity";
     //endregion
 
     //region plugin
-    String PLUGIN_PluginListActivity = PLUGIN + "user" + "/PluginListActivity";
-    String PLUGIN_PictureBedActivity = PLUGIN + "/PictureBedActivity";
     String PLUGIN_PluginCloudActivity = PLUGIN + "/PluginCloudActivity";
     String PLUGIN_PluginDownloadActivity = PLUGIN + "/PluginDownloadActivity";
-    String PLUGIN_PluginRouterActivity = PLUGIN + "/PluginRouterActivity";
     String PLUGIN_PluginUpdateActivity = PLUGIN + "/PluginUpdateActivity";
+    String PLUGIN_PluginDetailActivity = PLUGIN + "/PluginDetailActivity";
     //endregion
 
     //region 文件浏览器
