@@ -527,8 +527,8 @@ public interface RouterHub {
     String GLOBAL_ChangeReminderService = GLOBAL + "time" + SERVICE + "/ChangeReminderServiceImpl";
     String GLOBAL_HabitService = GLOBAL + "time" + SERVICE + "/HabitServiceImpl";
 
-    String GLOBAL_PictureBedService = GLOBAL + "plugin" + SERVICE + "/PictureBedServiceImpl";
-    String GLOBAL_PluginService = GLOBAL + "plugin" + SERVICE + "/PluginServiceImpl";
+    String GLOBAL_PictureBedService = GLOBAL + PLUGIN + SERVICE + "/PictureBedServiceImpl";
+    String GLOBAL_PluginService = GLOBAL + PLUGIN + SERVICE + "/PluginServiceImpl";
 
     String GLOBAL_FileContainerService = GLOBAL + "file" + SERVICE + "/FileContainerServiceImpl";
     String GLOBAL_OnlineContainerService = GLOBAL + "file" + SERVICE + "/OnlineContainerServiceImpl";
@@ -537,8 +537,10 @@ public interface RouterHub {
 
     String GLOBAL_GitContainerService = GLOBAL + "git" + SERVICE + "/GitContainerServiceImpl";
 
-    String GLOBAL_PluginContainerService = GLOBAL + "plugin" + SERVICE + "/PluginContainerServiceImpl";
-    String GLOBAL_PluginApiContainerService = GLOBAL + "plugin" + SERVICE + "/PluginApiContainerServiceImpl";
+    String GLOBAL_SkinContainerService = GLOBAL + SKIN + SERVICE + "/SkinContainerServiceImpl";
+
+    String GLOBAL_PluginContainerService = GLOBAL + PLUGIN + SERVICE + "/PluginContainerServiceImpl";
+    String GLOBAL_PluginApiContainerService = GLOBAL + PLUGIN + SERVICE + "/PluginApiContainerServiceImpl";
 
     String GLOBAL_WidgetServiceImpl = GLOBAL + "master" + SERVICE + "/WidgetService";
     String GLOBAL_RecordCategoryContainerService = GLOBAL + "master" + SERVICE + "/RecordCategoryContainerServiceImpl";
