@@ -229,9 +229,9 @@ public interface RouterHub {
     String MASTER_ControllerFragment = MASTER + FRAGMENT + "/ControllerFragment";
     String MASTER_StatisticFragment = MASTER + FRAGMENT + "/StatisticFragment";
 
-//    String MASTER_PlanDetailKanbanFragment = MASTER + FRAGMENT + "/PlanDetailKanbanFragment";
-//    String MASTER_PlanDetailKanbanFragment = MASTER + FRAGMENT + "/PlanDetailKanbanFragment";
-//    String MASTER_PlanDetailKanbanFragment = MASTER + FRAGMENT + "/PlanDetailKanbanFragment";
+    //    String MASTER_PlanDetailKanbanFragment = MASTER + FRAGMENT + "/PlanDetailKanbanFragment";
+    //    String MASTER_PlanDetailKanbanFragment = MASTER + FRAGMENT + "/PlanDetailKanbanFragment";
+    //    String MASTER_PlanDetailKanbanFragment = MASTER + FRAGMENT + "/PlanDetailKanbanFragment";
 
     String MASTER_HabitSupportEncourageFragment = MASTER + FRAGMENT + "/HabitSupportEncourageFragment";
     String MASTER_HabitSupportMultiFragment = MASTER + FRAGMENT + "/HabitSupportMultiFragment";
@@ -373,6 +373,7 @@ public interface RouterHub {
     String USER_AllHunPermissionActivity = USER + "/AllHunPermissionActivity";
     String USER_AllRoleActivity = USER + "/AllRoleActivity";
     String USER_AllIdentityActivity = USER + "/AllIdentityActivity";
+    String USER_AllIllustratedBookActivity = USER + "/AllIllustratedBookActivity";
     String USER_AllUserActivity = USER + "/AllUserActivity";
     String USER_AllLeaderBoardActivity = USER + "/AllLeaderBoardActivity";
     String USER_AllRecommendActivity = USER + "/AllRecommendActivity";
@@ -560,6 +561,41 @@ public interface RouterHub {
     String GLOBAL_NoteFloatService = GLOBAL + "floatview_note" + SERVICE + "/NoteFloatServiceImpl";
     String GLOBAL_HabitFloatService = GLOBAL + "floatview_habit" + SERVICE + "/HabitFloatServiceImpl";
     String GLOBAL_NovelFloatService = GLOBAL + "floatview_novel" + SERVICE + "/NovelFloatServiceImpl";
+
+    String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_RECORD = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_RECORD";
+    String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_DATABASE = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_DATABASE";
+    String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_NOVEL = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_NOVEL";
+    String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_MARKDOWN = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_MARKDOWN";
+    String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_MESSAGE = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_MESSAGE";
+    String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_ABOUT = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_ABOUT";
+    String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_TAG = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_TAG";
+    String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_TOPIC = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_TOPIC";
+    String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_MEDIA = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_MEDIA";
+    String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_LEADER_BOARD = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_LEADER_BOARD";
+    String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_APP = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_APP";
+    String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_COMMENT = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_COMMENT";
+    String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_RECOMMEND = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_RECOMMEND";
+    String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_CONVERSATION = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_CONVERSATION";
+    String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_CONTAINER = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_CONTAINER";
+    String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_ACTIVITY = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_ACTIVITY";
+    String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_FOCUS = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_FOCUS";
+    String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_PATH = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_PATH";
+    String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_TASK = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_TASK";
+    String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_MOMENT = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_MOMENT";
+    String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_DIALOG = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_DIALOG";
+    String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_PLUGIN = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_PLUGIN";
+    String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_LINK = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_LINK";
+    String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_BUTTON = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_BUTTON";
+    String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_FORUM = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_FORUM";
+    String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_POST = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_POST";
+    String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_PERMISSION = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_PERMISSION";
+    String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_IDENTITY = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_IDENTITY";
+    String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_ROLE = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_ROLE";
+    String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_ITEM = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_ITEM";
+    String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_MAIL = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_MAIL";
+    String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_SHOP = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_SHOP";
+    String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_SPACE = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_SPACE";
+    String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_SKIN = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_SKIN";
     //endregion
 
     //region burst link
