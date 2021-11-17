@@ -98,6 +98,7 @@ public interface RouterHub {
     String FRAGMENT = "fragment";
 
     //region module-welcome 欢迎
+    String WELCOME_IntroActivity = WELCOME + "/IntroActivity";
     String WELCOME_WelcomeActivity = WELCOME + "/WelcomeActivity";
     String WELCOME_WelcomeGuideActivity = WELCOME + "/WelcomeGuideActivity";
     String WELCOME_PreSettingActivity = WELCOME + "/PreSettingActivity";

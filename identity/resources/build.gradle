@@ -11,6 +11,7 @@ android {
                     'src/main/res',
                     'src/main/res-base/base',
                     'src/main/res-adapt',
+                    'src/main/res-export', // 导出给桌面
                     'src/main/res-theme',
                     'src/main/res-page/block',
                     'src/main/res-page/github',
