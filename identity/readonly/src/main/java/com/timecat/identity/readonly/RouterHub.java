@@ -89,6 +89,7 @@ public interface RouterHub {
     String SCARLET = "scarlet";//idea 编辑器组件
     String EXPLORER = "explorer";//文件浏览器组件
     String FILES = "files";//material 文件浏览器组件
+    String CHAT = "chat";//聊天组件
 
     /**
      * 服务组件, 用于给每个组件暴露特有的服务
@@ -597,6 +598,41 @@ public interface RouterHub {
     String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_SHOP = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_SHOP";
     String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_SPACE = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_SPACE";
     String CREATE_FACTORY_MainCreateBlockTypeService_BLOCK_SKIN = GLOBAL + SERVICE + "MainCreateBlockTypeService_BLOCK_SKIN";
+
+    String CARD_BlockTypeService_BLOCK_RECORD = GLOBAL + SERVICE + "BlockTypeService_BLOCK_RECORD";
+    String CARD_BlockTypeService_BLOCK_DATABASE = GLOBAL + SERVICE + "BlockTypeService_BLOCK_DATABASE";
+    String CARD_BlockTypeService_BLOCK_NOVEL = GLOBAL + SERVICE + "BlockTypeService_BLOCK_NOVEL";
+    String CARD_BlockTypeService_BLOCK_MARKDOWN = GLOBAL + SERVICE + "BlockTypeService_BLOCK_MARKDOWN";
+    String CARD_BlockTypeService_BLOCK_MESSAGE = GLOBAL + SERVICE + "BlockTypeService_BLOCK_MESSAGE";
+    String CARD_BlockTypeService_BLOCK_ABOUT = GLOBAL + SERVICE + "BlockTypeService_BLOCK_ABOUT";
+    String CARD_BlockTypeService_BLOCK_TAG = GLOBAL + SERVICE + "BlockTypeService_BLOCK_TAG";
+    String CARD_BlockTypeService_BLOCK_TOPIC = GLOBAL + SERVICE + "BlockTypeService_BLOCK_TOPIC";
+    String CARD_BlockTypeService_BLOCK_MEDIA = GLOBAL + SERVICE + "BlockTypeService_BLOCK_MEDIA";
+    String CARD_BlockTypeService_BLOCK_LEADER_BOARD = GLOBAL + SERVICE + "BlockTypeService_BLOCK_LEADER_BOARD";
+    String CARD_BlockTypeService_BLOCK_APP = GLOBAL + SERVICE + "BlockTypeService_BLOCK_APP";
+    String CARD_BlockTypeService_BLOCK_COMMENT = GLOBAL + SERVICE + "BlockTypeService_BLOCK_COMMENT";
+    String CARD_BlockTypeService_BLOCK_RECOMMEND = GLOBAL + SERVICE + "BlockTypeService_BLOCK_RECOMMEND";
+    String CARD_BlockTypeService_BLOCK_CONVERSATION = GLOBAL + SERVICE + "BlockTypeService_BLOCK_CONVERSATION";
+    String CARD_BlockTypeService_BLOCK_CONTAINER = GLOBAL + SERVICE + "BlockTypeService_BLOCK_CONTAINER";
+    String CARD_BlockTypeService_BLOCK_ACTIVITY = GLOBAL + SERVICE + "BlockTypeService_BLOCK_ACTIVITY";
+    String CARD_BlockTypeService_BLOCK_FOCUS = GLOBAL + SERVICE + "BlockTypeService_BLOCK_FOCUS";
+    String CARD_BlockTypeService_BLOCK_PATH = GLOBAL + SERVICE + "BlockTypeService_BLOCK_PATH";
+    String CARD_BlockTypeService_BLOCK_TASK = GLOBAL + SERVICE + "BlockTypeService_BLOCK_TASK";
+    String CARD_BlockTypeService_BLOCK_MOMENT = GLOBAL + SERVICE + "BlockTypeService_BLOCK_MOMENT";
+    String CARD_BlockTypeService_BLOCK_DIALOG = GLOBAL + SERVICE + "BlockTypeService_BLOCK_DIALOG";
+    String CARD_BlockTypeService_BLOCK_PLUGIN = GLOBAL + SERVICE + "BlockTypeService_BLOCK_PLUGIN";
+    String CARD_BlockTypeService_BLOCK_LINK = GLOBAL + SERVICE + "BlockTypeService_BLOCK_LINK";
+    String CARD_BlockTypeService_BLOCK_BUTTON = GLOBAL + SERVICE + "BlockTypeService_BLOCK_BUTTON";
+    String CARD_BlockTypeService_BLOCK_FORUM = GLOBAL + SERVICE + "BlockTypeService_BLOCK_FORUM";
+    String CARD_BlockTypeService_BLOCK_POST = GLOBAL + SERVICE + "BlockTypeService_BLOCK_POST";
+    String CARD_BlockTypeService_BLOCK_PERMISSION = GLOBAL + SERVICE + "BlockTypeService_BLOCK_PERMISSION";
+    String CARD_BlockTypeService_BLOCK_IDENTITY = GLOBAL + SERVICE + "BlockTypeService_BLOCK_IDENTITY";
+    String CARD_BlockTypeService_BLOCK_ROLE = GLOBAL + SERVICE + "BlockTypeService_BLOCK_ROLE";
+    String CARD_BlockTypeService_BLOCK_ITEM = GLOBAL + SERVICE + "BlockTypeService_BLOCK_ITEM";
+    String CARD_BlockTypeService_BLOCK_MAIL = GLOBAL + SERVICE + "BlockTypeService_BLOCK_MAIL";
+    String CARD_BlockTypeService_BLOCK_SHOP = GLOBAL + SERVICE + "BlockTypeService_BLOCK_SHOP";
+    String CARD_BlockTypeService_BLOCK_SPACE = GLOBAL + SERVICE + "BlockTypeService_BLOCK_SPACE";
+    String CARD_BlockTypeService_BLOCK_SKIN = GLOBAL + SERVICE + "BlockTypeService_BLOCK_SKIN";
     //endregion
 
     //region burst link
