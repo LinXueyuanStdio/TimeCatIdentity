@@ -633,6 +633,41 @@ public interface RouterHub {
     String CARD_BlockTypeService_BLOCK_SHOP = GLOBAL + SERVICE + "BlockTypeService_BLOCK_SHOP";
     String CARD_BlockTypeService_BLOCK_SPACE = GLOBAL + SERVICE + "BlockTypeService_BLOCK_SPACE";
     String CARD_BlockTypeService_BLOCK_SKIN = GLOBAL + SERVICE + "BlockTypeService_BLOCK_SKIN";
+
+    String NAVI_BlockTypeNaviService_BLOCK_RECORD = GLOBAL + SERVICE + "BlockTypeNaviService_BLOCK_RECORD";
+    String NAVI_BlockTypeNaviService_BLOCK_DATABASE = GLOBAL + SERVICE + "BlockTypeNaviService_BLOCK_DATABASE";
+    String NAVI_BlockTypeNaviService_BLOCK_NOVEL = GLOBAL + SERVICE + "BlockTypeNaviService_BLOCK_NOVEL";
+    String NAVI_BlockTypeNaviService_BLOCK_MARKDOWN = GLOBAL + SERVICE + "BlockTypeNaviService_BLOCK_MARKDOWN";
+    String NAVI_BlockTypeNaviService_BLOCK_MESSAGE = GLOBAL + SERVICE + "BlockTypeNaviService_BLOCK_MESSAGE";
+    String NAVI_BlockTypeNaviService_BLOCK_ABOUT = GLOBAL + SERVICE + "BlockTypeNaviService_BLOCK_ABOUT";
+    String NAVI_BlockTypeNaviService_BLOCK_TAG = GLOBAL + SERVICE + "BlockTypeNaviService_BLOCK_TAG";
+    String NAVI_BlockTypeNaviService_BLOCK_TOPIC = GLOBAL + SERVICE + "BlockTypeNaviService_BLOCK_TOPIC";
+    String NAVI_BlockTypeNaviService_BLOCK_MEDIA = GLOBAL + SERVICE + "BlockTypeNaviService_BLOCK_MEDIA";
+    String NAVI_BlockTypeNaviService_BLOCK_LEADER_BOARD = GLOBAL + SERVICE + "BlockTypeNaviService_BLOCK_LEADER_BOARD";
+    String NAVI_BlockTypeNaviService_BLOCK_APP = GLOBAL + SERVICE + "BlockTypeNaviService_BLOCK_APP";
+    String NAVI_BlockTypeNaviService_BLOCK_COMMENT = GLOBAL + SERVICE + "BlockTypeNaviService_BLOCK_COMMENT";
+    String NAVI_BlockTypeNaviService_BLOCK_RECOMMEND = GLOBAL + SERVICE + "BlockTypeNaviService_BLOCK_RECOMMEND";
+    String NAVI_BlockTypeNaviService_BLOCK_CONVERSATION = GLOBAL + SERVICE + "BlockTypeNaviService_BLOCK_CONVERSATION";
+    String NAVI_BlockTypeNaviService_BLOCK_CONTAINER = GLOBAL + SERVICE + "BlockTypeNaviService_BLOCK_CONTAINER";
+    String NAVI_BlockTypeNaviService_BLOCK_ACTIVITY = GLOBAL + SERVICE + "BlockTypeNaviService_BLOCK_ACTIVITY";
+    String NAVI_BlockTypeNaviService_BLOCK_FOCUS = GLOBAL + SERVICE + "BlockTypeNaviService_BLOCK_FOCUS";
+    String NAVI_BlockTypeNaviService_BLOCK_PATH = GLOBAL + SERVICE + "BlockTypeNaviService_BLOCK_PATH";
+    String NAVI_BlockTypeNaviService_BLOCK_TASK = GLOBAL + SERVICE + "BlockTypeNaviService_BLOCK_TASK";
+    String NAVI_BlockTypeNaviService_BLOCK_MOMENT = GLOBAL + SERVICE + "BlockTypeNaviService_BLOCK_MOMENT";
+    String NAVI_BlockTypeNaviService_BLOCK_DIALOG = GLOBAL + SERVICE + "BlockTypeNaviService_BLOCK_DIALOG";
+    String NAVI_BlockTypeNaviService_BLOCK_PLUGIN = GLOBAL + SERVICE + "BlockTypeNaviService_BLOCK_PLUGIN";
+    String NAVI_BlockTypeNaviService_BLOCK_LINK = GLOBAL + SERVICE + "BlockTypeNaviService_BLOCK_LINK";
+    String NAVI_BlockTypeNaviService_BLOCK_BUTTON = GLOBAL + SERVICE + "BlockTypeNaviService_BLOCK_BUTTON";
+    String NAVI_BlockTypeNaviService_BLOCK_FORUM = GLOBAL + SERVICE + "BlockTypeNaviService_BLOCK_FORUM";
+    String NAVI_BlockTypeNaviService_BLOCK_POST = GLOBAL + SERVICE + "BlockTypeNaviService_BLOCK_POST";
+    String NAVI_BlockTypeNaviService_BLOCK_PERMISSION = GLOBAL + SERVICE + "BlockTypeNaviService_BLOCK_PERMISSION";
+    String NAVI_BlockTypeNaviService_BLOCK_IDENTITY = GLOBAL + SERVICE + "BlockTypeNaviService_BLOCK_IDENTITY";
+    String NAVI_BlockTypeNaviService_BLOCK_ROLE = GLOBAL + SERVICE + "BlockTypeNaviService_BLOCK_ROLE";
+    String NAVI_BlockTypeNaviService_BLOCK_ITEM = GLOBAL + SERVICE + "BlockTypeNaviService_BLOCK_ITEM";
+    String NAVI_BlockTypeNaviService_BLOCK_MAIL = GLOBAL + SERVICE + "BlockTypeNaviService_BLOCK_MAIL";
+    String NAVI_BlockTypeNaviService_BLOCK_SHOP = GLOBAL + SERVICE + "BlockTypeNaviService_BLOCK_SHOP";
+    String NAVI_BlockTypeNaviService_BLOCK_SPACE = GLOBAL + SERVICE + "BlockTypeNaviService_BLOCK_SPACE";
+    String NAVI_BlockTypeNaviService_BLOCK_SKIN = GLOBAL + SERVICE + "BlockTypeNaviService_BLOCK_SKIN";
     //endregion
 
     //region burst link
