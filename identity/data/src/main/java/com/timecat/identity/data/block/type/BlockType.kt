@@ -12,7 +12,7 @@ import androidx.annotation.IntDef
 @IntDef(
     BLOCK_RECORD,
     BLOCK_DATABASE,
-    BLOCK_NOVEL,
+    BLOCK_CARD,
     BLOCK_MARKDOWN,
     BLOCK_MESSAGE,
 
@@ -46,7 +46,7 @@ annotation class BlockType
 
 const val BLOCK_RECORD: Int = 0 // 记录，当任务、笔记用（兼容了任务、笔记、计划、子计划、提醒等具有生命周期等）
 const val BLOCK_DATABASE: Int = 1 // 数据库，表头属性名和个数可自定义，具体类型有计划、子计划、看板、表格
-const val BLOCK_NOVEL: Int = 2 // 小说
+const val BLOCK_CARD: Int = 2 // 卡片，和数据库强相关
 const val BLOCK_MARKDOWN: Int = 3 // Markdown块
 const val BLOCK_MESSAGE: Int = 4 // 聊天消息
 

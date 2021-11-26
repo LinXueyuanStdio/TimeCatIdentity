@@ -548,6 +548,8 @@ public interface RouterHub {
     String GLOBAL_WidgetServiceImpl = GLOBAL + "master" + SERVICE + "/WidgetService";
     String GLOBAL_RecordCategoryContainerService = GLOBAL + "master" + SERVICE + "/RecordCategoryContainerServiceImpl";
 
+    String GLOBAL_RecordCardService = GLOBAL + "master" + SERVICE + "/RecordCardServiceImpl";
+    String GLOBAL_RecordDatabaseCardService = GLOBAL + "master" + SERVICE + "/RecordDatabaseCardServiceImpl";
     String GLOBAL_RecordDatabaseService = GLOBAL + "master" + SERVICE + "/RecordDatabaseServiceImpl";
     String GLOBAL_RecordMessageService = GLOBAL + "master" + SERVICE + "/RecordMessageServiceImpl";
     String GLOBAL_RecordButtonService = GLOBAL + "master" + SERVICE + "/RecordButtonServiceImpl";
@@ -567,7 +569,7 @@ public interface RouterHub {
 
     String CREATE_CreateService_BLOCK_RECORD = GLOBAL + SERVICE + "CreateService_BLOCK_RECORD";
     String CREATE_CreateService_BLOCK_DATABASE = GLOBAL + SERVICE + "CreateService_BLOCK_DATABASE";
-    String CREATE_CreateService_BLOCK_NOVEL = GLOBAL + SERVICE + "CreateService_BLOCK_NOVEL";
+    String CREATE_CreateService_BLOCK_CARD = GLOBAL + SERVICE + "CreateService_BLOCK_CARD";
     String CREATE_CreateService_BLOCK_MARKDOWN = GLOBAL + SERVICE + "CreateService_BLOCK_MARKDOWN";
     String CREATE_CreateService_BLOCK_MESSAGE = GLOBAL + SERVICE + "CreateService_BLOCK_MESSAGE";
     String CREATE_CreateService_BLOCK_ABOUT = GLOBAL + SERVICE + "CreateService_BLOCK_ABOUT";
@@ -602,7 +604,7 @@ public interface RouterHub {
 
     String CARD_CardService_BLOCK_RECORD = GLOBAL + SERVICE + "CardService_BLOCK_RECORD";
     String CARD_CardService_BLOCK_DATABASE = GLOBAL + SERVICE + "CardService_BLOCK_DATABASE";
-    String CARD_CardService_BLOCK_NOVEL = GLOBAL + SERVICE + "CardService_BLOCK_NOVEL";
+    String CARD_CardService_BLOCK_CARD = GLOBAL + SERVICE + "CardService_BLOCK_CARD";
     String CARD_CardService_BLOCK_MARKDOWN = GLOBAL + SERVICE + "CardService_BLOCK_MARKDOWN";
     String CARD_CardService_BLOCK_MESSAGE = GLOBAL + SERVICE + "CardService_BLOCK_MESSAGE";
     String CARD_CardService_BLOCK_ABOUT = GLOBAL + SERVICE + "CardService_BLOCK_ABOUT";
@@ -637,7 +639,7 @@ public interface RouterHub {
 
     String NAVI_NaviService_BLOCK_RECORD = GLOBAL + SERVICE + "NaviService_BLOCK_RECORD";
     String NAVI_NaviService_BLOCK_DATABASE = GLOBAL + SERVICE + "NaviService_BLOCK_DATABASE";
-    String NAVI_NaviService_BLOCK_NOVEL = GLOBAL + SERVICE + "NaviService_BLOCK_NOVEL";
+    String NAVI_NaviService_BLOCK_CARD = GLOBAL + SERVICE + "NaviService_BLOCK_CARD";
     String NAVI_NaviService_BLOCK_MARKDOWN = GLOBAL + SERVICE + "NaviService_BLOCK_MARKDOWN";
     String NAVI_NaviService_BLOCK_MESSAGE = GLOBAL + SERVICE + "NaviService_BLOCK_MESSAGE";
     String NAVI_NaviService_BLOCK_ABOUT = GLOBAL + SERVICE + "NaviService_BLOCK_ABOUT";
