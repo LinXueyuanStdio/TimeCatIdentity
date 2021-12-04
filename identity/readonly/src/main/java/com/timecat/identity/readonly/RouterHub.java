@@ -567,6 +567,8 @@ public interface RouterHub {
     String GLOBAL_HabitFloatService = GLOBAL + "floatview_habit" + SERVICE + "/HabitFloatServiceImpl";
     String GLOBAL_NovelFloatService = GLOBAL + "floatview_novel" + SERVICE + "/NovelFloatServiceImpl";
 
+    String BACKEND_BackendService_OnlineHost = GLOBAL + SERVICE + "BackendService_OnlineHost";
+
     String CREATE_CreateService_BLOCK_RECORD = GLOBAL + SERVICE + "CreateService_BLOCK_RECORD";
     String CREATE_CreateService_BLOCK_DATABASE = GLOBAL + SERVICE + "CreateService_BLOCK_DATABASE";
     String CREATE_CreateService_BLOCK_CARD = GLOBAL + SERVICE + "CreateService_BLOCK_CARD";
