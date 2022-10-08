@@ -417,6 +417,10 @@ public interface RouterHub {
     String USER_PriceActivityEditorActivity = USER + "/PriceActivityEditorActivity";
     String USER_DataTaskEditorActivity = USER + "/DataTaskEditorActivity";
 
+    String USER_AllItemIllustratedActivity = USER + "/AllItemIllustratedActivity";
+    String USER_AllIdentityIllustratedActivity = USER + "/AllIdentityIllustratedActivity";
+    String USER_AllActivityIllustratedActivity = USER + "/AllActivityIllustratedActivity";
+
     String LEADERBOARD_LeaderBoardHomeActivity = LEADERBOARD + "/LeaderBoardHomeActivity";
     String LEADERBOARD_LeaderBoardDetailActivity = LEADERBOARD + "/LeaderBoardDetailActivity";
     String LEADERBOARD_RecommendActivity = LEADERBOARD + "/RecommendActivity";
